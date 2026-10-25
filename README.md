@@ -13,13 +13,13 @@ O objetivo é demonstrar competências aplicáveis a serviços freelancer: prepa
 
 ## Estado atual
 
-As três primeiras rodadas de decisões foram aprovadas em 25 de outubro de 2026. A entrevista de escopo continua; ainda não há implementação, notebook executável, relatório publicado ou dashboard.
+As quatro rodadas de decisões foram aprovadas em 25 de outubro de 2026. O plano consolidado aguarda confirmação final antes da implementação; ainda não há notebook executável, relatório publicado ou dashboard.
 
 Planejamento de referência: quatro horas semanais durante seis semanas, sujeito à inspeção dos arquivos e ao escopo final. O aprendizado se concentra em NLP e avaliação de busca, aproveitando a experiência prévia em Python e análise de dados.
 
 A demonstração é voltada a pequenas equipes que precisam localizar informações em acervos documentais. As consultas serão em inglês na primeira versão, com interface e relatório em português e um resumo do projeto em inglês.
 
-A avaliação incluirá revisão humana de cerca de 20–30 consultas e seus trechos relevantes; a quantidade final e os critérios ainda serão definidos.
+A avaliação incluirá revisão humana de 30 consultas: dez para desenvolvimento e vinte reservadas para a avaliação final, incluindo consultas sem resposta. Os critérios e os marcos estão descritos no plano.
 
 ## Escopo aprovado da primeira versão
 
@@ -27,10 +27,11 @@ A avaliação incluirá revisão humana de cerca de 20–30 consultas e seus tre
 - Apresentar até cinco trechos, com título da obra, arquivo, localização verificável e filtro por obra; informar quando não houver correspondência.
 - Apoiar a análise com tamanho dos textos, termos frequentes e qualidade da preparação dos dados.
 
-Geração de respostas e chatbot ficam fora desta versão. O protocolo de avaliação e a regra de segmentação continuam em definição.
+A unidade inicial de busca será o parágrafo, preservando arquivo e intervalo de linhas de origem. Geração de respostas e chatbot ficam fora desta versão. O dashboard será hospedado no Streamlit Community Cloud e o relatório no GitHub Pages; essas publicações ainda não foram executadas.
 
 ## Documentação
 
+- [Plano e marcos para confirmação final](docs/plan.md)
 - [Descoberta e decisões aprovadas](docs/discovery.md)
 - [Glossário do domínio](GLOSSARY.md)
 

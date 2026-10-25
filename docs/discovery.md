@@ -29,6 +29,15 @@ Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. O
 
 Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. A regra de segmentação, o protocolo final de avaliação e os detalhes de publicação continuam abertos.
 
+## Decisões aprovadas — rodada 4
+
+13. **Unidade de busca:** começar com parágrafos, preservando arquivo e intervalo de linhas de origem para conferir cada resultado. A identificação completa de capítulos e contos fica para uma possível evolução.
+14. **Avaliação:** preparar 30 consultas, sendo dez para desenvolvimento e vinte para avaliação final, incluindo consultas sem resposta no corpus. Reservar as vinte finais para depois de fechar os ajustes. Comparar consultas que encontram trecho relevante entre os cinco resultados e consultas sem resposta que recebem resultados indevidos.
+15. **Publicação:** planejar o dashboard no Streamlit Community Cloud e o relatório no GitHub Pages. Aplicativos inativos no Community Cloud podem hibernar e precisar de reativação ao acessar.
+16. **Ordem de entrega:** processamento e busca → notebook Kaggle e avaliação → relatório Quarto → dashboard Streamlit, reaproveitando a mesma lógica Python.
+
+Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. O usuário pediu a consolidação do plano e dos marcos para confirmação final antes da implementação.
+
 ## Entregas solicitadas
 
 - Python como linguagem do projeto.
@@ -72,20 +81,22 @@ Em 25 de outubro de 2026, o [endpoint público oficial de download do Kaggle](ht
 - ZIP: 1.514.187 bytes; soma dos arquivos descompactados: 4.041.127 bytes.
 - SHA-256 do ZIP: `5abf2fe7bc636289347c2da51a7b611bda39ed451543c6428f79215328eeaaa3`.
 - Os nove arquivos começam com BOM UTF-8, confirmado pelos bytes `EF BB BF`, e decodificam com UTF-8-SIG.
-- Os nove arquivos têm separações por linhas em branco após normalizar quebras de linha. Isso permite propor trechos baseados em parágrafos; a regra final de segmentação ainda não foi aprovada.
+- Os nove arquivos têm separações por linhas em branco após normalizar quebras de linha. Essa observação fundamentou a escolha de parágrafos na decisão 13; os vínculos com linhas do arquivo de origem devem ser preservados durante a implementação.
 - A inspeção encontrou formatos variados de capítulos e títulos de contos. Identificar automaticamente todos esses títulos ainda não está garantido.
 - O nome `the_valley_of _fear.txt`, incluindo o espaço, foi confirmado dentro do ZIP.
 
 O endpoint usado não fixa uma versão no endereço. O hash identifica exatamente o arquivo inspecionado; não é uma garantia de que um download futuro retornará os mesmos bytes. A inspeção estrutural não conclui a verificação das condições de redistribuição.
 
-## Decisões abertas — próxima rodada
+## Consolidação e confirmação final
 
-- Regra de segmentação e referências que permitam localizar cada trecho no arquivo de origem.
-- Protocolo da avaliação humana: separação entre desenvolvimento e avaliação final, consultas sem resposta e critérios de conclusão.
-- Destino de hospedagem do dashboard Streamlit.
-- Organização do código compartilhado e reprodução do notebook no ambiente Kaggle.
-- Procedimento de obtenção e identificação dos dados para execução local e hospedada, respeitando a decisão de manter o corpus original fora do Git.
-- Ordem de entrega e confirmação final do entendimento antes da implementação.
+As decisões Q1–Q16 estão aprovadas. O [plano consolidado](plan.md) organiza essas decisões em seis marcos e descreve os detalhes técnicos propostos para executá-las. Esses detalhes e a distribuição de esforço aguardam confirmação final do usuário; a implementação não começou.
+
+Pontos a resolver durante a execução, sem reabrir as escolhas de produto:
+
+- Preparar e revisar as 30 consultas e seus rótulos, separando desenvolvimento e avaliação final antes dos ajustes.
+- Definir a regra de abstenção da busca TF-IDF com as dez consultas de desenvolvimento e congelá-la antes da avaliação final.
+- Verificar a identificação dos dados por arquivo no Kaggle e as condições de uso e atribuição aplicáveis à exibição pública de trechos.
+- Verificar acesso aos destinos de publicação e registrar as URLs apenas depois de testar as entregas publicadas.
 
 ## Restrições de interpretação
 
@@ -96,5 +107,6 @@ O corpus serve para demonstrar um fluxo de trabalho, não para afirmar eficácia
 - [Kaggle Notebooks](https://www.kaggle.com/docs/notebooks): o dataset pode ser anexado como entrada do notebook, sem incluir credenciais no código.
 - [Quarto e GitHub Pages](https://quarto.org/docs/publishing/github-pages.html): publicação do relatório estático.
 - [Implantação de dashboards Quarto](https://quarto.org/docs/dashboards/deployment.html): distinção entre saída estática e aplicações com servidor.
+- [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud): destino aprovado para a demonstração interativa.
 
-O relatório e a aplicação Python devem ter estratégias de publicação próprias. Hospedagem do dashboard ainda não foi definida.
+Os destinos aprovados são GitHub Pages para o relatório e Streamlit Community Cloud para a aplicação Python. Nenhuma dessas entregas foi implantada ainda.

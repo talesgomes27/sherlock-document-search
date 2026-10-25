@@ -24,3 +24,9 @@ Passagem do corpus julgada pertinente a uma consulta de avaliação. Relevância
 
 **Resultado de busca**:
 Trecho do corpus retornado para uma consulta, acompanhado do título da obra, do arquivo de origem e de uma localização verificável. Um resultado retornado ainda depende de julgamento humano para ser considerado relevante na avaliação.
+
+**Parágrafo de origem**:
+Passagem delimitada por separadores de parágrafos no arquivo-fonte, usada como unidade inicial de busca. Sua referência preserva o nome do arquivo e o intervalo de linhas de origem.
+
+**Consulta sem resposta**:
+Consulta de avaliação para a qual a revisão humana não identificou um trecho que satisfaça a informação solicitada no corpus. Compartilhar palavras com um texto não basta para torná-lo uma resposta relevante.
