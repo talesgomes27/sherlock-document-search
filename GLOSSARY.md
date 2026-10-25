@@ -30,3 +30,9 @@ Passagem delimitada por linhas vazias no arquivo-fonte, usada como unidade inici
 
 **Consulta sem resposta**:
 Consulta de avaliação para a qual a revisão humana não identificou um trecho que satisfaça a informação solicitada no corpus. Compartilhar palavras com um texto não basta para torná-lo uma resposta relevante.
+
+**Consulta de desenvolvimento**:
+Consulta do grupo de dez exemplos permitido para orientar ajustes após a revisão dos rótulos pelo autor.
+
+**Consulta final**:
+Consulta do grupo de vinte exemplos reservado para comparar os métodos depois de fechar código e parâmetros. Sua revisão de rótulos precede a avaliação e não autoriza usar os resultados para ajustes.

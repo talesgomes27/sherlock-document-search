@@ -1,6 +1,6 @@
 # Sherlock Document Search
 
-Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** está implementado e validado; a busca, o notebook Kaggle, o relatório Quarto e o dashboard Streamlit pertencem aos próximos marcos.
+Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** foi aprovado. O **M2 — busca literal e consultas** está implementado tecnicamente e aguarda sua revisão dos 30 rótulos; TF-IDF, notebook Kaggle, relatório Quarto e dashboard Streamlit pertencem aos próximos marcos.
 
 O objetivo é demonstrar competências aplicáveis a serviços freelancer: preparação de textos, recuperação de informação, avaliação de resultados e comunicação analítica. O exemplo é voltado a pequenas equipes que precisam localizar informações em acervos documentais. Resultados no corpus literário não comprovam desempenho em documentos de clientes nem retorno comercial.
 
@@ -28,6 +28,19 @@ Saídas locais: `data/processed/paragraphs.jsonl`, com texto e linhas de origem,
 
 As contagens seguem a regra documentada de palavras, sem números, com apóstrofos e hífens internos. A limpeza ainda mantém notas internas e alguns títulos; não se trata de um parser completo de capítulos e contos.
 
+## Usar a busca literal e revisar as consultas
+
+```bash
+uv run python -m sherlock_search --query "Cyanea" --book the_case-book_of_sherlock_holmes.txt
+uv run python -m sherlock_search.query_review
+```
+
+A busca retorna até cinco parágrafos com referências e contagem de ocorrências, ou informa ausência de correspondência literal. Ela procura a expressão informada, sem interpretar perguntas naturais. A revisão gera arquivos locais separados em `data/processed/review/`, com consultas e trechos para o autor conferir, sem executar busca ou métricas.
+
+**Ação pendente do M2:** revisar as dez propostas de desenvolvimento e as vinte finais, informando os IDs aprovados e as correções no chat ou nos JSON de origem. Todas começaram com `review_status: pending`. Os trechos dos livros permanecem fora do Git; as propostas versionadas contêm apenas consultas, referências e justificativas.
+
+A suíte atual tem **24 testes**, incluindo preparação, busca, CLI, validação das propostas e integração real. Não foram executadas buscas ou métricas nas vinte consultas finais.
+
 ## Próximas entregas aprovadas
 
 1. Revisão humana de 30 consultas: dez para desenvolvimento e vinte reservadas para avaliação final, incluindo consultas sem resposta.
@@ -38,12 +51,14 @@ As contagens seguem a regra documentada de palavras, sem números, com apóstrof
 
 As consultas serão em inglês; a interface e o relatório, em português, com um resumo do projeto em inglês. A análise de apoio cobre tamanho dos textos, termos frequentes e qualidade da preparação. Chatbot e geração de respostas ficam fora da primeira versão.
 
-O plano foi confirmado em 25 de outubro de 2026, com autorização para M1. O M1 aguarda aceite; M2–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
+O plano foi confirmado em 25 de outubro de 2026. O M1 foi aprovado e o M2 autorizado; M2 aguarda a revisão humana das consultas e M3–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
 
 ## Dados e documentação
 
 Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/talesgomes27/sherleck-books), com nove TXT na versão exibida durante a descoberta. O snapshot é identificado por SHA-256 por arquivo; os detalhes de origem e as condições de uso para publicação de trechos permanecem documentados separadamente.
 
+- [Busca literal e seus limites](docs/literal-search.md)
+- [Revisão das 30 consultas e protocolo](docs/query-review.md)
 - [Preparação, comandos e limitações do M1](docs/data-preparation.md)
 - [Relatório numérico do M1](reports/m1_quality.json)
 - [Manifesto de arquivos e hashes](src/sherlock_search/corpus_manifest.json)
@@ -55,4 +70,4 @@ Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/tales
 
 ## English summary
 
-Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs; lexical search, TF-IDF evaluation, a Kaggle notebook, a Quarto report and a Streamlit application are planned next. Evaluation on this literary corpus does not establish performance on business documents.
+Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs. Literal retrieval is implemented, while 30 query proposals await human review; TF-IDF evaluation, a Kaggle notebook, a Quarto report and a Streamlit application are planned next. Evaluation on this literary corpus does not establish performance on business documents.

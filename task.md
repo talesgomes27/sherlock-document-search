@@ -4,13 +4,13 @@
 
 Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1: “Confirmo o plano e autorizo iniciar o M1. Siga o recomendado, utilizando subagentes quando for benéfico.”
 
-Arquétipo A — dados, análise e Quarto, identificado pelo escopo explícito do [plano aprovado](docs/plan.md). Condução contínua dentro do M1 autorizado; M2–M6 não foram iniciados. A criação e manutenção do repositório GitHub fazem parte do contexto autorizado desta conversa; nenhum deploy de aplicação está incluído neste marco.
+Arquétipo A — dados, análise e Quarto, identificado pelo escopo explícito do [plano aprovado](docs/plan.md). Condução contínua dentro dos marcos autorizados. O usuário aprovou o M1 e autorizou iniciar o M2; M3–M6 não foram iniciados. A criação e manutenção do repositório GitHub fazem parte do contexto autorizado desta conversa; nenhum deploy de aplicação está incluído neste marco.
 
 Linha de base: repositório limpo, apenas documentação de planejamento, sem pacote, testes ou manifests de implementação. Não havia suíte preexistente a executar nem dados originais versionados.
 
 ## Estado do M1
 
-Implementado e validado tecnicamente; aceite do usuário pendente. O trabalho está restrito à preparação, rastreabilidade e análise inicial de limpeza.
+Implementado, validado tecnicamente e aprovado pelo usuário. O aceite e a autorização do M2 foram recebidos em 25 de outubro de 2026.
 
 | Gate da execução | Evidência no M1 |
 |---|---|
@@ -42,12 +42,44 @@ A revisão identificou dois marcadores `THE END` retidos e uma fração Unicode 
 
 - As condições de uso e atribuição para publicar trechos ainda precisam ser verificadas; isso não impediu a preparação local nem a publicação de metadados e contagens.
 - A limpeza mantém notas internas e alguns títulos editoriais. Não se implementou parser geral de capítulos ou contos.
-- A revisão humana das 30 consultas é tarefa do M2 e ainda não começou. As vinte consultas finais não foram criadas nem utilizadas para ajustes.
+- As 30 consultas do M2 foram propostas em dois arquivos separados e aguardam revisão humana. As vinte finais não foram executadas para ajustes, busca ou métricas.
 - O próximo ponto de reestimativa do esforço será após a revisão humana em M2; a referência de 24 horas não foi convertida em garantia de prazo.
-- Após o aceite do M1 e a autorização para o M2, preparar as consultas e a busca literal conforme o plano. Não iniciar automaticamente marcos posteriores.
+- M2 autorizado: implementar a busca literal e preparar a revisão humana. Não iniciar o M3 antes de concluir a revisão e obter autorização para o próximo marco.
 
 ## Correção da pasta local
 
 O usuário indicou `sherlock_holmes_series/` como pasta local do projeto. O checkout foi consolidado nessa pasta, preservando o histórico Git e os nove TXT que já existiam diretamente em `data/`. Seus hashes coincidem com o snapshot do M1. Esses TXT também ficam ignorados pelo Git; a cópia preparada continua em `data/raw/` e `data/processed/`. O ambiente virtual foi recriado no novo caminho para evitar referências ao local anterior.
 
 Posteriormente, o usuário autorizou alinhar o nome da pasta local ao repositório GitHub. A pasta atual é `sherlock-document-search/`; a renomeação preservou o checkout e os dados. O ambiente virtual foi recriado e os testes do M1 foram conferidos no caminho definitivo.
+
+## Execução do M2
+
+Autorização explícita em 25 de outubro de 2026: “Já atualizei o caminho na configuração do projeto. Aprovo o M1 e autorizo iniciar o M2 conforme o plano, utilizando subagentes quando for benéfico.”
+
+**Estado:** busca literal e preparação da revisão implementadas e validadas tecnicamente; M2 aguarda a revisão humana das 30 consultas. M3 não foi iniciado.
+
+Linha de base: dez testes do M1, pacote instalado, snapshot de nove TXT identificado e checkout limpo no caminho definitivo `sherlock-document-search/`.
+
+| Gate da execução | Evidência no M2 |
+|---|---|
+| Núcleo e contratos | Busca literal por palavra/expressão, até cinco resultados, score por ocorrências e desempate por arquivo/linhas. Validação das propostas de consulta sem executar recuperação. |
+| Integração e execução | CLI preserva a preparação do M1 e acrescenta consulta e filtro. Integração real usa apenas um termo de desenvolvimento para conferir metadados, sem calcular qualidade. |
+| Apresentação e saídas | Resultado textual com origem e contagem; mensagem de ausência. Dois arquivos Markdown locais mostram as fontes para o autor revisar. |
+| Documentação | Regras da busca, instruções da revisão e protocolo de separação documentados; propostas continuam marcadas como pendentes. |
+| Revisão integrada e build | 24 testes passaram, incluindo corpus real. Revisão independente corrigiu validação de tipos nos campos JSON. Build e execução do pacote instalado conferidos. |
+
+### Consultas e separação
+
+Dois subagentes com modelo mais leve propuseram os conjuntos sem usar rankings ou métricas. Desenvolvimento tem dez consultas (oito positivas e duas negativas propostas); final tem vinte (dezesseis positivas e quatro negativas propostas). Os tipos e a distribuição estão em [query-review.md](docs/query-review.md).
+
+A proposta final foi mantida fora do contexto do agente implementador. O comando de revisão apenas confere estrutura e referências e gera arquivos para o autor; não executa busca. Os hashes em `evaluation/split_manifest.json` identificam as propostas, ainda sem aprovação humana e sem congelamento do benchmark final.
+
+A revisão humana foi solicitada com links para os dois arquivos locais. Não foi registrada aprovação automática, nem foram usadas as vinte consultas finais em testes de recuperação. O teste real da busca usa apenas um termo de desenvolvimento e verifica metadados, não acerto de rótulo.
+
+### Verificações e limites
+
+- Testes escritos antes da implementação falharam pela ausência dos novos módulos e passaram após implementar os contratos.
+- Suíte completa de 24 testes: dez do M1, nove da busca/CLI e cinco da validação de revisão; corpus real incluído, sem testes ignorados.
+- A revisão independente identificou que tipos JSON não textuais podiam gerar `TypeError`; a correção e o teste de regressão foram conferidos.
+- Nenhuma métrica de qualidade foi calculada, pois os rótulos ainda aguardam o autor. Não há avaliação final ou TF-IDF neste marco.
+- Reestimar o esforço após o autor revisar as consultas. O tempo dessa participação ainda não foi medido.

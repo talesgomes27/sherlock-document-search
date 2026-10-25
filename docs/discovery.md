@@ -89,7 +89,7 @@ O endpoint usado não fixa uma versão no endereço. O hash identifica exatament
 
 ## Consolidação e confirmação final
 
-As decisões Q1–Q16 e o [plano consolidado](plan.md) foram confirmados pelo usuário em 25 de outubro de 2026, com autorização explícita para iniciar M1. A preparação do corpus está implementada e validada tecnicamente; a execução e as pendências constam em [task.md](../task.md). M2–M6 não foram iniciados.
+As decisões Q1–Q16 e o [plano consolidado](plan.md) foram confirmados pelo usuário em 25 de outubro de 2026, com autorização explícita para iniciar M1. A preparação do corpus está implementada e validada tecnicamente; a execução e as pendências constam em [task.md](../task.md). O usuário aprovou o M1 e autorizou o M2; a busca literal e as propostas de consulta estão prontas para revisão humana. M3–M6 não foram iniciados.
 
 Pontos a resolver durante a execução, sem reabrir as escolhas de produto:
 

@@ -1,0 +1,43 @@
+{
+  "source_files": {
+    "a_study_in_scarlet.txt": "af0f6c590ca3901b3f61d5b90acac1ac16abc83e50b8541c9f17aff079829d96",
+    "his_last_bow.txt": "fceb27b3fe80c2614335f94dbbf2fc925c6c6edde950eea9d70f192278c71d86",
+    "the_adventures_of_sherlock_holmes.txt": "41bbdab67e6c128ab07641d85c643f5599ec221f1e7713c1eda99651f8bfe68e",
+    "the_case-book_of_sherlock_holmes.txt": "bf5bc0c63b9c61795f3e8979021069c1e1c9f312e06f7bd178edda2e7f5f875a",
+    "the_hound_of_the_baskervilles.txt": "641ea58af0d2c42377d84b91b445a6d66c2901a302e361d2a371c862b133a03c",
+    "the_memoirs_of_sherlock_holmes.txt": "3379e11b94a7b3f2e7b1e5fe249456e59d075f83f7545f3176cfcc0463ae3414",
+    "the_return_of_sherlock_holmes.txt": "d8bbe5cf2ea014bb6f7afc422f6ab6b3e096e133caebe9069f3deec0e4e41c9c",
+    "the_sign_of_the_four.txt": "496ee013ba428d14c085192dd04091ff4da7cc4c56c81bb378bd675467d76722",
+    "the_valley_of _fear.txt": "60014f2640d9b7ee7cd2d9db4117108bdbee6fae9e99965b643d68aa784d0b61"
+  },
+  "splits": {
+    "development": {
+      "file": "development.json",
+      "sha256": "d9cf599d991bda4f1d652717e4d1888beb9bf364242a02c9688d168426335236",
+      "queries": 10,
+      "answerable": 8,
+      "unanswerable": 2,
+      "approved": 0,
+      "needs_changes": 0,
+      "query_types": {
+        "question": 6,
+        "phrase": 3,
+        "term": 1
+      }
+    },
+    "final": {
+      "file": "final.json",
+      "sha256": "212e2982e35fbee6ed70ec4449e33bcee58080f14b0463e2076cd8dd844fd19a",
+      "queries": 20,
+      "answerable": 16,
+      "unanswerable": 4,
+      "approved": 0,
+      "needs_changes": 0,
+      "query_types": {
+        "term": 4,
+        "question": 12,
+        "phrase": 4
+      }
+    }
+  }
+}

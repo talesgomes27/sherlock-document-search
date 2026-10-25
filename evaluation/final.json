@@ -1,0 +1,217 @@
+[
+  {
+    "id": "final-01",
+    "query": "Maiwand",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:93-100"
+    ],
+    "rationale": "Watson relata a formação médica em Londres antes do serviço militar.",
+    "review_status": "pending",
+    "query_type": "term"
+  },
+  {
+    "id": "final-02",
+    "query": "grotesque",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:94-102"
+    ],
+    "rationale": "Holmes associa o grotesco a casos que acabam em crime ou violência.",
+    "review_status": "pending",
+    "query_type": "term"
+  },
+  {
+    "id": "final-03",
+    "query": "Why was Irene Adler so exceptional in Holmes's eyes?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:59-75"
+    ],
+    "rationale": "A abertura explica que Irene era a mulher que se destacava para Holmes e por quê.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-04",
+    "query": "clumsy and careless servant girl",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:129-131"
+    ],
+    "rationale": "Watson menciona os dois indícios deduzidos por Holmes; a continuação desenvolve a explicação.",
+    "review_status": "pending",
+    "query_type": "phrase"
+  },
+  {
+    "id": "final-05",
+    "query": "Who planned to visit Holmes at 4:30, and what did he say about the matter?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:160-165"
+    ],
+    "rationale": "O bilhete identifica Sir James Damery, o horário e a natureza delicada e importante do assunto.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-06",
+    "query": "What kind of discreet work was Sir James Damery known for?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:173-178"
+    ],
+    "rationale": "Holmes descreve a reputação diplomática de Damery em assuntos mantidos fora dos jornais.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-07",
+    "query": "What did Watson infer about Dr. Mortimer from the walking stick?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:113-116"
+    ],
+    "rationale": "Watson interpreta a marca no bastão como sinal de estima por parte dos conhecidos de Mortimer.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-08",
+    "query": "What did the worn ferrule tell Holmes about the stick's owner?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:126-130"
+    ],
+    "rationale": "Holmes usa o desgaste do ferrule para inferir que o dono caminhava muito.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-09",
+    "query": "How did Holmes estimate the train's speed on the way to Dartmoor?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:106-108",
+      "the_memoirs_of_sherlock_holmes.txt:112-115"
+    ],
+    "rationale": "Holmes calcula a velocidade a partir do intervalo conhecido entre postes telegráficos.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-10",
+    "query": "What did Holmes's message say about his meeting with Moriarty?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:11358-11379"
+    ],
+    "rationale": "A carta relata que Moriarty aguardava uma conversa final e resume o que Holmes soube dele.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-11",
+    "query": "Why did Watson wait nearly ten years to tell the full story of Ronald Adair's murder?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:61-83"
+    ],
+    "rationale": "Watson diz que só então recebeu autorização para acrescentar os fatos omitidos.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-12",
+    "query": "second son of the Earl of Maynooth",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:106-120"
+    ],
+    "rationale": "A passagem identifica o pai de Adair e seu posto ligado a uma colônia australiana.",
+    "review_status": "pending",
+    "query_type": "phrase"
+  },
+  {
+    "id": "final-13",
+    "query": "cocaine",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:88-90"
+    ],
+    "rationale": "Holmes responde diretamente que era uma solução de cocaína a sete por cento.",
+    "review_status": "pending",
+    "query_type": "term"
+  },
+  {
+    "id": "final-14",
+    "query": "abhor the dull routine of existence",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:115-121"
+    ],
+    "rationale": "Holmes diz que problemas, trabalho e análises difíceis o mantêm em seu ambiente próprio.",
+    "review_status": "pending",
+    "query_type": "phrase"
+  },
+  {
+    "id": "final-15",
+    "query": "Porlock",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:111-120"
+    ],
+    "rationale": "Holmes explica que Porlock era um pseudônimo de um informante ligado a alguém mais perigoso.",
+    "review_status": "pending",
+    "query_type": "term"
+  },
+  {
+    "id": "final-16",
+    "query": "king-devil",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:122-122",
+      "the_valley_of _fear.txt:6877-6878",
+      "the_valley_of _fear.txt:6880-6882"
+    ],
+    "rationale": "A passagem nomeia Moriarty como o criminoso científico e o encerramento o chama de rei-demônio.",
+    "review_status": "pending",
+    "query_type": "phrase"
+  },
+  {
+    "id": "final-17",
+    "query": "What was Sherlock Holmes's personal email address in The Hound of the Baskervilles?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A consulta pede um endereço de e-mail moderno inexistente no cenário histórico do romance.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-18",
+    "query": "Which London Underground Oyster card did Watson use to reach Baker Street?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "O cartão Oyster é anacrônico para o período vitoriano/eduardiano das histórias.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-19",
+    "query": "What GPS coordinates did Holmes record at the crime scene in A Study in Scarlet?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A consulta pressupõe equipamento e registros de GPS, tecnologia posterior ao período narrado.",
+    "review_status": "pending",
+    "query_type": "question"
+  },
+  {
+    "id": "final-20",
+    "query": "Which DNA test identified the suspect in The Sign of the Four?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A identificação por teste de DNA é anacrônica para a época e não integra a investigação narrada.",
+    "review_status": "pending",
+    "query_type": "question"
+  }
+]

@@ -6,6 +6,7 @@ from pathlib import Path
 from zipfile import BadZipFile
 
 from .corpus import download_corpus, prepare_corpus
+from .search import literal_search
 
 
 def main() -> None:
@@ -13,13 +14,26 @@ def main() -> None:
     parser.add_argument("--raw-dir", type=Path, default=Path("data/raw"))
     parser.add_argument("--output-dir", type=Path, default=Path("data/processed"))
     parser.add_argument("--download", action="store_true", help="Baixa e verifica o snapshot em uma pasta nova.")
+    parser.add_argument("--query", help="Busca literal de palavra ou expressão, sem diferenciar maiúsculas.")
+    parser.add_argument("--book", help="Filtra a busca pelo nome exato do arquivo TXT.")
     args = parser.parse_args()
+    if args.book is not None and args.query is None:
+        parser.error("--book exige --query.")
     if args.raw_dir.resolve() == args.output_dir.resolve():
         parser.error("As pastas de origem e saída devem ser diferentes.")
     try:
         if args.download:
             download_corpus(args.raw_dir)
         paragraphs, report = prepare_corpus(args.raw_dir)
+        if args.query is not None:
+            results = literal_search(paragraphs, args.query, filename=args.book)
+            if not results:
+                print("Nenhuma correspondência literal encontrada.")
+            for rank, paragraph in enumerate(results, 1):
+                print(f"[{rank}] {paragraph['title']} | {paragraph['id']} | ocorrências: {paragraph['score']}")
+                print(paragraph["text"])
+                print()
+            return
         args.output_dir.mkdir(parents=True, exist_ok=True)
         with (args.output_dir / "paragraphs.jsonl").open("w", encoding="utf-8") as output:
             for paragraph in paragraphs:
