@@ -56,6 +56,19 @@ the_valley_of _fear.txt
 
 O espaço em `the_valley_of _fear.txt` reproduz o nome mostrado no explorador; ainda não foi comparado a um download.
 
+### Inspeção do arquivo baixado
+
+Em 25 de outubro de 2026, o [endpoint público oficial de download do Kaggle](https://www.kaggle.com/api/v1/datasets/download/talesgomes27/sherleck-books) retornou um ZIP com os nove arquivos do inventário. A inspeção foi feita em diretório temporário, sem adicionar o corpus ao repositório.
+
+- ZIP: 1.514.187 bytes; soma dos arquivos descompactados: 4.041.127 bytes.
+- SHA-256 do ZIP: `5abf2fe7bc636289347c2da51a7b611bda39ed451543c6428f79215328eeaaa3`.
+- Os nove arquivos começam com BOM UTF-8, confirmado pelos bytes `EF BB BF`, e decodificam com UTF-8-SIG.
+- Os nove arquivos têm separações por linhas em branco após normalizar quebras de linha. Isso permite propor trechos baseados em parágrafos; a regra final de segmentação ainda não foi aprovada.
+- A inspeção encontrou formatos variados de capítulos e títulos de contos. Identificar automaticamente todos esses títulos ainda não está garantido.
+- O nome `the_valley_of _fear.txt`, incluindo o espaço, foi confirmado dentro do ZIP.
+
+O endpoint usado não fixa uma versão no endereço. O hash identifica exatamente o arquivo inspecionado; não é uma garantia de que um download futuro retornará os mesmos bytes. A inspeção estrutural não conclui a verificação das condições de redistribuição.
+
 ## Decisões abertas — próxima rodada
 
 - Limites funcionais da primeira versão: tipos de busca, filtros, apresentação de resultados e eventual geração de respostas.

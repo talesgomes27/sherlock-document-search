@@ -30,6 +30,6 @@ A avaliação incluirá revisão humana de cerca de 20–30 consultas e seus tre
 
 Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/talesgomes27/sherleck-books).
 
-Na consulta de 25 de outubro de 2026, o explorador exibia a versão 3, com nove arquivos TXT e tamanho total informado de 4,04 MB. A descrição enumera seis obras. A amostra de `a_study_in_scarlet.txt` está em inglês e inclui cabeçalho do Project Gutenberg.
+Na consulta de 25 de outubro de 2026, o explorador exibia a versão 3, com nove arquivos TXT e tamanho total informado de 4,04 MB. A descrição enumera seis obras. A amostra de `a_study_in_scarlet.txt` está em inglês e inclui cabeçalho do Project Gutenberg. A inspeção do ZIP confirmou os nove nomes, a codificação UTF-8 com BOM e separadores de parágrafos; os detalhes e o hash do download estão no registro de descoberta.
 
 Os arquivos do dataset não estão incluídos neste repositório. A licença exibida no Kaggle é “Other (specified in description)”; a origem e as condições de uso de cada arquivo ainda precisam ser verificadas antes de definir redistribuição.
