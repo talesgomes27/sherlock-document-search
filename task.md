@@ -49,3 +49,5 @@ A revisão identificou dois marcadores `THE END` retidos e uma fração Unicode 
 ## Correção da pasta local
 
 O usuário indicou `sherlock_holmes_series/` como pasta local do projeto. O checkout foi consolidado nessa pasta, preservando o histórico Git e os nove TXT que já existiam diretamente em `data/`. Seus hashes coincidem com o snapshot do M1. Esses TXT também ficam ignorados pelo Git; a cópia preparada continua em `data/raw/` e `data/processed/`. O ambiente virtual foi recriado no novo caminho para evitar referências ao local anterior.
+
+Posteriormente, o usuário autorizou alinhar o nome da pasta local ao repositório GitHub. A pasta atual é `sherlock-document-search/`; a renomeação preservou o checkout e os dados. O ambiente virtual foi recriado e os testes do M1 foram conferidos no caminho definitivo.
