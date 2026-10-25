@@ -1,6 +1,6 @@
 # Plano e marcos — Sherlock Document Search
 
-Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e concluído, com busca literal validada e as 30 consultas aprovadas pelo autor. M3–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
+Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e concluído, com busca literal validada e as 30 consultas aprovadas pelo autor. O M3 foi autorizado e concluído com ajuste somente em desenvolvimento; M4–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
 
 ## Objetivo e entrega
 
@@ -23,7 +23,7 @@ Não fazem parte da primeira versão: chatbot, geração de respostas, busca mul
 
 ## Detalhes técnicos aprovados para executar as decisões
 
-Estes detalhes foram confirmados com o plano. A preparação e o empacotamento do M1 e a busca literal do M2 foram implementados e testados. Os rótulos do M2 foram aprovados; os marcos seguintes continuam pendentes. Consulte as evidências em [task.md](../task.md).
+Estes detalhes foram confirmados com o plano. A preparação e o empacotamento do M1 e a busca literal do M2 foram implementados e testados. Os rótulos do M2 foram aprovados. O TF-IDF, a regra de abstenção e o congelamento do M3 estão implementados; M4–M6 continuam pendentes. Consulte as evidências em [task.md](../task.md).
 
 **Dados e rastreabilidade.** Preservar os arquivos recebidos, tratar UTF-8 com BOM e quebras de linha, e remover material editorial da análise sem perder a ligação com as linhas de origem. Registrar tamanho e SHA-256 por TXT; guardar também o hash do ZIP quando disponível. O Kaggle fornece os TXT como entrada, portanto a reprodução não dependerá de receber o mesmo ZIP. Alterações inesperadas nos arquivos devem produzir aviso claro e exigir verificação antes da comparação de resultados.
 
@@ -67,7 +67,7 @@ O agente implementará o código e os testes focados nas regras de preparação,
 
 O autor revisará a relevância das consultas e as situações sem resposta, publicará ou atualizará o notebook Kaggle e realizará os passos de autenticação ou conexão que exigirem sua participação. O plano não presume que acesso ao GitHub já conceda acesso ao Kaggle ou ao Community Cloud.
 
-Executar os testes pertinentes ao código, a execução completa do notebook, a renderização Quarto e as verificações das URLs antes de declarar cada entrega concluída. As verificações do M1 estão registradas em [task.md](../task.md). A busca literal do M2 também foi testada. As verificações de TF-IDF, notebook, avaliação final, relatório e aplicação continuam reservadas aos respectivos marcos.
+Executar os testes pertinentes ao código, a execução completa do notebook, a renderização Quarto e as verificações das URLs antes de declarar cada entrega concluída. As verificações do M1 estão registradas em [task.md](../task.md). A busca literal do M2 também foi testada. As verificações de TF-IDF, calibração de desenvolvimento e congelamento do M3 foram concluídas. Notebook, avaliação final, relatório e aplicação continuam reservados aos respectivos marcos.
 
 ## Dependências e limites conhecidos
 
@@ -80,4 +80,4 @@ Executar os testes pertinentes ao código, a execução completa do notebook, a 
 
 ## Confirmação e execução
 
-Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e concluído, com as 30 consultas aprovadas no chat. M3–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.
+Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e concluído, com as 30 consultas aprovadas no chat. O M3 foi autorizado e concluído, conforme as evidências em task.md. M4–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.

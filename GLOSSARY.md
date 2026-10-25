@@ -36,3 +36,9 @@ Consulta do grupo de dez exemplos permitido para orientar ajustes após a revis�
 
 **Consulta final**:
 Consulta do grupo de vinte exemplos reservado para comparar os métodos depois de fechar código e parâmetros. Sua revisão de rótulos precede a avaliação e não autoriza usar os resultados para ajustes.
+
+**Abstenção de busca**:
+Situação em que o método não devolve um trecho para a consulta porque não há correspondência que atenda à sua regra. Isso não prova, por si só, que a informação esteja ausente de todo o corpus.
+
+**Trecho relevante conhecido**:
+Passagem anotada como relevante durante a revisão das consultas. A lista dessas passagens não pretende enumerar todas as respostas possíveis no corpus.

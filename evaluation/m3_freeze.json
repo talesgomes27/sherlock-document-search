@@ -1,0 +1,44 @@
+{
+  "frozen_on": "2026-10-25",
+  "scope": "M3 code, settings and approved query snapshots before final evaluation",
+  "final_queries_executed": false,
+  "file_sha256": {
+    "src/sherlock_search/__init__.py": "63065fd89aa93a6812104c1eb898306a2bafe9018e7e185463751a228153dc19",
+    "src/sherlock_search/__main__.py": "1ade1dbd2384ec29247dacc8cdd7e1be660273daea9bd7c7aa9d55c1c804b1d5",
+    "src/sherlock_search/corpus.py": "a76432f3876d6d5d08b53c47b9dae497fa27d5e112a589b3ea7ca7ef128549e8",
+    "src/sherlock_search/corpus_manifest.json": "b8b73b9a70ad9286c246730fef532f4dfffc58ba576156987d5398f8ffe87224",
+    "src/sherlock_search/development.py": "6da7beb43fd51826428d4ff5d792bf1602ad84c1b650383ac0aac2db19d122af",
+    "src/sherlock_search/query_review.py": "4f68247e707f3989a931bfbf219ab07ba1cb6e0173c60027305833dcbc2d9c6f",
+    "src/sherlock_search/search.py": "c14f6dcfc7a93eb1a7b1eadd425bfa0b45fd042e9cd3e4f5bd4257c0e2d5a3a3",
+    "src/sherlock_search/tfidf.py": "81616efcff9dc3ffc03f3590836790f85a5d0d79736dc8bec8e9f2f514a30b26",
+    "src/sherlock_search/tfidf_config.json": "0f5efcb5aa56d4f11e8595b3099bbb8c437a66ddd7e8f7fa56bed0f48115bfbd",
+    "pyproject.toml": "f24709a9257a1ad3a58842210df82b6be27eb285edd1bfad9e00b021f3ada2d1",
+    "uv.lock": "37beb2e1355c55d7dcd1680b2c3734adc8a11691f8e4b3bfd26ac02e01a9cf1d",
+    "evaluation/development.json": "5eaf150f61fb88013a9aa37ebab6bf840460ee15d34a1135a478f92243a95207",
+    "evaluation/final.json": "09dc4f7b62aa3fa12d33bbce91d4218959cd54c13cfffc324d3674262696ff91",
+    "evaluation/split_manifest.json": "5850eaf8e5be1357fd4a08acf84199cc5d366893239bde25530467b6581634e5",
+    "reports/m3_development.json": "401200a159a5823966450508283af15bd33cae2e398158bafa2c6ca93abdefd5"
+  },
+  "corpus_sha256": {
+    "a_study_in_scarlet.txt": "af0f6c590ca3901b3f61d5b90acac1ac16abc83e50b8541c9f17aff079829d96",
+    "his_last_bow.txt": "fceb27b3fe80c2614335f94dbbf2fc925c6c6edde950eea9d70f192278c71d86",
+    "the_adventures_of_sherlock_holmes.txt": "41bbdab67e6c128ab07641d85c643f5599ec221f1e7713c1eda99651f8bfe68e",
+    "the_case-book_of_sherlock_holmes.txt": "bf5bc0c63b9c61795f3e8979021069c1e1c9f312e06f7bd178edda2e7f5f875a",
+    "the_hound_of_the_baskervilles.txt": "641ea58af0d2c42377d84b91b445a6d66c2901a302e361d2a371c862b133a03c",
+    "the_memoirs_of_sherlock_holmes.txt": "3379e11b94a7b3f2e7b1e5fe249456e59d075f83f7545f3176cfcc0463ae3414",
+    "the_return_of_sherlock_holmes.txt": "d8bbe5cf2ea014bb6f7afc422f6ab6b3e096e133caebe9069f3deec0e4e41c9c",
+    "the_sign_of_the_four.txt": "496ee013ba428d14c085192dd04091ff4da7cc4c56c81bb378bd675467d76722",
+    "the_valley_of _fear.txt": "60014f2640d9b7ee7cd2d9db4117108bdbee6fae9e99965b643d68aa784d0b61"
+  },
+  "runtime_versions": {
+    "python": "3.11.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "tfidf": {
+    "min_score": 0.0,
+    "vectorizer": "TfidfVectorizer(stop_words='english'); other scikit-learn defaults.",
+    "selection_rule": "Preserve unthresholded positive_hits; minimize false_positive_rate among eligible thresholds; ties prefer lower threshold."
+  }
+}

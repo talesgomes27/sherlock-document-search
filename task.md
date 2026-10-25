@@ -4,7 +4,7 @@
 
 Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1: “Confirmo o plano e autorizo iniciar o M1. Siga o recomendado, utilizando subagentes quando for benéfico.”
 
-Arquétipo A — dados, análise e Quarto, identificado pelo escopo explícito do [plano aprovado](docs/plan.md). Condução contínua dentro dos marcos autorizados. O usuário aprovou o M1 e autorizou iniciar o M2; M3–M6 não foram iniciados. A criação e manutenção do repositório GitHub fazem parte do contexto autorizado desta conversa; nenhum deploy de aplicação está incluído neste marco.
+Arquétipo A — dados, análise e Quarto, identificado pelo escopo explícito do [plano aprovado](docs/plan.md). Condução contínua dentro dos marcos autorizados. O usuário aprovou o M1 e autorizou iniciar o M2; M3 foi posteriormente autorizado e concluído; M4–M6 não foram iniciados. A criação e manutenção do repositório GitHub fazem parte do contexto autorizado desta conversa; nenhum deploy de aplicação está incluído neste marco.
 
 Linha de base: repositório limpo, apenas documentação de planejamento, sem pacote, testes ou manifests de implementação. Não havia suíte preexistente a executar nem dados originais versionados.
 
@@ -44,7 +44,7 @@ A revisão identificou dois marcadores `THE END` retidos e uma fração Unicode 
 - A limpeza mantém notas internas e alguns títulos editoriais. Não se implementou parser geral de capítulos ou contos.
 - As 30 consultas do M2 foram propostas em dois arquivos separados e aprovadas pelo autor no chat. As vinte finais não foram executadas para ajustes, busca ou métricas.
 - O próximo ponto de reestimativa do esforço será após a revisão humana em M2; a referência de 24 horas não foi convertida em garantia de prazo.
-- M2 concluído: busca literal validada e 30 consultas aprovadas. Não iniciar M3 sem autorização para esse marco.
+- M2 concluído: busca literal validada e 30 consultas aprovadas. A autorização do M3 foi recebida e executada; não iniciar M4 sem autorização para esse marco.
 
 ## Correção da pasta local
 
@@ -56,7 +56,7 @@ Posteriormente, o usuário autorizou alinhar o nome da pasta local ao repositór
 
 Autorização explícita em 25 de outubro de 2026: “Já atualizei o caminho na configuração do projeto. Aprovo o M1 e autorizo iniciar o M2 conforme o plano, utilizando subagentes quando for benéfico.”
 
-**Estado:** M2 concluído. Busca literal e preparação da revisão validadas tecnicamente; as 30 consultas foram aprovadas explicitamente pelo autor. M3 não foi iniciado.
+**Estado:** M2 concluído. Busca literal e preparação da revisão validadas tecnicamente; as 30 consultas foram aprovadas explicitamente pelo autor. M3 foi posteriormente autorizado e concluído, conforme o registro abaixo.
 
 Linha de base: dez testes do M1, pacote instalado, snapshot de nove TXT identificado e checkout limpo no caminho definitivo `sherlock-document-search/`.
 
@@ -85,3 +85,44 @@ A revisão humana foi solicitada com links para os dois arquivos locais. Após e
 - A revisão foi aprovada no chat, mas o tempo gasto pelo autor não foi medido. Não há base para converter a referência de 24 horas em prazo garantido; reavaliar ao iniciar M3.
 
 A justificativa textual de `final-01` foi corrigida para descrever o ferimento em Maiwand. A consulta, o rótulo e a referência não mudaram, e a correção não se baseou em resultados de busca. O teste de integração percorreu somente as dez consultas de desenvolvimento para conferir limite e origem, sem calcular acurácia.
+
+## Execução do M3
+
+Em 25 de outubro de 2026, o usuário aprovou M2 e autorizou M3 “usando apenas as dez consultas de desenvolvimento para ajustes e mantendo as vinte finais reservadas para o M4”. Também perguntou sobre custo/benefício da skill Graphify.
+
+**Estado:** M3 implementado e validado tecnicamente, com configuração e ativos congelados antes da avaliação final. M4 não foi iniciado.
+
+Um subagente implementou o núcleo TF-IDF e os testes em um stage que não continha o arquivo final, a lista de consultas finais ou seus trechos. Outro subagente avaliou Graphify, sem construir grafo. Uma revisão independente usou somente o stage e os dados de desenvolvimento.
+
+### Implementação e evidências
+
+- scikit-learn 1.9.1 fixado no projeto; lockfile registra dependências. Instalação feita em ambiente isolado Python 3.11.17.
+- TfidfSearch reutiliza um índice de parágrafos; TF-IDF com stopwords em inglês, demais padrões do scikit-learn e similaridade de cosseno. Filtro, corte, limite de cinco, origem e desempate determinístico preservados.
+- CLI mantém busca literal como padrão e acrescenta `--method tfidf`, com score rotulado como cosseno.
+- O loader abre somente development.json e confere o hash aprovado, IDs dev-01 a dev-10, tipos e aprovação dos rótulos. Não existe opção de selecionar o conjunto final na calibração.
+- Grade de 0 a 1 em passos de 0,1. Regra final: preservar os acertos conhecidos do TF-IDF sem corte; minimizar falsos positivos entre os cortes elegíveis; desempatar pelo menor corte. Resultado min_score = 0,0, sempre excluindo score zero.
+- Literal: 3/8 positivas com trecho conhecido no top 5 e 0/2 negativas com retorno. TF-IDF selecionado: 1/8 e 2/2, respectivamente. Esses são resultados de desenvolvimento, com anotações limitadas; não foram apresentados como superioridade ou teste independente.
+- A exploração inicial com grade até 0,5 empatou. Ao cobrir todo o intervalo, uma regra de utilidade balanceada favoreceu 0,7, mas perdeu o único acerto conhecido do TF-IDF; adotou-se a preservação de cobertura. Essa revisão usou apenas desenvolvimento e está descrita no relatório metodológico, sem alterar rótulos ou dados.
+- A revisão independente encontrou dois riscos: tipos JSON incorretos podiam mudar denominadores, e o caminho de saída podia sobrescrever insumos. Ambos foram corrigidos com regressões; a revisão das correções não encontrou novos achados.
+- 48 testes passaram com o corpus real e sem testes ignorados. Incluem cosseno, reuso de índice, OOV/stopwords/entradas vazias, filtros, limites, validação, proteção de insumos e hashes do congelamento.
+- O wheel foi instalado em outro ambiente Python 3.11 com dependências exportadas do lockfile; os 48 testes passaram novamente e o relatório reproduzido foi idêntico byte a byte. A configuração TF-IDF está incluída no wheel.
+
+### Aceitação dos gates no M3
+
+| Gate | Evidência |
+|---|---|
+| Núcleo | Classe TF-IDF e validações cobertas por testes sintéticos; testes escritos antes da implementação. |
+| Integração | Desenvolvimento executado sobre os nove TXT do M1, somente com as dez consultas aprovadas. |
+| Saídas | Relatório JSON com grade, contagens e IDs; CLI distingue similaridade e ocorrências. Nenhum trecho ou índice foi versionado. |
+| Documentação | README e documento TF-IDF apresentam resultados desfavoráveis e limites das anotações. |
+| Revisão e build | Revisão independente corrigida, suíte completa, construção do pacote, instalação isolada e conferência do snapshot antes de encerrar. |
+
+O snapshot m3_freeze.json registra hashes do código, configuração, ambiente e rótulos; o conteúdo final não foi carregado nem executado. Para verificar integridade, os arquivos são lidos como bytes opacos, inclusive os rótulos finais. Os originais permanecem fora do Git.
+
+### Graphify — decisão para este tamanho de projeto
+
+Antes do M3 havia cinco módulos Python e 335 linhas, sem grafo existente. A CLI instalada foi verificada como Graphify 0.9.94. A recomendação foi adiar a construção: buscas diretas e os documentos de estado já atendem ao escopo, enquanto um grafo exige criação, revisão de exclusões e atualização. Não foi medido ganho de tokens, custo ou assinatura.
+
+As fontes oficiais descrevem extração estrutural local por AST e extração semântica para documentos: https://github.com/Graphify-Labs/graphify . Se as perguntas repetidas sobre relações crescerem, experimentar apenas código e medir o benefício. Não incluir livros, consultas finais ou documentos que reproduzam as consultas finais durante M3. Nenhuma atualização de skill ou construção de grafo foi realizada.
+
+A avaliação final, a execução do notebook Kaggle e as publicações permanecem pendentes de M4–M6. A comparação de desenvolvimento sugere cautela com a regra de ausência de resposta do TF-IDF; dois exemplos negativos não sustentam generalização.

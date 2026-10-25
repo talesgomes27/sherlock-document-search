@@ -1,6 +1,6 @@
 # Sherlock Document Search
 
-Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** foi aprovado. O **M2 — busca literal e consultas** está concluído, com 30 rótulos aprovados pelo autor; TF-IDF, notebook Kaggle, relatório Quarto e dashboard Streamlit pertencem aos próximos marcos.
+Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** foi aprovado. O **M3 — TF-IDF e desenvolvimento** está concluído, após o aceite do M2 e das 30 consultas. O notebook Kaggle, a avaliação final, o relatório Quarto e o dashboard Streamlit pertencem aos próximos marcos.
 
 O objetivo é demonstrar competências aplicáveis a serviços freelancer: preparação de textos, recuperação de informação, avaliação de resultados e comunicação analítica. O exemplo é voltado a pequenas equipes que precisam localizar informações em acervos documentais. Resultados no corpus literário não comprovam desempenho em documentos de clientes nem retorno comercial.
 
@@ -14,7 +14,7 @@ uv run python -m sherlock_search --download
 uv run python -m unittest discover -s tests -v
 ```
 
-O pacote usa apenas a biblioteca padrão em execução. O download cria `data/raw/` e recusa sobrescrever uma pasta existente; para reutilizar os TXT e gerar novamente as saídas, execute `uv run python -m sherlock_search` sem `--download`.
+A preparação usa a biblioteca padrão; a busca TF-IDF usa scikit-learn 1.9.1 e suas dependências, registradas no lockfile. O download cria `data/raw/` e recusa sobrescrever uma pasta existente; para reutilizar os TXT e gerar novamente as saídas, execute `uv run python -m sherlock_search` sem `--download`.
 
 Saídas locais: `data/processed/paragraphs.jsonl`, com texto e linhas de origem, e `data/processed/quality.json`, com metadados e contagens. Os originais e os parágrafos preparados ficam fora do Git. A instalação inicial e o download exigem rede; a preparação de dados já disponíveis pode executar sem rede.
 
@@ -39,9 +39,23 @@ A busca retorna até cinco parágrafos com referências e contagem de ocorrênci
 
 **Revisão concluída:** o autor aprovou as dez consultas de desenvolvimento e as vinte finais no chat. Os JSON registram `review_status: approved`; a [lista completa](docs/queries.md) apresenta as consultas e referências. Os trechos dos livros permanecem fora do Git; as propostas versionadas contêm apenas consultas, referências e justificativas.
 
-A suíte atual tem **25 testes**, incluindo preparação, busca, CLI, validação das propostas e integração real. Não foram executadas buscas ou métricas nas vinte consultas finais.
+A suíte atual tem **48 testes**, incluindo preparação, busca, CLI, validação das propostas e integração real. Não foram executadas buscas ou métricas nas vinte consultas finais.
 
-## Próximas entregas aprovadas
+## TF-IDF e desenvolvimento — M3
+
+```bash
+uv sync --python 3.11 --frozen
+uv run python -m sherlock_search --method tfidf --query "Cyanea"
+uv run python -m sherlock_search.development --check-freeze
+```
+
+Os dois métodos compartilham os mesmos parágrafos e referências. TF-IDF ordena por similaridade de cosseno; a pontuação não é probabilidade de correção. O índice é criado uma vez por instância e pode ser reutilizado nas consultas.
+
+Nas dez consultas de desenvolvimento: a busca literal recuperou um trecho conhecido em **3/8 positivas**, com **0/2 negativas** retornando resultados; TF-IDF ficou em **1/8 positivas** e **2/2 negativas**. O corte selecionado foi **0,0**, excluindo scores iguais a zero: nenhum corte da grade reduziu retornos nas negativas sem perder o único acerto conhecido do TF-IDF. Não há evidência de superioridade do TF-IDF neste conjunto.
+
+O [relatório de desenvolvimento](reports/m3_development.json) e o [snapshot congelado](evaluation/m3_freeze.json) permitem conferir o experimento antes do M4. Os rótulos são pequenos e não exaustivos; esses resultados não são uma avaliação independente nem comprovam desempenho em documentos empresariais. As vinte consultas finais continuam sem execução neste marco.
+
+## Entregas do plano
 
 1. Revisão humana de 30 consultas: dez para desenvolvimento e vinte reservadas para avaliação final, incluindo consultas sem resposta.
 2. Comparação de busca literal por palavras ou expressões com busca por relevância usando TF-IDF.
@@ -51,12 +65,13 @@ A suíte atual tem **25 testes**, incluindo preparação, busca, CLI, validaçã
 
 As consultas serão em inglês; a interface e o relatório, em português, com um resumo do projeto em inglês. A análise de apoio cobre tamanho dos textos, termos frequentes e qualidade da preparação. Chatbot e geração de respostas ficam fora da primeira versão.
 
-O plano foi confirmado em 25 de outubro de 2026. O M1 foi aprovado e o M2 autorizado; M2 foi concluído e M3–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
+O plano foi confirmado em 25 de outubro de 2026. O M1 foi aprovado e o M2 autorizado; M3 foi autorizado e concluído; M4–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
 
 ## Dados e documentação
 
 Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/talesgomes27/sherleck-books), com nove TXT na versão exibida durante a descoberta. O snapshot é identificado por SHA-256 por arquivo; os detalhes de origem e as condições de uso para publicação de trechos permanecem documentados separadamente.
 
+- [TF-IDF, calibração e limites do M3](docs/tfidf-search.md)
 - [Busca literal e seus limites](docs/literal-search.md)
 - [Revisão das 30 consultas e protocolo](docs/query-review.md)
 - [Lista completa das consultas aprovadas](docs/queries.md)
@@ -71,4 +86,4 @@ Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/tales
 
 ## English summary
 
-Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs. Literal retrieval is implemented, and 30 query labels have been approved by the project author; TF-IDF evaluation, a Kaggle notebook, a Quarto report and a Streamlit application are planned next. Evaluation on this literary corpus does not establish performance on business documents.
+Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs. Literal and TF-IDF retrieval are implemented, with 30 query labels approved by the project author. Only ten development queries were used for calibration; the twenty final queries remain reserved for the next milestone, alongside the Kaggle notebook. The Quarto report and Streamlit application are planned later. Evaluation on this literary corpus does not establish performance on business documents.

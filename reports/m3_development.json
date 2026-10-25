@@ -1,0 +1,494 @@
+{
+  "split": "development",
+  "query_count": 10,
+  "selection_rule": "Preserve unthresholded positive_hits; minimize false_positive_rate among eligible thresholds; ties prefer lower threshold.",
+  "vectorizer": "TfidfVectorizer(stop_words='english'); other scikit-learn defaults.",
+  "threshold_grid": [
+    {
+      "min_score": 0.0,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.1,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.2,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.3,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.4,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.5,
+      "positive_queries": 8,
+      "positive_hits": 1,
+      "known_hit_at_5": 0.125,
+      "negative_queries": 2,
+      "false_positive_queries": 2,
+      "false_positive_rate": 1.0,
+      "balanced_utility": 0.0625
+    },
+    {
+      "min_score": 0.6,
+      "positive_queries": 8,
+      "positive_hits": 0,
+      "known_hit_at_5": 0.0,
+      "negative_queries": 2,
+      "false_positive_queries": 1,
+      "false_positive_rate": 0.5,
+      "balanced_utility": 0.25
+    },
+    {
+      "min_score": 0.7,
+      "positive_queries": 8,
+      "positive_hits": 0,
+      "known_hit_at_5": 0.0,
+      "negative_queries": 2,
+      "false_positive_queries": 0,
+      "false_positive_rate": 0.0,
+      "balanced_utility": 0.5
+    },
+    {
+      "min_score": 0.8,
+      "positive_queries": 8,
+      "positive_hits": 0,
+      "known_hit_at_5": 0.0,
+      "negative_queries": 2,
+      "false_positive_queries": 0,
+      "false_positive_rate": 0.0,
+      "balanced_utility": 0.5
+    },
+    {
+      "min_score": 0.9,
+      "positive_queries": 8,
+      "positive_hits": 0,
+      "known_hit_at_5": 0.0,
+      "negative_queries": 2,
+      "false_positive_queries": 0,
+      "false_positive_rate": 0.0,
+      "balanced_utility": 0.5
+    },
+    {
+      "min_score": 1.0,
+      "positive_queries": 8,
+      "positive_hits": 0,
+      "known_hit_at_5": 0.0,
+      "negative_queries": 2,
+      "false_positive_queries": 0,
+      "false_positive_rate": 0.0,
+      "balanced_utility": 0.5
+    }
+  ],
+  "selected_min_score": 0.0,
+  "literal": {
+    "positive_queries": 8,
+    "positive_hits": 3,
+    "known_hit_at_5": 0.375,
+    "negative_queries": 2,
+    "false_positive_queries": 0,
+    "false_positive_rate": 0.0,
+    "balanced_utility": 0.6875
+  },
+  "tfidf": {
+    "positive_queries": 8,
+    "positive_hits": 1,
+    "known_hit_at_5": 0.125,
+    "negative_queries": 2,
+    "false_positive_queries": 2,
+    "false_positive_rate": 1.0,
+    "balanced_utility": 0.0625
+  },
+  "results": [
+    {
+      "id": "dev-01",
+      "answerable": true,
+      "known_relevant_ids": [
+        "a_study_in_scarlet.txt:81-91"
+      ],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:7365-7365",
+          "score": 0.5397926033755318
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:10510-10511",
+          "score": 0.3723339578998719
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:8028-8028",
+          "score": 0.3482582892907965
+        },
+        {
+          "id": "his_last_bow.txt:5874-5874",
+          "score": 0.32308554160498815
+        },
+        {
+          "id": "the_valley_of _fear.txt:1849-1849",
+          "score": 0.2962187784975958
+        }
+      ]
+    },
+    {
+      "id": "dev-02",
+      "answerable": true,
+      "known_relevant_ids": [
+        "his_last_bow.txt:258-263"
+      ],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "his_last_bow.txt:207-209",
+          "score": 0.44929650238085544
+        },
+        {
+          "id": "his_last_bow.txt:489-489",
+          "score": 0.43159563603843354
+        },
+        {
+          "id": "his_last_bow.txt:519-521",
+          "score": 0.4186304662034122
+        },
+        {
+          "id": "his_last_bow.txt:237-238",
+          "score": 0.3993806750083725
+        },
+        {
+          "id": "his_last_bow.txt:111-112",
+          "score": 0.3749568555937228
+        }
+      ]
+    },
+    {
+      "id": "dev-03",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_return_of_sherlock_holmes.txt:2307-2322"
+      ],
+      "literal": [
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2090-2090",
+          "score": 1
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2307-2322",
+          "score": 1
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2335-2339",
+          "score": 1
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2372-2379",
+          "score": 1
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2417-2433",
+          "score": 1
+        }
+      ],
+      "tfidf": [
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2090-2090",
+          "score": 0.8195881059299681
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:3198-3198",
+          "score": 0.6391186604493283
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:2366-2368",
+          "score": 0.4718549158094463
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:3117-3118",
+          "score": 0.4667855321712907
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:11792-11792",
+          "score": 0.38984418616317096
+        }
+      ]
+    },
+    {
+      "id": "dev-04",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_adventures_of_sherlock_holmes.txt:1272-1278"
+      ],
+      "literal": [
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1134-1134",
+          "score": 1
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1272-1278",
+          "score": 1
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1571-1571",
+          "score": 1
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1589-1595",
+          "score": 1
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1756-1758",
+          "score": 1
+        }
+      ],
+      "tfidf": [
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1134-1134",
+          "score": 0.8133452214507593
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1351-1352",
+          "score": 0.751292989662542
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1599-1599",
+          "score": 0.7029549775848118
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1571-1571",
+          "score": 0.6023157459915814
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1272-1278",
+          "score": 0.550341210364276
+        }
+      ]
+    },
+    {
+      "id": "dev-05",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_hound_of_the_baskervilles.txt:398-406"
+      ],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "the_case-book_of_sherlock_holmes.txt:506-506",
+          "score": 0.4894366125880097
+        },
+        {
+          "id": "the_case-book_of_sherlock_holmes.txt:6588-6588",
+          "score": 0.44576763205621484
+        },
+        {
+          "id": "the_hound_of_the_baskervilles.txt:1955-1955",
+          "score": 0.3868331256864824
+        },
+        {
+          "id": "the_hound_of_the_baskervilles.txt:2566-2566",
+          "score": 0.3672847027624686
+        },
+        {
+          "id": "the_hound_of_the_baskervilles.txt:419-420",
+          "score": 0.3516063526744754
+        }
+      ]
+    },
+    {
+      "id": "dev-06",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_memoirs_of_sherlock_holmes.txt:163-174"
+      ],
+      "literal": [
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:163-174",
+          "score": 2
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:996-998",
+          "score": 2
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:112-115",
+          "score": 1
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:247-252",
+          "score": 1
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:634-635",
+          "score": 1
+        }
+      ],
+      "tfidf": [
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:996-998",
+          "score": 0.804535266384248
+        },
+        {
+          "id": "his_last_bow.txt:5647-5647",
+          "score": 0.6630282243863743
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:993-994",
+          "score": 0.5509828037132046
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:634-635",
+          "score": 0.4124409630734095
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:967-970",
+          "score": 0.4115371111244433
+        }
+      ]
+    },
+    {
+      "id": "dev-07",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_case-book_of_sherlock_holmes.txt:7950-7953"
+      ],
+      "literal": [
+        {
+          "id": "the_case-book_of_sherlock_holmes.txt:7907-7907",
+          "score": 2
+        }
+      ],
+      "tfidf": [
+        {
+          "id": "the_case-book_of_sherlock_holmes.txt:7907-7907",
+          "score": 0.8005423903552571
+        }
+      ]
+    },
+    {
+      "id": "dev-08",
+      "answerable": true,
+      "known_relevant_ids": [
+        "the_sign_of_the_four.txt:663-673"
+      ],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "the_return_of_sherlock_holmes.txt:4616-4616",
+          "score": 0.5170153069742682
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:10627-10627",
+          "score": 0.44117577424214977
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:10687-10687",
+          "score": 0.3343052052394213
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:3730-3733",
+          "score": 0.3258362236206378
+        },
+        {
+          "id": "the_return_of_sherlock_holmes.txt:4618-4618",
+          "score": 0.3252525897194947
+        }
+      ]
+    },
+    {
+      "id": "dev-09",
+      "answerable": false,
+      "known_relevant_ids": [],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:11051-11051",
+          "score": 0.5928610267677059
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1837-1837",
+          "score": 0.5145821443850098
+        },
+        {
+          "id": "his_last_bow.txt:567-567",
+          "score": 0.4789218365115443
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:4274-4274",
+          "score": 0.4789218365115443
+        },
+        {
+          "id": "his_last_bow.txt:6681-6681",
+          "score": 0.4341696975961779
+        }
+      ]
+    },
+    {
+      "id": "dev-10",
+      "answerable": false,
+      "known_relevant_ids": [],
+      "literal": [],
+      "tfidf": [
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:11051-11051",
+          "score": 0.6168292096324485
+        },
+        {
+          "id": "the_adventures_of_sherlock_holmes.txt:1837-1837",
+          "score": 0.5353856689526382
+        },
+        {
+          "id": "the_memoirs_of_sherlock_holmes.txt:11049-11049",
+          "score": 0.39927704553059706
+        },
+        {
+          "id": "a_study_in_scarlet.txt:1415-1415",
+          "score": 0.39301024858736305
+        },
+        {
+          "id": "a_study_in_scarlet.txt:1440-1440",
+          "score": 0.39301024858736305
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "python": "3.11.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "development_sha256": "5eaf150f61fb88013a9aa37ebab6bf840460ee15d34a1135a478f92243a95207"
+}

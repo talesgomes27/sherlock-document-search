@@ -46,4 +46,4 @@ O agente aplicará no registro as aprovações explicitamente informadas pelo au
 
 Na preparação inicial havia 30 propostas e zero aprovações registradas. Em 25 de outubro de 2026, o autor confirmou: “pode continuar com aprovação das perguntas”. As 30 entradas foram marcadas como aprovadas e os hashes atualizados. A [lista completa](queries.md) reúne as consultas e referências. O M2 está concluído, sem cálculo de métricas de qualidade ou execução das consultas finais.
 
-O autor pode revisar em grupos de IDs. Registre o tempo gasto nessa atividade para reestimar o plano após M2; ainda não há medição do esforço real da revisão. M3 não foi iniciado.
+O autor pode revisar em grupos de IDs. Registre o tempo gasto nessa atividade para reestimar o plano após M2; ainda não há medição do esforço real da revisão. M3 foi autorizado e concluído usando apenas desenvolvimento; a execução das vinte finais continua reservada ao M4.

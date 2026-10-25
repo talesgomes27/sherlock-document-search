@@ -16,9 +16,12 @@ def main() -> None:
     parser.add_argument("--download", action="store_true", help="Baixa e verifica o snapshot em uma pasta nova.")
     parser.add_argument("--query", help="Busca literal de palavra ou expressão, sem diferenciar maiúsculas.")
     parser.add_argument("--book", help="Filtra a busca pelo nome exato do arquivo TXT.")
+    parser.add_argument("--method", choices=["literal", "tfidf"], default="literal", help="Método de busca; padrão: literal.")
     args = parser.parse_args()
     if args.book is not None and args.query is None:
         parser.error("--book exige --query.")
+    if args.method != "literal" and args.query is None:
+        parser.error("--method tfidf exige --query.")
     if args.raw_dir.resolve() == args.output_dir.resolve():
         parser.error("As pastas de origem e saída devem ser diferentes.")
     try:
@@ -26,11 +29,18 @@ def main() -> None:
             download_corpus(args.raw_dir)
         paragraphs, report = prepare_corpus(args.raw_dir)
         if args.query is not None:
-            results = literal_search(paragraphs, args.query, filename=args.book)
+            if args.method == "tfidf":
+                from .tfidf import TfidfSearch
+                results = TfidfSearch(paragraphs).search(args.query, filename=args.book)
+            else:
+                results = literal_search(paragraphs, args.query, filename=args.book)
             if not results:
-                print("Nenhuma correspondência literal encontrada.")
+                print("Nenhuma correspondência literal encontrada." if args.method == "literal"
+                      else "Nenhuma correspondência TF-IDF atende ao limiar.")
             for rank, paragraph in enumerate(results, 1):
-                print(f"[{rank}] {paragraph['title']} | {paragraph['id']} | ocorrências: {paragraph['score']}")
+                score = (f"ocorrências: {paragraph['score']}" if args.method == "literal"
+                         else f"similaridade de cosseno: {paragraph['score']:.6f}")
+                print(f"[{rank}] {paragraph['title']} | {paragraph['id']} | {score}")
                 print(paragraph["text"])
                 print()
             return
