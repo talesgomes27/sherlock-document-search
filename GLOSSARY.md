@@ -21,3 +21,6 @@ Pergunta ou expressão em inglês usada para avaliar a busca no corpus, acompanh
 
 **Trecho relevante**:
 Passagem do corpus julgada pertinente a uma consulta de avaliação. Relevância depende da consulta e não apenas da presença de palavras iguais.
+
+**Resultado de busca**:
+Trecho do corpus retornado para uma consulta, acompanhado do título da obra, do arquivo de origem e de uma localização verificável. Um resultado retornado ainda depende de julgamento humano para ser considerado relevante na avaliação.

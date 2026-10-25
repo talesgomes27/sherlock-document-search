@@ -20,6 +20,15 @@ O usuário autorizou a criação do repositório no GitHub e informou que fará 
 
 Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. O escopo funcional e os critérios de conclusão continuam em discussão.
 
+## Decisões aprovadas — rodada 3
+
+9. **Resultados da busca:** retornar até cinco trechos, mostrando título da obra, arquivo e localização verificável. Incluir filtro por obra e mensagem quando não houver correspondência. Geração de respostas e chatbot ficam fora da primeira versão.
+10. **Métodos comparados:** busca literal por palavras ou expressões e busca por relevância usando TF-IDF. A comparação será reproduzível e apoiada na avaliação humana; não foi assumida superioridade de um método.
+11. **Análise exploratória:** limitar a análise de apoio ao tamanho dos textos, termos frequentes e qualidade da preparação dos dados.
+12. **Dados fora do Git:** manter os textos originais fora do repositório, documentando a obtenção no Kaggle e a identificação do arquivo utilizado. Versionar código, documentação e avaliação; anexar o corpus como entrada do notebook Kaggle e documentar sua origem no relatório.
+
+Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. A regra de segmentação, o protocolo final de avaliação e os detalhes de publicação continuam abertos.
+
 ## Entregas solicitadas
 
 - Python como linguagem do projeto.
@@ -54,7 +63,7 @@ the_sign_of_the_four.txt
 the_valley_of _fear.txt
 ```
 
-O espaço em `the_valley_of _fear.txt` reproduz o nome mostrado no explorador; ainda não foi comparado a um download.
+O espaço em `the_valley_of _fear.txt` reproduz o nome mostrado no explorador e foi posteriormente confirmado no ZIP, conforme a inspeção abaixo.
 
 ### Inspeção do arquivo baixado
 
@@ -71,12 +80,12 @@ O endpoint usado não fixa uma versão no endereço. O hash identifica exatament
 
 ## Decisões abertas — próxima rodada
 
-- Limites funcionais da primeira versão: tipos de busca, filtros, apresentação de resultados e eventual geração de respostas.
-- Limites da análise exploratória de apoio.
-- Como construir a avaliação humana acordada e definir critérios de conclusão.
-- Granularidade dos resultados, após inspeção da estrutura dos textos.
+- Regra de segmentação e referências que permitam localizar cada trecho no arquivo de origem.
+- Protocolo da avaliação humana: separação entre desenvolvimento e avaliação final, consultas sem resposta e critérios de conclusão.
 - Destino de hospedagem do dashboard Streamlit.
-- Organização do código compartilhado, obtenção dos dados e execução do notebook no ambiente Kaggle.
+- Organização do código compartilhado e reprodução do notebook no ambiente Kaggle.
+- Procedimento de obtenção e identificação dos dados para execução local e hospedada, respeitando a decisão de manter o corpus original fora do Git.
+- Ordem de entrega e confirmação final do entendimento antes da implementação.
 
 ## Restrições de interpretação
 
