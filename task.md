@@ -127,7 +127,7 @@ As fontes oficiais descrevem extração estrutural local por AST e extração se
 
 A avaliação final, a execução do notebook Kaggle e as publicações permanecem pendentes de M4–M6. A comparação de desenvolvimento sugere cautela com a regra de ausência de resposta do TF-IDF; dois exemplos negativos não sustentam generalização.
 
-## Execução do M4 — em andamento
+## Execução do M4 — validação local concluída; Kaggle pendente
 
 Em 25 de outubro de 2026, o usuário aprovou M3 e autorizou preparar o notebook Kaggle, conferir o snapshot e avaliar as vinte consultas finais sem novos ajustes.
 
@@ -136,3 +136,30 @@ O novo avaliador e seus 15 testes sintéticos foram implementados e revisados an
 Este commit prepara o código de suporte que será fixado no notebook. As ferramentas Jupyter de validação ficam em um ambiente separado, descrito em notebooks/validation-requirements.txt; não alteram o pyproject ou o lockfile congelados. A primeira execução final e a validação do notebook ocorrerão depois deste registro de suporte.
 
 Não foram encontradas credenciais da API Kaggle no ambiente. A publicação e a execução na conta do autor continuam sendo sua etapa prevista no plano; validação local não será apresentada como execução real no Kaggle.
+
+### Resultado e validação do M4
+
+**Estado:** entrega técnica local pronta, com notebook e avaliação final. O critério de execução/publicação no Kaggle permanece pendente da etapa do autor; não foi declarado como concluído por simulação local. M5–M6 não foram iniciados.
+
+O suporte foi versionado no commit `51a69a0264ef318d8506da0a8db627c295a5ccba` antes da primeira execução real. O notebook fixa esse commit. O código M3, as versões, o corte 0,0, o corpus e os rótulos permaneceram inalterados.
+
+| Método | Positivas com referência conhecida no top 5 | Negativas com retorno indevido |
+|---|---:|---:|
+| Literal | 7/16 | 0/4 |
+| TF-IDF | 8/16 | 4/4 |
+
+Um acerto conhecido adicional do TF-IDF não demonstra superioridade geral, pois o método retornou resultados em todas as negativas. As referências são limitadas e o conjunto é pequeno; não foram alteradas após os resultados.
+
+- 63 testes passaram, sem ignorados, com o corpus real. Os 15 testes novos usam apenas dados sintéticos; a revisão independente não encontrou achados acionáveis no avaliador.
+- O avaliador verifica os quinze ativos, os módulos importados e o runtime antes e depois da recuperação e protege insumos contra sobrescrita. Métricas vêm da função congelada do M3.
+- O notebook foi validado com nbformat e executado por nbclient em kernel local novo. As sete células de código foram executadas em ordem, sem erro; código e Markdown permaneceram idênticos durante a execução.
+- O notebook clonou o commit público de suporte, provisionou Python gerenciado 3.11.17 e sincronizou o lockfile. O relatório ficou idêntico byte a byte ao da primeira avaliação.
+- O pacote foi construído e instalado em ambiente separado; 63 testes e reprodução do relatório final passaram também nesse modo.
+- Repetições da avaliação tiveram somente finalidade de reprodução; nenhum método, limiar, rótulo ou recorte foi ajustado entre as execuções.
+- O relatório versionado e os outputs do notebook contêm metadados, contagens, referências e scores; não incluem corpos dos livros nem caminhos privados da máquina.
+
+O relatório `reports/m4_notebook_validation.json` identifica explicitamente `local_clean_kernel_not_kaggle`. A primeira tentativa de validação e a versão final com visão do corpus passaram; usa-se a evidência da versão final. O registro da configuração M3 continua intacto, inclusive seu indicador histórico de consultas finais ainda não executadas naquele marco.
+
+### Handoff para o autor
+
+Importar `notebooks/sherlock_document_search.ipynb` no Kaggle, anexar o dataset, habilitar Internet, executar todas as células e informar a URL. As instruções completas estão em `docs/kaggle-notebook.md`. Só depois de conferir essa execução será possível registrar o critério hospedado do M4 como validado. Não foi solicitada nem executada publicação automática na conta do autor.

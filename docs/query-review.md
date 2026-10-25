@@ -40,10 +40,10 @@ O agente aplicará no registro as aprovações explicitamente informadas pelo au
 - A revisão humana pode acessar ambos os grupos para conferir os rótulos. Desenvolvimento e ajustes posteriores usam somente as dez consultas de desenvolvimento.
 - Após o autor revisar as propostas, registrar os hashes dos arquivos aprovados, como realizado em `split_manifest.json`. Fechar também código e parâmetros antes da avaliação final de M4; os hashes atuais identificam os rótulos aprovados. Código e parâmetros de TF-IDF ainda serão fechados no M3; isso não significa que uma avaliação final já ocorreu.
 - Não usar os JSON finais como fixtures de testes da busca. Os testes do validador usam conjuntos sintéticos; a integração da busca usa somente um termo de desenvolvimento para verificar referências, sem estimar qualidade.
-- As vinte consultas finais serão executadas para comparar métodos somente no M4. Qualquer ajuste motivado por resultados finais será identificado como exploração posterior, conforme o plano.
+- As vinte consultas finais foram executadas para comparar métodos no M4, após conferência do snapshot. Qualquer ajuste motivado por resultados finais será identificado como exploração posterior, conforme o plano.
 
 ## Situação e esforço
 
 Na preparação inicial havia 30 propostas e zero aprovações registradas. Em 25 de outubro de 2026, o autor confirmou: “pode continuar com aprovação das perguntas”. As 30 entradas foram marcadas como aprovadas e os hashes atualizados. A [lista completa](queries.md) reúne as consultas e referências. O M2 está concluído, sem cálculo de métricas de qualidade ou execução das consultas finais.
 
-O autor pode revisar em grupos de IDs. Registre o tempo gasto nessa atividade para reestimar o plano após M2; ainda não há medição do esforço real da revisão. M3 foi autorizado e concluído usando apenas desenvolvimento; a execução das vinte finais continua reservada ao M4.
+O autor pode revisar em grupos de IDs. Registre o tempo gasto nessa atividade para reestimar o plano após M2; ainda não há medição do esforço real da revisão. M3 foi autorizado e concluído usando apenas desenvolvimento; as vinte consultas finais foram posteriormente avaliadas no M4 sem novos ajustes.

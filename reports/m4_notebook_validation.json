@@ -1,0 +1,24 @@
+{
+  "environment": "local_clean_kernel_not_kaggle",
+  "code_cells_executed": 7,
+  "cell_errors": 0,
+  "source_cells_unchanged": true,
+  "report_byte_identical": true,
+  "notebook_sha256": "0263b40eb3d838e7f496b48077af6fef07a25d300ac9f923ec2254da1748e9ad",
+  "final_report_sha256": "92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324",
+  "versions": {
+    "python": "3.11.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "support_commit": "51a69a0264ef318d8506da0a8db627c295a5ccba",
+  "validated_on": "2026-10-25",
+  "kaggle_execution_verified": false,
+  "notebook_tools": {
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0",
+    "uv": "0.13.5"
+  }
+}
