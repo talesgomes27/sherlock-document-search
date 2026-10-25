@@ -45,3 +45,7 @@ A revisão identificou dois marcadores `THE END` retidos e uma fração Unicode 
 - A revisão humana das 30 consultas é tarefa do M2 e ainda não começou. As vinte consultas finais não foram criadas nem utilizadas para ajustes.
 - O próximo ponto de reestimativa do esforço será após a revisão humana em M2; a referência de 24 horas não foi convertida em garantia de prazo.
 - Após o aceite do M1 e a autorização para o M2, preparar as consultas e a busca literal conforme o plano. Não iniciar automaticamente marcos posteriores.
+
+## Correção da pasta local
+
+O usuário indicou `sherlock_holmes_series/` como pasta local do projeto. O checkout foi consolidado nessa pasta, preservando o histórico Git e os nove TXT que já existiam diretamente em `data/`. Seus hashes coincidem com o snapshot do M1. Esses TXT também ficam ignorados pelo Git; a cópia preparada continua em `data/raw/` e `data/processed/`. O ambiente virtual foi recriado no novo caminho para evitar referências ao local anterior.
