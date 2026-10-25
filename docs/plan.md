@@ -1,6 +1,6 @@
 # Plano e marcos — Sherlock Document Search
 
-Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e concluído, com busca literal validada e as 30 consultas aprovadas pelo autor. O M3 foi autorizado e concluído com ajuste somente em desenvolvimento; M4–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
+Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e concluído, com busca literal validada e as 30 consultas aprovadas pelo autor. O M3 foi autorizado e concluído com ajuste somente em desenvolvimento; O M4 foi autorizado e está em andamento; M5–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
 
 ## Objetivo e entrega
 
@@ -80,4 +80,4 @@ Executar os testes pertinentes ao código, a execução completa do notebook, a 
 
 ## Confirmação e execução
 
-Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e concluído, com as 30 consultas aprovadas no chat. O M3 foi autorizado e concluído, conforme as evidências em task.md. M4–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.
+Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e concluído, com as 30 consultas aprovadas no chat. O M3 foi autorizado e concluído, conforme as evidências em task.md. O M4 foi autorizado e está em andamento; M5–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.

@@ -126,3 +126,13 @@ Antes do M3 havia cinco módulos Python e 335 linhas, sem grafo existente. A CLI
 As fontes oficiais descrevem extração estrutural local por AST e extração semântica para documentos: https://github.com/Graphify-Labs/graphify . Se as perguntas repetidas sobre relações crescerem, experimentar apenas código e medir o benefício. Não incluir livros, consultas finais ou documentos que reproduzam as consultas finais durante M3. Nenhuma atualização de skill ou construção de grafo foi realizada.
 
 A avaliação final, a execução do notebook Kaggle e as publicações permanecem pendentes de M4–M6. A comparação de desenvolvimento sugere cautela com a regra de ausência de resposta do TF-IDF; dois exemplos negativos não sustentam generalização.
+
+## Execução do M4 — em andamento
+
+Em 25 de outubro de 2026, o usuário aprovou M3 e autorizou preparar o notebook Kaggle, conferir o snapshot e avaliar as vinte consultas finais sem novos ajustes.
+
+O novo avaliador e seus 15 testes sintéticos foram implementados e revisados antes de executar as consultas finais reais. O código M3, o lockfile, a configuração e os rótulos permanecem imutáveis. O avaliador confere os módulos realmente importados e exige Python 3.11.17 e as versões numéricas do snapshot antes de recuperar resultados; usa a função de métricas congelada.
+
+Este commit prepara o código de suporte que será fixado no notebook. As ferramentas Jupyter de validação ficam em um ambiente separado, descrito em notebooks/validation-requirements.txt; não alteram o pyproject ou o lockfile congelados. A primeira execução final e a validação do notebook ocorrerão depois deste registro de suporte.
+
+Não foram encontradas credenciais da API Kaggle no ambiente. A publicação e a execução na conta do autor continuam sendo sua etapa prevista no plano; validação local não será apresentada como execução real no Kaggle.
