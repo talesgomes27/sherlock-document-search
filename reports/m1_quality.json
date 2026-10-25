@@ -1,0 +1,132 @@
+{
+  "dataset_url": "https://www.kaggle.com/datasets/talesgomes27/sherleck-books",
+  "word_count_rule": "Unicode letters with optional internal apostrophe or hyphen; numbers excluded.",
+  "files": [
+    {
+      "filename": "a_study_in_scarlet.txt",
+      "title": "A Study in Scarlet",
+      "size_bytes": 272277,
+      "sha256": "af0f6c590ca3901b3f61d5b90acac1ac16abc83e50b8541c9f17aff079829d96",
+      "source_lines": 5156,
+      "body_start_line": 81,
+      "body_end_line": 4712,
+      "source_words": 46908,
+      "retained_words": 43334,
+      "removed_words": 3574,
+      "paragraphs": 805
+    },
+    {
+      "filename": "his_last_bow.txt",
+      "title": "His Last Bow",
+      "size_bytes": 357494,
+      "sha256": "fceb27b3fe80c2614335f94dbbf2fc925c6c6edde950eea9d70f192278c71d86",
+      "source_lines": 7224,
+      "body_start_line": 79,
+      "body_end_line": 6873,
+      "source_words": 62234,
+      "retained_words": 58982,
+      "removed_words": 3252,
+      "paragraphs": 1424
+    },
+    {
+      "filename": "the_adventures_of_sherlock_holmes.txt",
+      "title": "The Adventures of Sherlock Holmes",
+      "size_bytes": 607430,
+      "sha256": "41bbdab67e6c128ab07641d85c643f5599ec221f1e7713c1eda99651f8bfe68e",
+      "source_lines": 12304,
+      "body_start_line": 59,
+      "body_end_line": 11952,
+      "source_words": 107593,
+      "retained_words": 104454,
+      "removed_words": 3139,
+      "paragraphs": 2540
+    },
+    {
+      "filename": "the_case-book_of_sherlock_holmes.txt",
+      "title": "The Case-Book of Sherlock Holmes",
+      "size_bytes": 483376,
+      "sha256": "bf5bc0c63b9c61795f3e8979021069c1e1c9f312e06f7bd178edda2e7f5f875a",
+      "source_lines": 10389,
+      "body_start_line": 135,
+      "body_end_line": 9979,
+      "source_words": 86120,
+      "retained_words": 82179,
+      "removed_words": 3941,
+      "paragraphs": 2247
+    },
+    {
+      "filename": "the_hound_of_the_baskervilles.txt",
+      "title": "The Hound of the Baskervilles",
+      "size_bytes": 387870,
+      "sha256": "641ea58af0d2c42377d84b91b445a6d66c2901a302e361d2a371c862b133a03c",
+      "source_lines": 7729,
+      "body_start_line": 86,
+      "body_end_line": 7374,
+      "source_words": 62409,
+      "retained_words": 59225,
+      "removed_words": 3184,
+      "paragraphs": 1483
+    },
+    {
+      "filename": "the_memoirs_of_sherlock_holmes.txt",
+      "title": "The Memoirs of Sherlock Holmes",
+      "size_bytes": 612668,
+      "sha256": "3379e11b94a7b3f2e7b1e5fe249456e59d075f83f7545f3176cfcc0463ae3414",
+      "source_lines": 11753,
+      "body_start_line": 63,
+      "body_end_line": 11402,
+      "source_words": 98653,
+      "retained_words": 95549,
+      "removed_words": 3104,
+      "paragraphs": 2191
+    },
+    {
+      "filename": "the_return_of_sherlock_holmes.txt",
+      "title": "The Return of Sherlock Holmes",
+      "size_bytes": 719417,
+      "sha256": "d8bbe5cf2ea014bb6f7afc422f6ab6b3e096e133caebe9069f3deec0e4e41c9c",
+      "source_lines": 13830,
+      "body_start_line": 61,
+      "body_end_line": 13477,
+      "source_words": 115501,
+      "retained_words": 112364,
+      "removed_words": 3137,
+      "paragraphs": 2573
+    },
+    {
+      "filename": "the_sign_of_the_four.txt",
+      "title": "The Sign of the Four",
+      "size_bytes": 260948,
+      "sha256": "496ee013ba428d14c085192dd04091ff4da7cc4c56c81bb378bd675467d76722",
+      "source_lines": 4931,
+      "body_start_line": 60,
+      "body_end_line": 4580,
+      "source_words": 46242,
+      "retained_words": 43107,
+      "removed_words": 3135,
+      "paragraphs": 784
+    },
+    {
+      "filename": "the_valley_of _fear.txt",
+      "title": "The Valley of Fear",
+      "size_bytes": 339647,
+      "sha256": "60014f2640d9b7ee7cd2d9db4117108bdbee6fae9e99965b643d68aa784d0b61",
+      "source_lines": 7255,
+      "body_start_line": 85,
+      "body_end_line": 6885,
+      "source_words": 60790,
+      "retained_words": 57690,
+      "removed_words": 3100,
+      "paragraphs": 1551
+    }
+  ],
+  "totals": {
+    "size_bytes": 4041127,
+    "source_lines": 80571,
+    "source_words": 686450,
+    "retained_words": 656884,
+    "removed_words": 29566,
+    "paragraphs": 15598,
+    "files": 9
+  }
+}

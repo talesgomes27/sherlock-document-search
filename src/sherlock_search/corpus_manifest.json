@@ -1,0 +1,118 @@
+{
+  "dataset_url": "https://www.kaggle.com/datasets/talesgomes27/sherleck-books",
+  "inspected_on": "2026-10-25",
+  "version_displayed_on_kaggle": 3,
+  "archive_url": "https://www.kaggle.com/api/v1/datasets/download/talesgomes27/sherleck-books",
+  "archive_size_bytes": 1514187,
+  "archive_sha256": "5abf2fe7bc636289347c2da51a7b611bda39ed451543c6428f79215328eeaaa3",
+  "files": [
+    {
+      "filename": "a_study_in_scarlet.txt",
+      "title": "A Study in Scarlet",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 244,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/244",
+      "size_bytes": 272277,
+      "sha256": "af0f6c590ca3901b3f61d5b90acac1ac16abc83e50b8541c9f17aff079829d96",
+      "body_start_line": 81,
+      "body_end_line": 4712
+    },
+    {
+      "filename": "his_last_bow.txt",
+      "title": "His Last Bow",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 2350,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/2350",
+      "size_bytes": 357494,
+      "sha256": "fceb27b3fe80c2614335f94dbbf2fc925c6c6edde950eea9d70f192278c71d86",
+      "body_start_line": 79,
+      "body_end_line": 6873
+    },
+    {
+      "filename": "the_adventures_of_sherlock_holmes.txt",
+      "title": "The Adventures of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 1661,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/1661",
+      "size_bytes": 607430,
+      "sha256": "41bbdab67e6c128ab07641d85c643f5599ec221f1e7713c1eda99651f8bfe68e",
+      "body_start_line": 59,
+      "body_end_line": 11952
+    },
+    {
+      "filename": "the_case-book_of_sherlock_holmes.txt",
+      "title": "The Case-Book of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 69700,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/69700",
+      "size_bytes": 483376,
+      "sha256": "bf5bc0c63b9c61795f3e8979021069c1e1c9f312e06f7bd178edda2e7f5f875a",
+      "body_start_line": 135,
+      "body_end_line": 9979
+    },
+    {
+      "filename": "the_hound_of_the_baskervilles.txt",
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 2852,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/2852",
+      "size_bytes": 387870,
+      "sha256": "641ea58af0d2c42377d84b91b445a6d66c2901a302e361d2a371c862b133a03c",
+      "body_start_line": 86,
+      "body_end_line": 7374
+    },
+    {
+      "filename": "the_memoirs_of_sherlock_holmes.txt",
+      "title": "The Memoirs of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 834,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/834",
+      "size_bytes": 612668,
+      "sha256": "3379e11b94a7b3f2e7b1e5fe249456e59d075f83f7545f3176cfcc0463ae3414",
+      "body_start_line": 63,
+      "body_end_line": 11402
+    },
+    {
+      "filename": "the_return_of_sherlock_holmes.txt",
+      "title": "The Return of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 108,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/108",
+      "size_bytes": 719417,
+      "sha256": "d8bbe5cf2ea014bb6f7afc422f6ab6b3e096e133caebe9069f3deec0e4e41c9c",
+      "body_start_line": 61,
+      "body_end_line": 13477
+    },
+    {
+      "filename": "the_sign_of_the_four.txt",
+      "title": "The Sign of the Four",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 2097,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/2097",
+      "size_bytes": 260948,
+      "sha256": "496ee013ba428d14c085192dd04091ff4da7cc4c56c81bb378bd675467d76722",
+      "body_start_line": 60,
+      "body_end_line": 4580
+    },
+    {
+      "filename": "the_valley_of _fear.txt",
+      "title": "The Valley of Fear",
+      "author": "Arthur Conan Doyle",
+      "declared_language": "English",
+      "gutenberg_id": 3776,
+      "gutenberg_url": "https://www.gutenberg.org/ebooks/3776",
+      "size_bytes": 339647,
+      "sha256": "60014f2640d9b7ee7cd2d9db4117108bdbee6fae9e99965b643d68aa784d0b61",
+      "body_start_line": 85,
+      "body_end_line": 6885
+    }
+  ]
+}

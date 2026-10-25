@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sherlock-document-search"
+version = "0.1.0"
+description = "Reproducible preparation and search of the Sherlock Holmes corpus"
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sherlock_search = ["corpus_manifest.json"]
