@@ -8,7 +8,7 @@
       "a_study_in_scarlet.txt:81-91"
     ],
     "rationale": "Pergunta natural sobre o local de serviço; o trecho situa Watson na Índia com o Fifth Northumberland Fusiliers.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-02",
@@ -19,7 +19,7 @@
       "his_last_bow.txt:258-263"
     ],
     "rationale": "O trecho diz que Garcia convidou Eccles para passar alguns dias em sua casa, Wisteria Lodge.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-03",
@@ -30,7 +30,7 @@
       "the_return_of_sherlock_holmes.txt:2307-2322"
     ],
     "rationale": "Expressão literal presente no trecho, que orienta Cubitt a copiar novos desenhos dos dancing men.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-04",
@@ -41,7 +41,7 @@
       "the_adventures_of_sherlock_holmes.txt:1272-1278"
     ],
     "rationale": "Expressão literal do anúncio, que informa quem era elegível para a vaga na League.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-05",
@@ -52,7 +52,7 @@
       "the_hound_of_the_baskervilles.txt:398-406"
     ],
     "rationale": "Pergunta natural; Mortimer identifica a data exata do documento como 1742.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-06",
@@ -63,7 +63,7 @@
       "the_memoirs_of_sherlock_holmes.txt:163-174"
     ],
     "rationale": "Expressão literal do nome do cavalo mencionado no contexto de sua ausência na corrida.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-07",
@@ -74,7 +74,7 @@
       "the_case-book_of_sherlock_holmes.txt:7950-7953"
     ],
     "rationale": "Termo literal do nome científico da criatura descrita no aviso para banhistas.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-08",
@@ -85,7 +85,7 @@
       "the_sign_of_the_four.txt:663-673"
     ],
     "rationale": "Pergunta natural; o trecho descreve a inscrição “3.37 from left” no mapa.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-09",
@@ -94,7 +94,7 @@
     "answerable": false,
     "relevant_ids": [],
     "rationale": "Pergunta negativa anacrônica; termos de personagem e local podem corresponder a passagens sem resposta sobre aplicativo.",
-    "review_status": "pending"
+    "review_status": "approved"
   },
   {
     "id": "dev-10",
@@ -103,6 +103,6 @@
     "answerable": false,
     "relevant_ids": [],
     "rationale": "Pergunta negativa anacrônica; Baker Street pode corresponder a trechos que não informam senha de rede.",
-    "review_status": "pending"
+    "review_status": "approved"
   }
 ]

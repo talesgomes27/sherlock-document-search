@@ -1,6 +1,7 @@
 import copy
 from contextlib import redirect_stdout
 import io
+import json
 import os
 from pathlib import Path
 import tempfile
@@ -84,6 +85,21 @@ REAL_RAW_DIR = Path(os.environ.get("SHERLOCK_RAW_DIR", "data/raw"))
 
 @unittest.skipUnless(REAL_RAW_DIR.is_dir(), "Real corpus not available")
 class LiteralCorpusIntegrationTests(unittest.TestCase):
+    def test_development_queries_preserve_top_five_and_source_contract(self):
+        paragraphs, _ = prepare_corpus(REAL_RAW_DIR)
+        source_by_id = {p["id"]: p for p in paragraphs}
+        path = Path(__file__).resolve().parents[1] / "evaluation" / "development.json"
+        queries = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(len(queries), 10)
+        for query in queries:
+            with self.subTest(query=query["id"]):
+                results = literal_search(paragraphs, query["query"])
+                self.assertLessEqual(len(results), 5)
+                for result in results:
+                    self.assertGreater(result["score"], 0)
+                    for key, value in source_by_id[result["id"]].items():
+                        self.assertEqual(result[key], value)
+
     def test_development_term_returns_original_references_in_selected_book(self):
         paragraphs, _ = prepare_corpus(REAL_RAW_DIR)
         source_by_id = {p["id"]: p for p in paragraphs}

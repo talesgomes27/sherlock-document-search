@@ -1,6 +1,6 @@
 # Plano e marcos — Sherlock Document Search
 
-Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e tem busca literal e propostas implementadas; a revisão humana está pendente. M3–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
+Status: plano confirmado pelo usuário em 25 de outubro de 2026, com autorização para iniciar M1. O M1 foi aprovado pelo usuário. O M2 foi autorizado e concluído, com busca literal validada e as 30 consultas aprovadas pelo autor. M3–M6 ainda não começaram. Este documento consolida o [registro de descoberta](discovery.md), sem substituí-lo.
 
 ## Objetivo e entrega
 
@@ -23,7 +23,7 @@ Não fazem parte da primeira versão: chatbot, geração de respostas, busca mul
 
 ## Detalhes técnicos aprovados para executar as decisões
 
-Estes detalhes foram confirmados com o plano. A preparação e o empacotamento do M1 e a busca literal do M2 foram implementados e testados. A revisão dos rótulos do M2 e os demais marcos continuam pendentes. Consulte as evidências em [task.md](../task.md).
+Estes detalhes foram confirmados com o plano. A preparação e o empacotamento do M1 e a busca literal do M2 foram implementados e testados. Os rótulos do M2 foram aprovados; os marcos seguintes continuam pendentes. Consulte as evidências em [task.md](../task.md).
 
 **Dados e rastreabilidade.** Preservar os arquivos recebidos, tratar UTF-8 com BOM e quebras de linha, e remover material editorial da análise sem perder a ligação com as linhas de origem. Registrar tamanho e SHA-256 por TXT; guardar também o hash do ZIP quando disponível. O Kaggle fornece os TXT como entrada, portanto a reprodução não dependerá de receber o mesmo ZIP. Alterações inesperadas nos arquivos devem produzir aviso claro e exigir verificação antes da comparação de resultados.
 
@@ -80,4 +80,4 @@ Executar os testes pertinentes ao código, a execução completa do notebook, a 
 
 ## Confirmação e execução
 
-Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e está em andamento, aguardando revisão humana das consultas. M3–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.
+Em 25 de outubro de 2026, o usuário confirmou o plano e autorizou iniciar M1. O M1 foi implementado, validado tecnicamente e aprovado pelo usuário, conforme [task.md](../task.md). O M2 foi autorizado e concluído, com as 30 consultas aprovadas no chat. M3–M6 não foram iniciados; notebook, relatório Quarto e dashboard ainda não foram publicados.

@@ -13,11 +13,11 @@
   "splits": {
     "development": {
       "file": "development.json",
-      "sha256": "d9cf599d991bda4f1d652717e4d1888beb9bf364242a02c9688d168426335236",
+      "sha256": "5eaf150f61fb88013a9aa37ebab6bf840460ee15d34a1135a478f92243a95207",
       "queries": 10,
       "answerable": 8,
       "unanswerable": 2,
-      "approved": 0,
+      "approved": 10,
       "needs_changes": 0,
       "query_types": {
         "question": 6,
@@ -27,11 +27,11 @@
     },
     "final": {
       "file": "final.json",
-      "sha256": "212e2982e35fbee6ed70ec4449e33bcee58080f14b0463e2076cd8dd844fd19a",
+      "sha256": "09dc4f7b62aa3fa12d33bbce91d4218959cd54c13cfffc324d3674262696ff91",
       "queries": 20,
       "answerable": 16,
       "unanswerable": 4,
-      "approved": 0,
+      "approved": 20,
       "needs_changes": 0,
       "query_types": {
         "term": 4,
