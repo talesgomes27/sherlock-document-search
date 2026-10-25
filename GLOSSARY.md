@@ -15,3 +15,9 @@ _Evitar_: Livro, capítulo ou conto como sinônimos de arquivo.
 **Obra**:
 Unidade bibliográfica identificada por título, que pode ser um romance ou uma coletânea de contos.
 _Evitar_: Conto como sinônimo de obra.
+
+**Consulta de avaliação**:
+Pergunta ou expressão em inglês usada para avaliar a busca no corpus, acompanhada de revisão humana dos trechos relevantes.
+
+**Trecho relevante**:
+Passagem do corpus julgada pertinente a uma consulta de avaliação. Relevância depende da consulta e não apenas da presença de palavras iguais.

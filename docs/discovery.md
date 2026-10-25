@@ -11,12 +11,21 @@ Registro da entrevista iniciada em 25 de outubro de 2026. Este documento disting
 
 O usuário autorizou a criação do repositório no GitHub e informou que fará a atualização do notebook no Kaggle. A publicação de um notebook não foi executada por esta etapa.
 
+## Decisões aprovadas — rodada 2
+
+5. **Situação de uso:** demonstrar como pequenas equipes podem localizar informações em acervos de documentos, usando Sherlock Holmes como exemplo público. Isso não representa validação em documentos empresariais.
+6. **Idiomas:** consultas em inglês na primeira versão; interface e relatório em português; resumo do projeto em inglês. Busca multilíngue fica para uma possível evolução.
+7. **Dashboard:** usar Streamlit, aproveitando a experiência já presente no portfólio e concentrando o aprendizado em NLP.
+8. **Avaliação humana:** reservar parte do projeto para o autor revisar cerca de 20–30 consultas e seus trechos relevantes. A quantidade final e os critérios de avaliação dependem da inspeção dos textos.
+
+Estas quatro decisões foram aprovadas pelo usuário em 25 de outubro de 2026. O escopo funcional e os critérios de conclusão continuam em discussão.
+
 ## Entregas solicitadas
 
 - Python como linguagem do projeto.
 - Notebook Jupyter para o Kaggle.
 - Relatório em Quarto para GitHub Pages.
-- Dashboard posterior em Streamlit ou Shiny.
+- Dashboard posterior em Streamlit.
 
 A proposta é compartilhar o processamento entre as entregas; a organização técnica ainda depende da definição do escopo.
 
@@ -49,13 +58,12 @@ O espaço em `the_valley_of _fear.txt` reproduz o nome mostrado no explorador; a
 
 ## Decisões abertas — próxima rodada
 
-- Público e situação de uso que a demonstração pretende atender.
-- Idioma das consultas e dos materiais públicos.
 - Limites funcionais da primeira versão: tipos de busca, filtros, apresentação de resultados e eventual geração de respostas.
-- Como construir a avaliação e definir critérios de conclusão.
+- Limites da análise exploratória de apoio.
+- Como construir a avaliação humana acordada e definir critérios de conclusão.
 - Granularidade dos resultados, após inspeção da estrutura dos textos.
-- Streamlit ou Shiny e destino de hospedagem do dashboard.
-- Organização do código compartilhado e execução do notebook no ambiente Kaggle.
+- Destino de hospedagem do dashboard Streamlit.
+- Organização do código compartilhado, obtenção dos dados e execução do notebook no ambiente Kaggle.
 
 ## Restrições de interpretação
 

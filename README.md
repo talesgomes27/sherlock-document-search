@@ -9,13 +9,17 @@ O objetivo é demonstrar competências aplicáveis a serviços freelancer: prepa
 - Processamento e busca em Python.
 - Notebook Jupyter para publicação e atualização no Kaggle pelo autor.
 - Relatório Quarto para GitHub Pages.
-- Dashboard posterior em Streamlit ou Shiny; a escolha ainda está aberta.
+- Dashboard posterior em Streamlit.
 
 ## Estado atual
 
-As decisões iniciais foram aprovadas em 25 de outubro de 2026. A entrevista de escopo continua; ainda não há implementação, notebook executável, relatório publicado ou dashboard.
+As duas primeiras rodadas de decisões foram aprovadas em 25 de outubro de 2026. A entrevista de escopo continua; ainda não há implementação, notebook executável, relatório publicado ou dashboard.
 
 Planejamento de referência: quatro horas semanais durante seis semanas, sujeito à inspeção dos arquivos e ao escopo final. O aprendizado se concentra em NLP e avaliação de busca, aproveitando a experiência prévia em Python e análise de dados.
+
+A demonstração é voltada a pequenas equipes que precisam localizar informações em acervos documentais. As consultas serão em inglês na primeira versão, com interface e relatório em português e um resumo do projeto em inglês.
+
+A avaliação incluirá revisão humana de cerca de 20–30 consultas e seus trechos relevantes; a quantidade final e os critérios ainda serão definidos.
 
 ## Documentação
 
