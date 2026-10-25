@@ -45,14 +45,19 @@ def main():
     code_cells = [cell for cell in executed.cells if cell.cell_type == "code"]
     assert [cell.execution_count for cell in code_cells] == list(range(1, len(code_cells) + 1))
     assert not any(item.output_type == "error" for cell in code_cells for item in cell.outputs)
-    report = work / "m4_final.json"
+    figures = sorted((work / "figures").glob("*"))
+    assert [path.name for path in figures] == ["corpus_size.png", "corpus_size.svg", "retrieval_comparison.png", "retrieval_comparison.svg"]
+    assert all(path.stat().st_size > 1000 for path in figures), "Missing or empty chart."
+    image_count = sum("image/png" in item.get("data", {}) for cell in code_cells for item in cell.outputs)
+    assert image_count == 2, "Expected two inline charts."
+    report = work / "search_results.json"
     assert report.read_bytes() == args.expected_report.read_bytes(), "Notebook and reference report differ."
     executed.metadata.kernelspec = {"display_name": "Python 3", "language": "python", "name": "python3"}
     artifact = output / "sherlock_document_search.ipynb"
     nbformat.write(executed, artifact)
     evidence = {
         "environment": "local_clean_kernel_not_kaggle", "code_cells_executed": len(code_cells),
-        "cell_errors": 0, "source_cells_unchanged": True, "report_byte_identical": True,
+        "cell_errors": 0, "inline_charts": image_count, "figure_files": [path.name for path in figures], "source_cells_unchanged": True, "report_byte_identical": True,
         "notebook_sha256": hashlib.sha256(artifact.read_bytes()).hexdigest(),
         "final_report_sha256": hashlib.sha256(report.read_bytes()).hexdigest(),
         "versions": json.loads(report.read_text(encoding="utf-8"))["versions"],

@@ -1,10 +1,17 @@
 {
   "environment": "local_clean_kernel_not_kaggle",
-  "code_cells_executed": 7,
+  "code_cells_executed": 8,
   "cell_errors": 0,
+  "inline_charts": 2,
+  "figure_files": [
+    "corpus_size.png",
+    "corpus_size.svg",
+    "retrieval_comparison.png",
+    "retrieval_comparison.svg"
+  ],
   "source_cells_unchanged": true,
   "report_byte_identical": true,
-  "notebook_sha256": "0263b40eb3d838e7f496b48077af6fef07a25d300ac9f923ec2254da1748e9ad",
+  "notebook_sha256": "5f5f979f249b4f3b3c4813dc4a9918050dc2abf7e7fab17ff104a22f35aca465",
   "final_report_sha256": "92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324",
   "versions": {
     "python": "3.11.17",
@@ -12,13 +19,15 @@
     "numpy": "2.4.6",
     "scipy": "1.17.1"
   },
-  "support_commit": "51a69a0264ef318d8506da0a8db627c295a5ccba",
   "validated_on": "2026-10-25",
   "kaggle_execution_verified": false,
+  "embedded_project_code": true,
+  "project_clone_required": false,
   "notebook_tools": {
     "nbclient": "0.11.0",
     "nbformat": "5.11.1",
     "ipykernel": "7.4.0",
-    "uv": "0.13.5"
+    "uv": "0.13.5",
+    "matplotlib": "3.11.2"
   }
 }

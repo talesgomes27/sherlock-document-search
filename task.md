@@ -163,3 +163,16 @@ O relatório `reports/m4_notebook_validation.json` identifica explicitamente `lo
 ### Handoff para o autor
 
 Importar `notebooks/sherlock_document_search.ipynb` no Kaggle, anexar o dataset, habilitar Internet, executar todas as células e informar a URL. As instruções completas estão em `docs/kaggle-notebook.md`. Só depois de conferir essa execução será possível registrar o critério hospedado do M4 como validado. Não foi solicitada nem executada publicação automática na conta do autor.
+
+
+### Reformulação do notebook para o leitor do Kaggle
+
+Após o retorno do autor sobre referências excessivas ao GitHub e falta de visualizações, a apresentação foi reescrita como análise independente: problema de busca documental, acervo, métodos, comparação, erros e limites. A narrativa do notebook não usa nomes de marcos ou instruções internas do repositório.
+
+O código e os metadados necessários estão embutidos em um ZIP determinístico, sem os livros, gerado por `scripts/build_kaggle_bundle.py`. O notebook não clona nem baixa código do projeto; Internet continua necessária para ferramentas, Python gerenciado e dependências quando ausentes do cache. O pacote compartilhado e os quinze ativos M3 foram preservados, sem copiar uma nova implementação da busca para as células.
+
+Foram acrescentados dois gráficos: palavras retidas por obra e comparação dos dois métodos em painéis separados para positivas e negativas. Ambos são exibidos no notebook e exportados em PNG e SVG. As tabelas mostram volume por obra, métricas e as vinte consultas por extenso com os resultados dos métodos. As saídas públicas são `search_results.json` e `figures/` dentro de `/kaggle/working/sherlock_analysis`.
+
+Validação da versão entregue: 65 testes passaram; oito células de código executaram em kernel local limpo, sem erros; dois gráficos inline e quatro arquivos de figura foram conferidos. O relatório reproduzido permaneceu idêntico byte a byte ao original, SHA-256 `92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324`. Os quinze hashes congelados continuam válidos. Figuras foram inspecionadas visualmente. Uma revisão independente do empacotamento e da interpretação científica não encontrou achados acionáveis.
+
+A nova evidência substitui a validação local anterior em `reports/m4_notebook_validation.json`. A execução e a publicação atuais no Kaggle não foram conferidas por URL; não se concluiu esse critério do M4. M5–M6 não foram iniciados. As figuras são apresentação dos resultados existentes, sem novos ajustes de parâmetros ou rótulos.

@@ -3,3 +3,4 @@ nbformat==5.11.1
 ipykernel==7.4.0
 uv==0.13.5
 pip==26.2.2
+matplotlib==3.11.2

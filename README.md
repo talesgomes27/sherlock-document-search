@@ -1,6 +1,6 @@
 # Sherlock Document Search
 
-Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** foi aprovado. O **M3 — TF-IDF e desenvolvimento** está concluído, após o aceite do M2 e das 30 consultas. A avaliação final do M4 foi executada e o notebook está pronto, validado localmente. A execução real no Kaggle depende do autor; relatório Quarto e dashboard Streamlit ficam para M5–M6.
+Projeto Python de busca documental e análise exploratória do acervo Sherlock Holmes. O **M1 — dados e preparação** foi aprovado. O **M3 — TF-IDF e desenvolvimento** está concluído, após o aceite do M2 e das 30 consultas. A avaliação final do M4 e o notebook reformulado foram validados localmente, com gráficos e tabelas. A execução atual no Kaggle ainda não foi conferida; relatório Quarto e dashboard Streamlit ficam para M5–M6.
 
 O objetivo é demonstrar competências aplicáveis a serviços freelancer: preparação de textos, recuperação de informação, avaliação de resultados e comunicação analítica. O exemplo é voltado a pequenas equipes que precisam localizar informações em acervos documentais. Resultados no corpus literário não comprovam desempenho em documentos de clientes nem retorno comercial.
 
@@ -39,7 +39,7 @@ A busca retorna até cinco parágrafos com referências e contagem de ocorrênci
 
 **Revisão concluída:** o autor aprovou as dez consultas de desenvolvimento e as vinte finais no chat. Os JSON registram `review_status: approved`; a [lista completa](docs/queries.md) apresenta as consultas e referências. Os trechos dos livros permanecem fora do Git; as propostas versionadas contêm apenas consultas, referências e justificativas.
 
-A suíte atual tem **63 testes**, incluindo preparação, busca, CLI, validação das propostas e integração real. Não foram executadas buscas ou métricas nas vinte consultas finais.
+A suíte atual tem **65 testes**, incluindo preparação, busca, CLI, avaliação, integração real e integridade do código embutido no notebook. As vinte consultas finais foram avaliadas somente após o congelamento do M3, conforme a seção seguinte.
 
 ## TF-IDF e desenvolvimento — M3
 
@@ -57,7 +57,7 @@ O [relatório de desenvolvimento](reports/m3_development.json) e o [snapshot con
 
 ## Notebook Kaggle e avaliação final — M4
 
-[Notebook pronto para importar](notebooks/sherlock_document_search.ipynb) · [Resultados finais](reports/m4_final.json) · [Instruções Kaggle](docs/kaggle-notebook.md)
+[Notebook pronto para importar](notebooks/sherlock_document_search.ipynb) · [Resultados finais](reports/m4_final.json) · [Gráfico comparativo](reports/figures/retrieval_comparison.png) · [Instruções Kaggle](docs/kaggle-notebook.md)
 
 | Método | Positivas com trecho conhecido no top 5 | Negativas com retorno indevido |
 |---|---:|---:|
@@ -66,9 +66,9 @@ O [relatório de desenvolvimento](reports/m3_development.json) e o [snapshot con
 
 O TF-IDF recuperou uma referência conhecida a mais, mas retornou resultados nas quatro negativas. Isso não demonstra superioridade geral. O corte e os quinze ativos M3 permaneceram congelados; nenhuma configuração ou rótulo foi ajustado com base nesses resultados.
 
-O notebook executou sete células de código em kernel local limpo, sem erro, e reproduziu o relatório byte a byte. Ele clona o commit de suporte fixo e usa Python 3.11.17 com dependências do lockfile em um ambiente separado do kernel.
+O notebook foi reformulado para carregar um ZIP determinístico com código e metadados derivados de fontes verificadas; não clona nem baixa o código do projeto. O processamento usa Python 3.11.17 e as dependências congeladas em `uv.lock`, em ambiente separado do kernel. A versão reformulada executou oito células de código em kernel local limpo, sem erros, gerou dois gráficos e reproduziu o relatório final byte a byte. A execução atual no Kaggle ainda não foi conferida.
 
-**Etapa do autor:** importar o arquivo no Kaggle, anexar o dataset, habilitar Internet e executar todas as células. A validação local não substitui essa execução. A URL publicada ou a execução na conta Kaggle ainda não foi conferida.
+**Etapa do autor:** importar o arquivo no Kaggle, anexar o dataset, habilitar Internet e executar todas as células. A execução atual na plataforma e eventual publicação ainda não foram conferidas.
 
 ## Entregas do plano
 
@@ -80,7 +80,7 @@ O notebook executou sete células de código em kernel local limpo, sem erro, e 
 
 As consultas serão em inglês; a interface e o relatório, em português, com um resumo do projeto em inglês. A análise de apoio cobre tamanho dos textos, termos frequentes e qualidade da preparação. Chatbot e geração de respostas ficam fora da primeira versão.
 
-O plano foi confirmado em 25 de outubro de 2026. O M1 foi aprovado e o M2 autorizado; M3 foi autorizado e concluído; M4 tem avaliação final e notebook validados localmente, aguardando a execução na plataforma Kaggle pelo autor. M5–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
+O plano foi confirmado em 25 de outubro de 2026. O M1 foi aprovado e o M2 autorizado; M3 foi autorizado e concluído; M4 tem resultados finais e notebook reformulado validados localmente; a execução atual no Kaggle ainda não foi conferida. M5–M6 não começaram. A disponibilidade de quatro horas semanais durante seis semanas continua uma referência, com reestimativa após a revisão humana das consultas.
 
 ## Dados e documentação
 
@@ -102,4 +102,4 @@ Fonte: [Sherlock Holmes Series, no Kaggle](https://www.kaggle.com/datasets/tales
 
 ## English summary
 
-Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs. Literal and TF-IDF retrieval are implemented, with 30 query labels approved by the project author. Only ten development queries were used for calibration. The twenty final queries have now been evaluated without retuning, and a Kaggle-ready notebook reproduces the report in a clean local kernel; an actual Kaggle execution by the author remains pending. The Quarto report and Streamlit application are planned later. Evaluation on this literary corpus does not establish performance on business documents.
+Sherlock Document Search is a Python portfolio project for document retrieval and text analytics. The first milestone validates nine source files and prepares traceable paragraphs. Literal and TF-IDF retrieval are implemented, with 30 query labels approved by the project author. Only ten development queries were used for calibration. The twenty final queries have been evaluated without retuning. The Kaggle notebook embeds a deterministic code-and-metadata bundle and uses the attached corpus; the current hosted execution has not been checked. The Quarto report and Streamlit application are planned later. Evaluation on this literary corpus does not establish performance on business documents.
