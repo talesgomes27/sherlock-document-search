@@ -266,3 +266,12 @@ Fontes em site/index.qmd, configuração/style/assets em site/, helpers stdlib d
 Validação local: 115 testes passaram com os dados reais e sem ignorados; nove são novos testes de fontes/HTML. Quatro tabelas, duas imagens com alt e seis referências cruzadas conferem com as fontes; 30 links/recursos locais e cinco CSS verificados. Render HTML inspecionado no navegador. Fontes remotas desnecessárias foram retiradas do tema, preservando fontes de sistema. As verificações dos 35 ativos v1, 48 arquivos v2 e ambos payloads de notebooks passaram.
 
 O workflow foi revisado independentemente: build sem permissão de deploy em PR, artifact publicado somente a partir de main, deploy dependente do build validado e permissões mínimas. Pages não estava configurado (GET 404); gh confirmou administração do repositório, Actions habilitado e destino público. A configuração de Pages, execução remota e smoke tests serão registrados em evidência própria após a publicação; validação local não os substitui.
+
+
+### M5 — publicação concluída e verificada
+
+A configuração inicial de Pages foi criada com `build_type: workflow`. A implementação `b55ff7027641d3e4421cc95ca919f9c6626070a1` foi integrada à main por fast-forward e publicada. O [run 40256849352](https://github.com/talesgomes27/sherlock-document-search/actions/runs/40256849352) concluiu build e deploy com sucesso; o build remoto executou os nove testes do relatório e renderizou as cinco células.
+
+O [relatório público](https://talesgomes27.github.io/sherlock-document-search/) respondeu HTTP 200. A metadata publicada confirma o commit b55ff70 e árvore limpa, Python 3.11.17 e Quarto 1.10.19. O smoke test baixou os 21 arquivos do artifact e conferiu seus hashes, os 50 hashes de entrada e as quatro tabelas, duas imagens, seis referências cruzadas e 30 links/recursos locais. A página pública também foi inspecionada visualmente no navegador. Evidência em `reports/m5/publication_validation.json` e `reports/m5/publication.png`.
+
+Os 35 ativos v1, os 48 arquivos congelados v2 e os dois notebooks continuam preservados. Não houve nova avaliação ou ajuste de modelos. O commit subsequente contém somente documentação e evidência, sem novo deploy; o commit-fonte publicado continua b55ff70. M5 tecnicamente concluído; aprovação de apresentação pelo autor continua distinta desta verificação. M6 e execução real no Kaggle permanecem pendentes.

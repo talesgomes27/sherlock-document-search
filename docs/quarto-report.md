@@ -40,3 +40,10 @@ Depois do deploy, confira a conclusão do run, URL final e `_build.json`: o comm
 Se uma alteração futura falhar no build, o deploy não avança e o site anterior permanece. Para recuperar uma versão publicada, restaure as fontes do último commit aprovado por um commit de reversão revisável e execute novamente o fluxo, sem reescrever histórico ou manifests científicos. Mudança de resultados exige outro protocolo; não se edita o snapshot para corrigir aparência.
 
 Fontes operacionais: [Quarto/Python](https://quarto.org/docs/computations/python.html), [Quarto/Pages](https://quarto.org/docs/publishing/github-pages.html) e [workflow de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+
+## Publicação verificada do M5
+
+O [run 40256849352](https://github.com/talesgomes27/sherlock-document-search/actions/runs/40256849352) concluiu build e deploy do commit `b55ff7027641d3e4421cc95ca919f9c6626070a1`. A página pública respondeu HTTP 200; os 21 arquivos publicados conferiram com os hashes do build, assim como os 50 hashes de entrada. As quatro tabelas foram verificadas contra os JSONs aprovados e a apresentação foi inspecionada no navegador.
+
+A evidência está em [publication_validation.json](../reports/m5/publication_validation.json) e na [captura da publicação](../reports/m5/publication.png). A suíte local passou com 115 testes, sem ignorados; o workflow remoto passou nos nove testes específicos do relatório. Ambos os notebooks e os arquivos congelados permanecem intactos. O commit que acrescenta esta evidência altera apenas documentação e não dispara novo deploy.
