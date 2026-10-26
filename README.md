@@ -39,7 +39,7 @@ A busca retorna até cinco parágrafos com referências e contagem de ocorrênci
 
 **Revisão concluída:** o autor aprovou as dez consultas de desenvolvimento e as vinte finais no chat. Os JSON registram `review_status: approved`; a [lista completa](docs/queries.md) apresenta as consultas e referências. Os trechos dos livros permanecem fora do Git; as propostas versionadas contêm apenas consultas, referências e justificativas.
 
-A suíte atual tem **102 testes**, incluindo preparação, busca, CLI, avaliação, integração real e integridade do código embutido no notebook. As vinte consultas finais foram avaliadas somente após o congelamento do M3, conforme a seção seguinte.
+A suíte atual tem **106 testes**, incluindo preparação, busca, CLI, avaliação, integração real e integridade do código embutido no notebook. As vinte consultas finais foram avaliadas somente após o congelamento do M3, conforme a seção seguinte.
 
 ## TF-IDF e desenvolvimento — M3
 
@@ -80,6 +80,14 @@ uv run python -m sherlock_search.v2_development --output reports/v2/development.
 ```
 
 No desenvolvimento, as consultas positivas com referência conhecida no top 5 foram: literal 9/27, TF-IDF 10/27 e BM25 12/27. TF-IDF e BM25 retornaram trechos nas nove negativas. No novo teste congelado, literal ficou em 6/18, TF-IDF em 10/18 e BM25 em 12/18, com 0/6, 6/6 e 6/6 negativas com retorno, respectivamente. BM25 foi avaliado como ranking; a ausência de resposta permanece sem solução. Estes números não devem ser comparados diretamente aos percentuais do teste v1, que usa outras consultas.
+
+### Notebook v2 e diagnóstico de ausência de resposta
+
+[Notebook v2 para importar no Kaggle](notebooks/sherlock_document_search_v2.ipynb) · [Instruções e validação](docs/kaggle-notebook-v2.md) · [Diagnóstico das seis negativas](docs/v2-no-answer-analysis.md)
+
+O arquivo próprio da v2 inclui os três métodos, duas figuras, as 24 consultas e tabelas de IDs/scores nas negativas. O código está embutido, sem clonagem do projeto, e reproduziu o relatório congelado byte a byte em kernel local limpo. A execução real no Kaggle ainda não foi conferida. O notebook v1 permanece intacto.
+
+TF-IDF e BM25 ordenam correspondência lexical sem verificar a presença do detalhe solicitado. Melhorias de abstenção foram analisadas como propostas para outro ciclo, com novo teste independente; nenhum parâmetro foi alterado nesta entrega.
 
 ## Entregas do plano
 

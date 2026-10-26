@@ -223,3 +223,18 @@ Verificações da entrega: 102 testes passaram no código-fonte e no wheel, com 
 Os cinco gates de implementação desta extensão foram cumpridos: núcleo testado, integração com corpus e avaliador, figura/JSON inspecionados, documentação de decisões e reprodução, revisão independente e build/instalação. O aceite dos rótulos veio do autor; conclusão técnica não significa aprovação final da entrega pelo autor. A publicação do código continua na branch v2, com a referência v1 preservada.
 
 O notebook Kaggle v1, seus resultados e gráficos foram preservados. Uma integração dos resultados v2 em novo notebook, Quarto ou dashboard ainda não foi executada. A validação ocorreu em Linux local; não se executou a v2 no Kaggle nem em Windows/macOS. Não foram introduzidos embeddings, geração de respostas ou serviços de busca hospedados.
+
+
+## Notebook Kaggle próprio da v2 e diagnóstico das negativas
+
+O autor aprovou a v2 e autorizou um notebook próprio com três métodos, gráficos e limitações, preservando a v1. Também pediu análise do retorno de TF-IDF e BM25 nas perguntas sem resposta. Condução contínua no arquétipo A; não foi autorizada ou implementada uma v3 de modelos nesta etapa.
+
+Arquivos novos: notebook `notebooks/sherlock_document_search_v2.ipynb`, gerador `scripts/build_kaggle_v2_bundle.py`, validador `scripts/validate_notebook_v2.py`, quatro testes de bundle, documentação de importação e diagnóstico. O builder incorpora 51 entradas: 48 ativos congelados, freeze, README mínimo e relatório de referência. Usa a cópia pública das consultas para restaurar o caminho esperado pelo avaliador; nenhum TXT ou documento local com trechos é incluído. V1, seus auxiliares e os 48 arquivos v2 permanecem inalterados.
+
+Os testes do builder falharam inicialmente pela ausência do módulo e passaram após implementação. Cobrem determinismo, hashes, correspondência com o payload real do notebook, proteção de caminhos, reprodução sem o holdout local e escrita exclusiva no notebook v2. A suíte completa passou com 106 testes, incluindo dados reais e sem ignorados. Revisão independente do notebook, bundle e limites científicos não encontrou achados acionáveis.
+
+O notebook executou oito células em kernel local novo, sem erro; gerou duas figuras inline e quatro arquivos PNG/SVG. Seu relatório reproduziu byte a byte o final aprovado, SHA-256 `4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b`. Os gráficos foram inspecionados visualmente. A única mudança posterior de metadata recolhe a célula do payload; fontes e outputs foram preservados. Evidência própria em `reports/v2/notebook_validation.json`; figuras em `reports/v2/notebook_figures/`. O notebook v1 continua byte-idêntico e os verificadores confirmam 35 ativos v1 e 48 v2.
+
+O diagnóstico foi delegado a modelo mais leve: leitura de fontes, resultados pré-computados e inspeção descritiva dos seis top 1s. Não foram feitos fit, novas buscas, grades ou mudanças de rótulos/modelos. Palavras compartilhadas geram scores positivos com corte zero mesmo sem evidência do atributo; o relatório distingue busca de textos relacionados de suficiência de evidência. Propõe rótulos de pares pergunta–trecho e decisão de abstenção em outro desenvolvimento/teste, sem declarar melhoria já validada. Os testes finais v1/v2 já foram vistos e não são independentes para escolher uma próxima configuração.
+
+Gates: integração por reprodução congelada, figuras e tabelas verificadas, documentação de execução e limites, testes e revisão independente concluídos. A entrega local foi validada; execução ou publicação real da v2 no Kaggle não foi conferida. O autor fará a importação na plataforma conforme o fluxo já acordado. Quarto, dashboard e novos modelos não foram iniciados.

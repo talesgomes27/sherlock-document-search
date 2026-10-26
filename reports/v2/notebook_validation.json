@@ -1,0 +1,39 @@
+{
+  "environment": "local_clean_kernel_not_kaggle",
+  "study": "v2",
+  "code_cells_executed": 8,
+  "cell_errors": 0,
+  "inline_charts": 2,
+  "figure_files": [
+    "corpus_size.png",
+    "corpus_size.svg",
+    "final_comparison.png",
+    "final_comparison.svg"
+  ],
+  "source_cells_unchanged": true,
+  "report_byte_identical": true,
+  "notebook_sha256": "037289155de7e59777261c5ec83cf3580c0924b3d480f6485feaf76d491052e1",
+  "final_report_sha256": "4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b",
+  "versions": {
+    "python": "3.11.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "validated_on": "2026-10-25",
+  "kaggle_execution_verified": false,
+  "presentation_metadata": "Embedded payload source hidden; cell sources and execution outputs unchanged.",
+  "tools": {
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "uv": "0.13.5",
+    "matplotlib": "3.11.2"
+  },
+  "source_tests": {
+    "passed": 106,
+    "skipped": 0
+  },
+  "v1_preserved_files": 35,
+  "v2_frozen_files": 48
+}
