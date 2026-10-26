@@ -176,3 +176,78 @@ Foram acrescentados dois gráficos: palavras retidas por obra e comparação dos
 Validação da versão entregue: 65 testes passaram; oito células de código executaram em kernel local limpo, sem erros; dois gráficos inline e quatro arquivos de figura foram conferidos. O relatório reproduzido permaneceu idêntico byte a byte ao original, SHA-256 `92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324`. Os quinze hashes congelados continuam válidos. Figuras foram inspecionadas visualmente. Uma revisão independente do empacotamento e da interpretação científica não encontrou achados acionáveis.
 
 A nova evidência substitui a validação local anterior em `reports/m4_notebook_validation.json`. A execução e a publicação atuais no Kaggle não foram conferidas por URL; não se concluiu esse critério do M4. M5–M6 não foram iniciados. As figuras são apresentação dos resultados existentes, sem novos ajustes de parâmetros ou rótulos.
+
+
+## V2 — BM25 e novo conjunto: execução autorizada
+
+O autor autorizou iniciar a v2 em 25 de outubro de 2026, preservando a v1 e seus resultados, registrando o plano e delegando quando benéfico. A extensão segue o [plano v2](docs/v2-plan.md), arquétipo A, sem iniciar M5–M6. A primeira entrega não inclui executar o novo teste nem atribuir aprovação humana aos novos rótulos.
+
+Preservação: tag local `v1-baseline` no commit `8f17985`; branch `codex/search-v2-bm25`; manifesto `evaluation/v2/v1_preservation.json` com SHA-256 de 35 ativos v1 de código, testes, avaliação, relatórios, notebook e ambiente. README e registro de estado podem evoluir; a tag preserva a árvore completa anterior.
+
+O protocolo foi registrado antes das métricas v2: 36 propostas de desenvolvimento (27/9) e 24 reservadas (18/6), fontes de referência em regiões distintas, múltiplas referências conhecidas e separação de intenções. A reserva é procedural, local e ignorada pelo Git. Um curador separado produz o teste sem executar métodos. O implementador não abre suas consultas, rótulos ou trechos.
+
+Núcleo BM25 implementado por subagente com testes antes da implementação. Primeira execução dos testes falhou por ausência do módulo; 16 testes sintéticos passaram após implementar. Sem dependências novas nem alterações nos quinze ativos M3. Comparador de desenvolvimento separado: seus oito testes iniciais também falharam antes de existir o módulo e passaram depois. A revisão independente encontrou desempate vulnerável a arredondamento e evidência de negativas sem tipo estrito; ambos foram corrigidos e acrescentados testes, totalizando onze no comparador. A revisão das correções não encontrou novos achados. O revisor também comparou 300 corpora sintéticos com fórmula independente, sem divergência relevante.
+
+Revisão metodológica anterior às métricas: os curadores inicialmente criaram negativas com premissas refutadas. Essa convenção penalizaria trechos úteis que corrigem a pergunta. As propostas foram reabertas para substituição por detalhes plausíveis não informados, sem usar resultados de busca. A incerteza da anotação permanece explícita e a aprovação humana está pendente.
+
+Estado deste registro de suporte: regras e código preparados antes da primeira comparação real v2; curadoria e execução exploratória de desenvolvimento em andamento. O candidato de corte não altera a configuração distribuída. Nenhuma consulta do teste v2 foi executada.
+
+
+### V2 — aceite, configuração e congelamento antes do teste
+
+O autor respondeu “aprovado” à solicitação explícita de revisão das 36 consultas de desenvolvimento e 24 reservadas. Alteraram-se exclusivamente os status de revisão; a cópia privada das propostas finais foi preservada. Registrou-se o aceite global do chat, sem afirmar revisão humana individual documentada.
+
+No desenvolvimento aprovado, literal teve 9/27 hits conhecidos e 0/9 negativas com retorno; TF-IDF 10/27 e 9/9; BM25 12/27 e 9/9. A regra pré-registrada produziu corte 32, com 0/27 hits e 3/9 negativas com retorno. Esse candidato foi rejeitado explicitamente por inviabilidade funcional, sem alterar ou ocultar a regra inicial. A decisão anterior ao teste mantém k1=1,2, b=0,75 e min_score=0,0 para avaliar BM25 como ranking, sem resolver abstenção. A análise por tipo está em docs/v2-development.md.
+
+O novo avaliador final e dez testes sintéticos foram implementados antes de abrir semanticamente o teste. Revisão independente confirmou os gates de integridade, aprovação, composição, runtime, fontes importadas e saídas; nenhum achado acionável. Suíte completa com 102 testes passou antes do congelamento. O avaliador não oferece grade, limiar ou seleção de consultas; usa os três métodos fixos. A tag e os 35 ativos v1 permanecem intactos. O freeze v2 registra também a decisão, o desenvolvimento aprovado e o hash do teste local, conferido como bytes opacos nesta etapa.
+
+Este registro e o código serão versionados antes da primeira execução final v2; os resultados ainda não foram calculados neste ponto. A execução subsequente usará exclusivamente o snapshot fixo e não orientará novos ajustes neste ciclo.
+
+
+### V2 — resultado final e entrega
+
+O suporte foi versionado em `14a0913` antes da primeira execução das 24 finais. O snapshot v2 contém 48 arquivos por hash, incluindo código, ambiente, decisão, desenvolvimento aprovado, fontes v1 e bytes do teste reservado. A execução final usou apenas literal e TF-IDF v1 e BM25 fixo (min_score=0,0), sem grade ou seleção. Depois, o wheel instalado reproduziu o relatório byte a byte, sem alterações.
+
+| Método no mesmo novo teste | Consultas positivas com referência no top 5 | Negativas com retorno |
+|---|---:|---:|
+| Literal v1 | 6/18 | 0/6 |
+| TF-IDF v1 | 10/18 | 6/6 |
+| BM25 | 12/18 | 6/6 |
+
+O ganho observado é de recuperação conhecida e ranking no conjunto curado; abstenção não foi resolvida. A média balanceada não favorece BM25 em relação ao literal neste conjunto. Não se apresentou superioridade geral nem desempenho em documentos de clientes. Não houve ajuste após conhecer o teste.
+
+Após concluir, o curador publicou somente metadados em `evaluation/v2/final.json` e uma tabela sem trechos em `docs/v2-final-queries.md`. O JSON público é byte-idêntico ao privado aprovado; este foi mantido junto da proposta original. Os rótulos finais agora são públicos e não podem ser usados como novo teste independente de futuras melhorias. Os estados de não execução dos manifests são históricos do congelamento e permaneceram intactos.
+
+Verificações da entrega: 102 testes passaram no código-fonte e no wheel, com o corpus real e sem testes ignorados; o avaliador foi revisado independentemente antes da execução real; corpus, runtime e fontes importadas conferidos antes/depois; 35 ativos v1 e 15 hashes M3 intactos; 48 arquivos v2 continuam iguais ao freeze. Relatório final SHA-256 `4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b`. Figuras PNG/SVG geradas do relatório, sem novas buscas, e inspecionadas visualmente. Evidência em `reports/v2/validation.json`.
+
+Os cinco gates de implementação desta extensão foram cumpridos: núcleo testado, integração com corpus e avaliador, figura/JSON inspecionados, documentação de decisões e reprodução, revisão independente e build/instalação. O aceite dos rótulos veio do autor; conclusão técnica não significa aprovação final da entrega pelo autor. A publicação do código continua na branch v2, com a referência v1 preservada.
+
+O notebook Kaggle v1, seus resultados e gráficos foram preservados. Uma integração dos resultados v2 em novo notebook, Quarto ou dashboard ainda não foi executada. A validação ocorreu em Linux local; não se executou a v2 no Kaggle nem em Windows/macOS. Não foram introduzidos embeddings, geração de respostas ou serviços de busca hospedados.
+
+
+## Notebook Kaggle próprio da v2 e diagnóstico das negativas
+
+O autor aprovou a v2 e autorizou um notebook próprio com três métodos, gráficos e limitações, preservando a v1. Também pediu análise do retorno de TF-IDF e BM25 nas perguntas sem resposta. Condução contínua no arquétipo A; não foi autorizada ou implementada uma v3 de modelos nesta etapa.
+
+Arquivos novos: notebook `notebooks/sherlock_document_search_v2.ipynb`, gerador `scripts/build_kaggle_v2_bundle.py`, validador `scripts/validate_notebook_v2.py`, quatro testes de bundle, documentação de importação e diagnóstico. O builder incorpora 51 entradas: 48 ativos congelados, freeze, README mínimo e relatório de referência. Usa a cópia pública das consultas para restaurar o caminho esperado pelo avaliador; nenhum TXT ou documento local com trechos é incluído. V1, seus auxiliares e os 48 arquivos v2 permanecem inalterados.
+
+Os testes do builder falharam inicialmente pela ausência do módulo e passaram após implementação. Cobrem determinismo, hashes, correspondência com o payload real do notebook, proteção de caminhos, reprodução sem o holdout local e escrita exclusiva no notebook v2. A suíte completa passou com 106 testes, incluindo dados reais e sem ignorados. Revisão independente do notebook, bundle e limites científicos não encontrou achados acionáveis.
+
+O notebook executou oito células em kernel local novo, sem erro; gerou duas figuras inline e quatro arquivos PNG/SVG. Seu relatório reproduziu byte a byte o final aprovado, SHA-256 `4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b`. Os gráficos foram inspecionados visualmente. A única mudança posterior de metadata recolhe a célula do payload; fontes e outputs foram preservados. Evidência própria em `reports/v2/notebook_validation.json`; figuras em `reports/v2/notebook_figures/`. O notebook v1 continua byte-idêntico e os verificadores confirmam 35 ativos v1 e 48 v2.
+
+O diagnóstico foi delegado a modelo mais leve: leitura de fontes, resultados pré-computados e inspeção descritiva dos seis top 1s. Não foram feitos fit, novas buscas, grades ou mudanças de rótulos/modelos. Palavras compartilhadas geram scores positivos com corte zero mesmo sem evidência do atributo; o relatório distingue busca de textos relacionados de suficiência de evidência. Propõe rótulos de pares pergunta–trecho e decisão de abstenção em outro desenvolvimento/teste, sem declarar melhoria já validada. Os testes finais v1/v2 já foram vistos e não são independentes para escolher uma próxima configuração.
+
+Gates: integração por reprodução congelada, figuras e tabelas verificadas, documentação de execução e limites, testes e revisão independente concluídos. A entrega local foi validada; execução ou publicação real da v2 no Kaggle não foi conferida. O autor fará a importação na plataforma conforme o fluxo já acordado. Quarto, dashboard e novos modelos não foram iniciados.
+
+
+## Consolidação da apresentação e preparação do PR v2 → main
+
+Em 25 de outubro de 2026, o autor aprovou reorganizar o README e preparar o PR da v2 para main, preservando os dois notebooks, resultados e arquivos congelados. A autorização cobre commit, publicação da branch e abertura do PR; não inclui executar o merge ou iniciar Quarto, dashboard ou novos modelos.
+
+O README foi reorganizado como entrada única do projeto: problema e três métodos, notebook v2 como ponto de entrada, comparação no mesmo teste v2, execução local e verificação, dados/proveniência e histórico separado da v1. A cronologia detalhada continua nos documentos existentes. O histórico identifica tamanhos e métodos dos conjuntos, sem combinar métricas de avaliações diferentes. O notebook v1 e seus resultados seguem acessíveis por seus caminhos originais e pela tag v1-baseline.
+
+A primeira redação foi delegada a modelo mais leve e revisada pelo agente principal, com conferência dos números, denominadores, comandos e links locais. A revisão substituiu a tabela histórica de scores por uma identificação explícita dos conjuntos, eliminando a possibilidade de confundir resultados de testes distintos. Não foram criados testes artificiais para a alteração documental.
+
+Verificações desta preparação: 106 testes passaram novamente com o corpus real, sem ignorados; os verificadores confirmaram os 35 ativos v1 e 48 arquivos do congelamento v2; os dois notebooks conferem com seus hashes de validação; os payloads dos dois notebooks conferiram antes da publicação. A comparação remota identificou main em 8f17985 e v2 cinco commits à frente antes desta edição, sem divergência; não havia PR aberto dessa branch para main na consulta realizada.
+
+O PR integra a branch completa codex/search-v2-bm25 em main: BM25, avaliação v2, notebook próprio, diagnóstico e documentação consolidada. A descrição registra validação local e limitações, sem alegar CI ou execução real no Kaggle. O merge fica pendente de autorização específica. Nenhum arquivo além de README.md e deste registro foi alterado nesta consolidação.

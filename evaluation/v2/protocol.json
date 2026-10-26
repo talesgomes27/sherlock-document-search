@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "development": {
+    "queries": 36,
+    "answerable": 27,
+    "unanswerable": 9,
+    "query_types": {
+      "exact": 9,
+      "paraphrase": 9,
+      "context": 9,
+      "unanswerable": 9
+    }
+  },
+  "final": {
+    "queries": 24,
+    "answerable": 18,
+    "unanswerable": 6,
+    "query_types": {
+      "exact": 6,
+      "paraphrase": 6,
+      "context": 6,
+      "unanswerable": 6
+    }
+  },
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "thresholds": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "selection_rule": "maximize_balanced_utility_then_minimize_false_positive_rate_then_minimize_threshold",
+  "final_queries_executed": false
+}

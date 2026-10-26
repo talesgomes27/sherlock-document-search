@@ -1,0 +1,27 @@
+{
+  "split": "v2_final",
+  "status": "approved_not_evaluated",
+  "query_count": 24,
+  "positive": 18,
+  "negative": 6,
+  "type_counts": {
+    "exact": 6,
+    "context": 6,
+    "paraphrase": 6,
+    "unanswerable": 6
+  },
+  "json_path": "data/processed/v2_holdout/final.json",
+  "review_path": "data/processed/v2_holdout/review.md",
+  "json_sha256": "ed52895e7b760b1ceab89857881624d070455669327677e2c26d1b1c96c5aa61",
+  "review_sha256": "e733faaae9b724636d63ceb6bb43f58f702dceb474d25cea2fa20b217fe53973",
+  "source_region": [
+    0.6,
+    0.85
+  ],
+  "intent_overlap_checked_v1": true,
+  "final_queries_executed": false,
+  "intent_overlap_checked_v2development": true,
+  "v2development_sha256": "19f8ff3275c97c4d7b136d85d96c57015a1611c53784275f5b08942ace4f40bc",
+  "approval_source": "author_chat_2026-10-25",
+  "scope": "pre_evaluation_v2_holdout_manifest"
+}
