@@ -238,3 +238,16 @@ O notebook executou oito células em kernel local novo, sem erro; gerou duas fig
 O diagnóstico foi delegado a modelo mais leve: leitura de fontes, resultados pré-computados e inspeção descritiva dos seis top 1s. Não foram feitos fit, novas buscas, grades ou mudanças de rótulos/modelos. Palavras compartilhadas geram scores positivos com corte zero mesmo sem evidência do atributo; o relatório distingue busca de textos relacionados de suficiência de evidência. Propõe rótulos de pares pergunta–trecho e decisão de abstenção em outro desenvolvimento/teste, sem declarar melhoria já validada. Os testes finais v1/v2 já foram vistos e não são independentes para escolher uma próxima configuração.
 
 Gates: integração por reprodução congelada, figuras e tabelas verificadas, documentação de execução e limites, testes e revisão independente concluídos. A entrega local foi validada; execução ou publicação real da v2 no Kaggle não foi conferida. O autor fará a importação na plataforma conforme o fluxo já acordado. Quarto, dashboard e novos modelos não foram iniciados.
+
+
+## Consolidação da apresentação e preparação do PR v2 → main
+
+Em 25 de outubro de 2026, o autor aprovou reorganizar o README e preparar o PR da v2 para main, preservando os dois notebooks, resultados e arquivos congelados. A autorização cobre commit, publicação da branch e abertura do PR; não inclui executar o merge ou iniciar Quarto, dashboard ou novos modelos.
+
+O README foi reorganizado como entrada única do projeto: problema e três métodos, notebook v2 como ponto de entrada, comparação no mesmo teste v2, execução local e verificação, dados/proveniência e histórico separado da v1. A cronologia detalhada continua nos documentos existentes. O histórico identifica tamanhos e métodos dos conjuntos, sem combinar métricas de avaliações diferentes. O notebook v1 e seus resultados seguem acessíveis por seus caminhos originais e pela tag v1-baseline.
+
+A primeira redação foi delegada a modelo mais leve e revisada pelo agente principal, com conferência dos números, denominadores, comandos e links locais. A revisão substituiu a tabela histórica de scores por uma identificação explícita dos conjuntos, eliminando a possibilidade de confundir resultados de testes distintos. Não foram criados testes artificiais para a alteração documental.
+
+Verificações desta preparação: 106 testes passaram novamente com o corpus real, sem ignorados; os verificadores confirmaram os 35 ativos v1 e 48 arquivos do congelamento v2; os dois notebooks conferem com seus hashes de validação; os payloads dos dois notebooks conferiram antes da publicação. A comparação remota identificou main em 8f17985 e v2 cinco commits à frente antes desta edição, sem divergência; não havia PR aberto dessa branch para main na consulta realizada.
+
+O PR integra a branch completa codex/search-v2-bm25 em main: BM25, avaliação v2, notebook próprio, diagnóstico e documentação consolidada. A descrição registra validação local e limitações, sem alegar CI ou execução real no Kaggle. O merge fica pendente de autorização específica. Nenhum arquivo além de README.md e deste registro foi alterado nesta consolidação.
