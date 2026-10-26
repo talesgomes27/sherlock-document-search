@@ -176,3 +176,18 @@ Foram acrescentados dois gráficos: palavras retidas por obra e comparação dos
 Validação da versão entregue: 65 testes passaram; oito células de código executaram em kernel local limpo, sem erros; dois gráficos inline e quatro arquivos de figura foram conferidos. O relatório reproduzido permaneceu idêntico byte a byte ao original, SHA-256 `92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324`. Os quinze hashes congelados continuam válidos. Figuras foram inspecionadas visualmente. Uma revisão independente do empacotamento e da interpretação científica não encontrou achados acionáveis.
 
 A nova evidência substitui a validação local anterior em `reports/m4_notebook_validation.json`. A execução e a publicação atuais no Kaggle não foram conferidas por URL; não se concluiu esse critério do M4. M5–M6 não foram iniciados. As figuras são apresentação dos resultados existentes, sem novos ajustes de parâmetros ou rótulos.
+
+
+## V2 — BM25 e novo conjunto: execução autorizada
+
+O autor autorizou iniciar a v2 em 25 de outubro de 2026, preservando a v1 e seus resultados, registrando o plano e delegando quando benéfico. A extensão segue o [plano v2](docs/v2-plan.md), arquétipo A, sem iniciar M5–M6. A primeira entrega não inclui executar o novo teste nem atribuir aprovação humana aos novos rótulos.
+
+Preservação: tag local `v1-baseline` no commit `8f17985`; branch `codex/search-v2-bm25`; manifesto `evaluation/v2/v1_preservation.json` com SHA-256 de 35 ativos v1 de código, testes, avaliação, relatórios, notebook e ambiente. README e registro de estado podem evoluir; a tag preserva a árvore completa anterior.
+
+O protocolo foi registrado antes das métricas v2: 36 propostas de desenvolvimento (27/9) e 24 reservadas (18/6), fontes de referência em regiões distintas, múltiplas referências conhecidas e separação de intenções. A reserva é procedural, local e ignorada pelo Git. Um curador separado produz o teste sem executar métodos. O implementador não abre suas consultas, rótulos ou trechos.
+
+Núcleo BM25 implementado por subagente com testes antes da implementação. Primeira execução dos testes falhou por ausência do módulo; 16 testes sintéticos passaram após implementar. Sem dependências novas nem alterações nos quinze ativos M3. Comparador de desenvolvimento separado: seus oito testes iniciais também falharam antes de existir o módulo e passaram depois. A revisão independente encontrou desempate vulnerável a arredondamento e evidência de negativas sem tipo estrito; ambos foram corrigidos e acrescentados testes, totalizando onze no comparador. A revisão das correções não encontrou novos achados. O revisor também comparou 300 corpora sintéticos com fórmula independente, sem divergência relevante.
+
+Revisão metodológica anterior às métricas: os curadores inicialmente criaram negativas com premissas refutadas. Essa convenção penalizaria trechos úteis que corrigem a pergunta. As propostas foram reabertas para substituição por detalhes plausíveis não informados, sem usar resultados de busca. A incerteza da anotação permanece explícita e a aprovação humana está pendente.
+
+Estado deste registro de suporte: regras e código preparados antes da primeira comparação real v2; curadoria e execução exploratória de desenvolvimento em andamento. O candidato de corte não altera a configuração distribuída. Nenhuma consulta do teste v2 foi executada.

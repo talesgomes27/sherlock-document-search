@@ -1,0 +1,25 @@
+{
+  "split": "v2_final",
+  "status": "proposed_not_evaluated",
+  "query_count": 24,
+  "positive": 18,
+  "negative": 6,
+  "type_counts": {
+    "exact": 6,
+    "context": 6,
+    "paraphrase": 6,
+    "unanswerable": 6
+  },
+  "json_path": "data/processed/v2_holdout/final.proposed.json",
+  "review_path": "data/processed/v2_holdout/review.md",
+  "json_sha256": "275b0d4b1b107851bdfd90cc17e88385abbb494e331ef982a0badbac2b85f8d6",
+  "review_sha256": "3ce3814e27bf70da7417f8b77e6378c51a637f23040eb0cdbbb96684d4be4938",
+  "source_region": [
+    0.6,
+    0.85
+  ],
+  "intent_overlap_checked_v1": true,
+  "final_queries_executed": false,
+  "intent_overlap_checked_v2development": true,
+  "v2development_sha256": "e658cd4bec42e631e35c393f85408d6880d2fd4c56545aaa9868055d0d78b31f"
+}

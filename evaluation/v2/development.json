@@ -1,0 +1,687 @@
+[
+  {
+    "id": "v2-dev-01",
+    "query": "Trichinopoly cigar",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:1215-1224"
+    ],
+    "rationale": "Holmes inclui o charuto Trichinopoly entre as características que atribui ao assassino.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-02",
+    "query": "How did Holmes collect a small sample from the floor during his examination of the murder room?",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:1170-1188"
+    ],
+    "rationale": "Durante a inspeção, Holmes recolhe um montículo de pó cinzento e o guarda em um envelope.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-03",
+    "query": "What fell out when the body was lifted, and what did Lestrade infer from it?",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:1053-1056",
+      "a_study_in_scarlet.txt:1058-1058",
+      "a_study_in_scarlet.txt:1060-1062"
+    ],
+    "rationale": "Um anel cai durante a remoção do corpo; Lestrade o interpreta como aliança feminina e conclui que uma mulher esteve ali. A descrição confirma ouro simples, sem validar a conclusão sobre presença feminina.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-04",
+    "query": "Sidney Johnson",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:1642-1648"
+    ],
+    "rationale": "Mycroft identifica Sidney Johnson como funcionário sênior e desenhista que possui a outra chave.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-05",
+    "query": "Why could the government not simply replace Mycroft with its individual departmental specialists?",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:1444-1463"
+    ],
+    "rationale": "Holmes explica que Mycroft combina informações de vários departamentos e avalia suas interações, tornando-se indispensável às decisões nacionais.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-06",
+    "query": "Why did the missing Woolwich papers require Sherlock to investigate rather than Mycroft to solve everything from his chair?",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:1596-1604",
+      "his_last_bow.txt:1608-1613"
+    ],
+    "rationale": "Três dos dez documentos, os mais essenciais, continuam desaparecidos; Mycroft pode opinar com os dados em mãos, mas não faz diligências e interrogatórios de campo.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-07",
+    "query": "Westhouse & Marbank",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:2546-2547"
+    ],
+    "rationale": "O nome literal identifica a firma de importação de vinhos para a qual Windibank viaja.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-08",
+    "query": "What about Mary Sutherland’s footwear suggested she had left home in haste?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:2614-2622"
+    ],
+    "rationale": "Holmes observa botas diferentes entre si e abotoadas de forma incompleta e irregular; disso infere pressa.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-09",
+    "query": "How did Hosmer Angel disappear on the way to the wedding, and why did Mary interpret it as an unforeseen separation rather than abandonment?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:2471-2481",
+      "the_adventures_of_sherlock_holmes.txt:2486-2491"
+    ],
+    "rationale": "Angel entra em outro carro e não aparece ao chegar à igreja. Mary recorda que ele exigira fidelidade mesmo se algum imprevisto os separasse e interpreta o desaparecimento à luz desse aviso.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-10",
+    "query": "Mazarin stone",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:2253-2256"
+    ],
+    "rationale": "Holmes identifica a joia desaparecida como a grande pedra amarela Mazarin.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-11",
+    "query": "Why did Holmes hold back from arresting Count Sylvius even though he said he could do so?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:2243-2243",
+      "the_case-book_of_sherlock_holmes.txt:2245-2245",
+      "the_case-book_of_sherlock_holmes.txt:2247-2247",
+      "the_case-book_of_sherlock_holmes.txt:2249-2249",
+      "the_case-book_of_sherlock_holmes.txt:2253-2256"
+    ],
+    "rationale": "Holmes pode prender o conde, mas ainda não sabe onde está o diamante e prioriza recuperar a pedra.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-12",
+    "query": "How did the figure by Holmes’s window serve his plan against the watchers across the street?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:2167-2171",
+      "the_case-book_of_sherlock_holmes.txt:2173-2175",
+      "the_case-book_of_sherlock_holmes.txt:2179-2182",
+      "the_case-book_of_sherlock_holmes.txt:2276-2281"
+    ],
+    "rationale": "A réplica de Holmes pode ser vista da rua e mudada de posição para parecer viva. Billy vê vigilantes em frente, e Holmes espera que uma arma de ar comprimido atire na cabeça do boneco.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-13",
+    "query": "Cartwright",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:1769-1771"
+    ],
+    "rationale": "Holmes pede ao gerente o rapaz Cartwright, cuja habilidade conhecera em investigação anterior.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-14",
+    "query": "What prevented Holmes from catching the bearded passenger after the hansom sped away in Regent Street?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:1677-1684"
+    ],
+    "rationale": "Não há outro carro vazio disponível; Holmes tenta perseguir a pé, mas a vantagem do fugitivo e o trânsito fazem o carro desaparecer.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-15",
+    "query": "Why did the watcher’s use of a cab help him shadow Sir Henry, and what weakness did Watson identify in that method?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:1708-1719",
+      "the_hound_of_the_baskervilles.txt:1721-1721",
+      "the_hound_of_the_baskervilles.txt:1723-1723"
+    ],
+    "rationale": "O carro permite atrasar, ultrapassar e acompanhar outro carro sem chamar atenção. Watson observa que o passageiro fica dependente do cocheiro, e Holmes concorda.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-16",
+    "query": "Scotch firs",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:2415-2424"
+    ],
+    "rationale": "Munro situa um pequeno bosque de pinheiros escoceses além do chalé vizinho.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-17",
+    "query": "What did Grant Munro do for a living, and how much annual rent did he pay for the Norbury villa?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:2367-2377"
+    ],
+    "rationale": "Munro se apresenta como comerciante de lúpulo e diz que a casa custava oitenta libras de aluguel por ano.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-18",
+    "query": "Why did Munro distrust Effie’s explanation that she had merely needed fresh air during the night?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:2469-2491",
+      "the_memoirs_of_sherlock_holmes.txt:2514-2520",
+      "the_memoirs_of_sherlock_holmes.txt:2522-2532"
+    ],
+    "rationale": "Munro observa saída furtiva às três da manhã e expressão pálida e ansiosa; ao explicar a necessidade de ar, Effie evita olhá-lo e fala de modo diferente. A pergunta trata da percepção de Munro, não exige resolver o segredo.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-19",
+    "query": "John Vincent Harden",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:3250-3268"
+    ],
+    "rationale": "Watson registra que Holmes estava ocupado com a perseguição ao milionário do tabaco John Vincent Harden quando Violet Smith chegou.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-20",
+    "query": "What visible wear made Holmes infer that Violet Smith rode a bicycle frequently?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:3270-3271",
+      "the_return_of_sherlock_holmes.txt:3273-3275"
+    ],
+    "rationale": "O desgaste lateral na sola, provocado pela borda do pedal, acompanha a dedução de que a visitante pedalava muito.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-21",
+    "query": "Why was Carruthers’s music-teaching offer attractive to Violet Smith despite her reluctance to leave her mother?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:3306-3324",
+      "the_return_of_sherlock_holmes.txt:3342-3360"
+    ],
+    "rationale": "Violet e a mãe estavam pobres. Carruthers ofereceu cem libras anuais, consideradas excelente remuneração, e permitiu visitas à mãe nos fins de semana.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-22",
+    "query": "Lal Chowdar",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:989-1005"
+    ],
+    "rationale": "O relato identifica Lal Chowdar como o criado que participa da ocultação do corpo de Morstan.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-23",
+    "query": "How did Bartholomew locate a sealed room that ordinary searches of the grounds had missed?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:1106-1121"
+    ],
+    "rationale": "Bartholomew compara a altura externa com as alturas internas, percebe quatro pés sem explicação no topo e abre o teto para achar o sótão e o baú.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-24",
+    "query": "What fears led Major Sholto to hide Morstan’s body instead of reporting the death?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:979-987",
+      "the_sign_of_the_four.txt:989-1005"
+    ],
+    "rationale": "Sholto teme acusação de homicídio e exposição do tesouro; a interpretação culpabilizadora do próprio criado o faz descrer de convencer um júri e aceitar a ocultação.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-25",
+    "query": "Rudge-Whitworth",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:1626-1630"
+    ],
+    "rationale": "A bicicleta retirada dos arbustos é descrita como uma Rudge-Whitworth bastante usada.",
+    "query_type": "exact",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-26",
+    "query": "Why did Holmes think the mysterious card had been written somewhere other than the study?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:1553-1554",
+      "the_valley_of _fear.txt:1558-1562"
+    ],
+    "rationale": "Holmes compara a tinta do cartão com a da escrivaninha e encontra cores diferentes; também contrapõe traço de pena grossa às penas finas disponíveis na sala.",
+    "query_type": "paraphrase",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-27",
+    "query": "Why did Holmes regard the plaster on Douglas’s jaw as a possible sign of apprehension before the attack?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:1529-1532",
+      "the_valley_of _fear.txt:1534-1534",
+      "the_valley_of _fear.txt:1536-1536",
+      "the_valley_of _fear.txt:1538-1538",
+      "the_valley_of _fear.txt:1540-1543"
+    ],
+    "rationale": "Ames diz que o curativo cobre corte feito ao barbear na véspera e que Douglas não se cortava havia muito tempo. Holmes considera que isso pode indicar nervosismo e receio de perigo, admitindo coincidência.",
+    "query_type": "context",
+    "review_status": "proposed"
+  },
+  {
+    "id": "v2-dev-28",
+    "query": "Which jeweller made the plain gold wedding ring that fell when Drebber’s body was lifted?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A aliança é efetivamente encontrada e descrita como ouro simples; as passagens sobre sua circulação e ligação com Lucy não identificam o joalheiro fabricante.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "\\bring\\b|jewell|jewel",
+      "inspected_mention_ids": [
+        "a_study_in_scarlet.txt:1053-1056",
+        "a_study_in_scarlet.txt:1058-1058",
+        "a_study_in_scarlet.txt:1071-1080",
+        "a_study_in_scarlet.txt:1306-1314",
+        "a_study_in_scarlet.txt:1504-1514",
+        "a_study_in_scarlet.txt:1579-1581",
+        "a_study_in_scarlet.txt:1588-1592",
+        "a_study_in_scarlet.txt:1597-1598",
+        "a_study_in_scarlet.txt:1610-1625",
+        "a_study_in_scarlet.txt:1667-1670",
+        "a_study_in_scarlet.txt:1689-1697",
+        "a_study_in_scarlet.txt:1699-1699",
+        "a_study_in_scarlet.txt:1701-1702",
+        "a_study_in_scarlet.txt:1722-1724",
+        "a_study_in_scarlet.txt:2067-2088",
+        "a_study_in_scarlet.txt:2144-2151",
+        "a_study_in_scarlet.txt:2507-2526",
+        "a_study_in_scarlet.txt:3983-4003",
+        "a_study_in_scarlet.txt:4198-4207",
+        "a_study_in_scarlet.txt:4413-4424",
+        "a_study_in_scarlet.txt:4426-4444",
+        "a_study_in_scarlet.txt:4483-4485",
+        "a_study_in_scarlet.txt:4487-4491",
+        "a_study_in_scarlet.txt:4606-4621"
+      ],
+      "finding": "A aliança é efetivamente encontrada e descrita como ouro simples; as passagens sobre sua circulação e ligação com Lucy não identificam o joalheiro fabricante.",
+      "possible_ambiguous_answers": "O nome Barraud no inventário é o fabricante do relógio, não da aliança; o anel maçônico no bolso é outro objeto.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Menções a ring, wedding-ring, casamento e joias em A Study in Scarlet, incluindo descoberta, anúncio, disfarce, casamento de Lucy e confissão de Hope; distinguidos campainha, voz e outros sentidos de ring.",
+      "evidence_ids": [
+        "a_study_in_scarlet.txt:1053-1056",
+        "a_study_in_scarlet.txt:1060-1062"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-29",
+    "query": "What was Arthur Cadogan West’s exact annual salary as a clerk at Woolwich Arsenal?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "West é funcionário do Arsenal e sua noiva considera o salário suficiente, mas não informa valor anual exato.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "cadogan|\\bwest\\b|salary|wages",
+      "inspected_mention_ids": [
+        "his_last_bow.txt:1414-1414",
+        "his_last_bow.txt:1416-1416",
+        "his_last_bow.txt:1444-1463",
+        "his_last_bow.txt:1465-1467",
+        "his_last_bow.txt:1486-1487",
+        "his_last_bow.txt:1513-1518",
+        "his_last_bow.txt:1596-1604",
+        "his_last_bow.txt:1650-1650",
+        "his_last_bow.txt:1662-1664",
+        "his_last_bow.txt:1678-1679",
+        "his_last_bow.txt:1703-1709",
+        "his_last_bow.txt:1915-1918",
+        "his_last_bow.txt:1927-1931",
+        "his_last_bow.txt:1952-1953",
+        "his_last_bow.txt:2036-2040",
+        "his_last_bow.txt:2065-2067",
+        "his_last_bow.txt:2089-2092",
+        "his_last_bow.txt:2097-2098",
+        "his_last_bow.txt:2100-2102",
+        "his_last_bow.txt:2148-2157",
+        "his_last_bow.txt:2165-2179",
+        "his_last_bow.txt:2183-2196",
+        "his_last_bow.txt:2256-2259",
+        "his_last_bow.txt:2263-2268",
+        "his_last_bow.txt:2333-2339",
+        "his_last_bow.txt:2535-2541",
+        "his_last_bow.txt:2546-2559",
+        "his_last_bow.txt:2564-2565",
+        "his_last_bow.txt:2574-2596",
+        "his_last_bow.txt:2719-2722",
+        "his_last_bow.txt:2724-2749",
+        "his_last_bow.txt:3592-3601",
+        "his_last_bow.txt:6155-6169",
+        "his_last_bow.txt:6348-6349"
+      ],
+      "finding": "West é funcionário do Arsenal e sua noiva considera o salário suficiente, mas não informa valor anual exato.",
+      "possible_ambiguous_answers": "Algumas centenas economizadas são patrimônio acumulado; a remuneração de outro personagem em outro conto não determina o salário de West.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Menções a Cadogan/West e todas as passagens de salário/remuneração em His Last Bow; lidos perfil funcional e depoimento da noiva sobre finanças.",
+      "evidence_ids": [
+        "his_last_bow.txt:1486-1487",
+        "his_last_bow.txt:1952-1953"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-30",
+    "query": "What was the street number of Westhouse & Marbank’s office in Fenchurch Street?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A firma e Fenchurch Street são informadas; o relato de correspondência confirma o endereço comercial sem fornecer número do prédio.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "westhouse|marbank|fenchurch",
+      "inspected_mention_ids": [
+        "the_adventures_of_sherlock_holmes.txt:2546-2547",
+        "the_adventures_of_sherlock_holmes.txt:2897-2909"
+      ],
+      "finding": "A firma e Fenchurch Street são informadas; o relato de correspondência confirma o endereço comercial sem fornecer número do prédio.",
+      "possible_ambiguous_answers": "31 Lyon Place é endereço de Mary Sutherland; Baker Street é o de Holmes. Nenhum deles responde pelo escritório da firma.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Todas as menções a Westhouse, Marbank e Fenchurch no acervo; lidos declaração de Mary e relato de Holmes sobre a correspondência e identificação de Windibank.",
+      "evidence_ids": [
+        "the_adventures_of_sherlock_holmes.txt:2546-2547",
+        "the_adventures_of_sherlock_holmes.txt:2897-2909"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-31",
+    "query": "What was the first name of Tavernier, the French modeller who made Holmes’s wax likeness in the Mazarin stone case?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Holmes identifica o modelador francês como Tavernier, sem prenome na passagem nem nas demais menções ao nome examinadas.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "tavernier",
+      "inspected_mention_ids": [
+        "the_case-book_of_sherlock_holmes.txt:2373-2375"
+      ],
+      "finding": "Holmes identifica o modelador francês como Tavernier, sem prenome na passagem nem nas demais menções ao nome examinadas.",
+      "possible_ambiguous_answers": "Tavernier é sobrenome, não resposta ao prenome; Straubenzee fabricou a arma de ar comprimido. Não completar a identidade com biografia externa.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Todas as menções a Tavernier no acervo, descrições da imagem/réplica e diálogo de Holmes com Sylvius em The Mazarin Stone; conferida atribuição da fabricação.",
+      "evidence_ids": [
+        "the_case-book_of_sherlock_holmes.txt:2373-2375"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-32",
+    "query": "Which manufacturer made Sir Henry Baskerville’s new brown boots, bought in London for six dollars?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Sir Henry confirma a compra das botas marrons, informa preço e que ainda não as usara; não nomeia fabricante.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "\\bboots?\\b|boot.?maker|six dollars",
+      "inspected_mention_ids": [
+        "the_hound_of_the_baskervilles.txt:1140-1147",
+        "the_hound_of_the_baskervilles.txt:1526-1529",
+        "the_hound_of_the_baskervilles.txt:1531-1531",
+        "the_hound_of_the_baskervilles.txt:1539-1540",
+        "the_hound_of_the_baskervilles.txt:1551-1552",
+        "the_hound_of_the_baskervilles.txt:1554-1555",
+        "the_hound_of_the_baskervilles.txt:1557-1562",
+        "the_hound_of_the_baskervilles.txt:1564-1566",
+        "the_hound_of_the_baskervilles.txt:1651-1656",
+        "the_hound_of_the_baskervilles.txt:1884-1889",
+        "the_hound_of_the_baskervilles.txt:1891-1895",
+        "the_hound_of_the_baskervilles.txt:1897-1897",
+        "the_hound_of_the_baskervilles.txt:1901-1901",
+        "the_hound_of_the_baskervilles.txt:1918-1919",
+        "the_hound_of_the_baskervilles.txt:2135-2137",
+        "the_hound_of_the_baskervilles.txt:2139-2139",
+        "the_hound_of_the_baskervilles.txt:2149-2149",
+        "the_hound_of_the_baskervilles.txt:2154-2168",
+        "the_hound_of_the_baskervilles.txt:2405-2408",
+        "the_hound_of_the_baskervilles.txt:3974-3992",
+        "the_hound_of_the_baskervilles.txt:4169-4171",
+        "the_hound_of_the_baskervilles.txt:5365-5372",
+        "the_hound_of_the_baskervilles.txt:5796-5802",
+        "the_hound_of_the_baskervilles.txt:5804-5809",
+        "the_hound_of_the_baskervilles.txt:6586-6597",
+        "the_hound_of_the_baskervilles.txt:6891-6918",
+        "the_hound_of_the_baskervilles.txt:6920-6921",
+        "the_hound_of_the_baskervilles.txt:7184-7199"
+      ],
+      "finding": "Sir Henry confirma a compra das botas marrons, informa preço e que ainda não as usara; não nomeia fabricante.",
+      "possible_ambiguous_answers": "Cor, preço e posse das botas não determinam a marca. Não confundir quem as roubou, devolveu ou levou ao hotel com fabricante.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Descrições da compra e sequência das botas no hotel, mais menções a brown boots, tan boots e bootmaker no acervo; revisadas menções das botas em The Hound of the Baskervilles.",
+      "evidence_ids": [
+        "the_hound_of_the_baskervilles.txt:1551-1552",
+        "the_hound_of_the_baskervilles.txt:1557-1562"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-33",
+    "query": "What was the name of the inn near Grant Munro’s Norbury villa, mentioned when he described his neighbourhood?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Munro efetivamente situa uma estalagem próxima à vila, mas não lhe dá nome no relato examinado.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "\\binn\\b|norbury|munro",
+      "inspected_mention_ids": [
+        "the_memoirs_of_sherlock_holmes.txt:2308-2308",
+        "the_memoirs_of_sherlock_holmes.txt:2348-2349",
+        "the_memoirs_of_sherlock_holmes.txt:2367-2377",
+        "the_memoirs_of_sherlock_holmes.txt:2543-2549",
+        "the_memoirs_of_sherlock_holmes.txt:2731-2741",
+        "the_memoirs_of_sherlock_holmes.txt:2749-2751",
+        "the_memoirs_of_sherlock_holmes.txt:2808-2811",
+        "the_memoirs_of_sherlock_holmes.txt:2842-2845",
+        "the_memoirs_of_sherlock_holmes.txt:2857-2859",
+        "the_memoirs_of_sherlock_holmes.txt:2870-2877",
+        "the_memoirs_of_sherlock_holmes.txt:2879-2893",
+        "the_memoirs_of_sherlock_holmes.txt:2958-2962",
+        "the_memoirs_of_sherlock_holmes.txt:2971-2972",
+        "the_memoirs_of_sherlock_holmes.txt:2978-2981",
+        "the_memoirs_of_sherlock_holmes.txt:10401-10408"
+      ],
+      "finding": "Munro efetivamente situa uma estalagem próxima à vila, mas não lhe dá nome no relato examinado.",
+      "possible_ambiguous_answers": "Estalagens de outros episódios ou localidades não identificam a de Norbury; o nome da vila é localidade e não nome comercial do estabelecimento.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Descrição da vizinhança e menções a inn, Norbury e Munro em The Memoirs; diferenciada a estalagem de Ripley em The Naval Treaty e outros estabelecimentos do acervo.",
+      "evidence_ids": [
+        "the_memoirs_of_sherlock_holmes.txt:2367-2377"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-34",
+    "query": "What was the first name of Violet Smith’s mother in The Solitary Cyclist?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "O relato confirma a mãe de Violet, sua viuvez e as visitas da filha, mas não fornece seu prenome.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "violet|mrs\\.? smith|\\bmother\\b",
+      "inspected_mention_ids": [
+        "the_return_of_sherlock_holmes.txt:106-120",
+        "the_return_of_sherlock_holmes.txt:139-157",
+        "the_return_of_sherlock_holmes.txt:1085-1098",
+        "the_return_of_sherlock_holmes.txt:1489-1501",
+        "the_return_of_sherlock_holmes.txt:2020-2035",
+        "the_return_of_sherlock_holmes.txt:2564-2579",
+        "the_return_of_sherlock_holmes.txt:3227-3248",
+        "the_return_of_sherlock_holmes.txt:3250-3268",
+        "the_return_of_sherlock_holmes.txt:3298-3301",
+        "the_return_of_sherlock_holmes.txt:3306-3324",
+        "the_return_of_sherlock_holmes.txt:3342-3360",
+        "the_return_of_sherlock_holmes.txt:3793-3794",
+        "the_return_of_sherlock_holmes.txt:4071-4089",
+        "the_return_of_sherlock_holmes.txt:4091-4106",
+        "the_return_of_sherlock_holmes.txt:4229-4241",
+        "the_return_of_sherlock_holmes.txt:4420-4420",
+        "the_return_of_sherlock_holmes.txt:5434-5458",
+        "the_return_of_sherlock_holmes.txt:5460-5483",
+        "the_return_of_sherlock_holmes.txt:6187-6207"
+      ],
+      "finding": "O relato confirma a mãe de Violet, sua viuvez e as visitas da filha, mas não fornece seu prenome.",
+      "possible_ambiguous_answers": "Violet é o nome da filha; James e Ralph são pai e tio; Mrs Dixon é a governanta de Carruthers. Não inferir o prenome da mãe de parentes ou homônimas.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Contexto familiar, oferta de emprego, retorno à casa materna e desfecho de The Solitary Cyclist; menções a Violet, Mrs Smith e mother examinadas com identificação do episódio e parentesco.",
+      "evidence_ids": [
+        "the_return_of_sherlock_holmes.txt:3306-3324",
+        "the_return_of_sherlock_holmes.txt:3342-3360",
+        "the_return_of_sherlock_holmes.txt:4071-4089"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-35",
+    "query": "How old was Lal Chowdar when he helped Major Sholto conceal Captain Morstan’s body?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Lal Chowdar é descrito como velho e participa da ocultação; o relato não informa idade numérica nem data de nascimento para calculá-la.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "chowdar",
+      "inspected_mention_ids": [
+        "the_sign_of_the_four.txt:965-977",
+        "the_sign_of_the_four.txt:989-1005"
+      ],
+      "finding": "Lal Chowdar é descrito como velho e participa da ocultação; o relato não informa idade numérica nem data de nascimento para calculá-la.",
+      "possible_ambiguous_answers": "O adjetivo old não define idade exata; datas da morte de Morstan ou de Sholto não permitem calcular a idade do criado.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Todas as menções a Chowdar no acervo e relato circunstanciado da morte de Morstan e ocultação do corpo; distinguidas idades e cronologia de outros personagens.",
+      "evidence_ids": [
+        "the_sign_of_the_four.txt:965-977",
+        "the_sign_of_the_four.txt:989-1005"
+      ]
+    }
+  },
+  {
+    "id": "v2-dev-36",
+    "query": "What colour was the Rudge-Whitworth bicycle found concealed in the evergreens near Birlstone Manor?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "A bicicleta existe, tem marca, desgaste, lama e bolsa descritos; o relato examinado não especifica a cor da pintura.",
+    "query_type": "unanswerable",
+    "review_status": "proposed",
+    "negative_verification": {
+      "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
+      "kind": "missing_detail",
+      "inspection_pattern": "rudge|bicycle|\\bcycle\\b",
+      "inspected_mention_ids": [
+        "the_valley_of _fear.txt:1466-1480",
+        "the_valley_of _fear.txt:1622-1624",
+        "the_valley_of _fear.txt:1626-1630",
+        "the_valley_of _fear.txt:1730-1738",
+        "the_valley_of _fear.txt:2404-2419",
+        "the_valley_of _fear.txt:2430-2434",
+        "the_valley_of _fear.txt:2452-2461",
+        "the_valley_of _fear.txt:2498-2501",
+        "the_valley_of _fear.txt:2507-2510",
+        "the_valley_of _fear.txt:2515-2526",
+        "the_valley_of _fear.txt:2539-2543",
+        "the_valley_of _fear.txt:2580-2597",
+        "the_valley_of _fear.txt:2601-2612",
+        "the_valley_of _fear.txt:2705-2707",
+        "the_valley_of _fear.txt:2809-2810",
+        "the_valley_of _fear.txt:4400-4402"
+      ],
+      "finding": "A bicicleta existe, tem marca, desgaste, lama e bolsa descritos; o relato examinado não especifica a cor da pintura.",
+      "possible_ambiguous_answers": "Lama e respingos não identificam cor de fábrica; cor de roupa, mala ou outro veículo não responde pela bicicleta.",
+      "uncertainty": "Não foi localizada resposta no escopo textual descrito; a inspeção por entidade e contexto pode perder alusões implícitas. A ausência no acervo inteiro não é uma prova formal. Confirmar manualmente antes de aprovar.",
+      "review_status": "proposed",
+      "scope": "Todas as menções à bicicleta, Rudge e cycle em The Valley of Fear, incluindo descoberta, hipóteses sobre fuga e identificação no hotel; conferida descrição física completa nas passagens recuperadas para leitura editorial.",
+      "evidence_ids": [
+        "the_valley_of _fear.txt:1626-1630",
+        "the_valley_of _fear.txt:2515-2526"
+      ]
+    }
+  }
+]
