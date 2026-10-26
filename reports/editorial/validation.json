@@ -1,0 +1,31 @@
+{
+  "scope": "editorial_humanization_and_saved_result_visualization",
+  "checked_at_utc": "2026-10-26T02:11:26.301434+00:00",
+  "source_base_commit": "2d7bc96f7644e0370970f894f51b7fa748b1fbe6",
+  "local_tests_passed": 118,
+  "local_tests_skipped": 0,
+  "report_ci_test_count": 12,
+  "quarto_code_cells_unchanged": 5,
+  "qmd_cells_executed": 5,
+  "readme_command_blocks_unchanged": true,
+  "html_checks": {
+    "html_files": 1,
+    "checked_local_links": 32,
+    "css_files": 5,
+    "tables_checked": 4,
+    "images": 3,
+    "crossrefs_checked": 7
+  },
+  "frozen_source_hashes_checked": 50,
+  "v1_preserved_files": 35,
+  "v2_frozen_files": 48,
+  "original_notebooks_preserved": 2,
+  "new_notebook_charts_executed": 2,
+  "full_notebooks_rerun": false,
+  "new_searches_for_charts": false,
+  "models_or_labels_changed": false,
+  "visual_review": "local_render_and_both_study_matrices",
+  "independent_review": "completed_with_two_wording_fixes_applied",
+  "publication_status": "pull_request_preview_not_deployed",
+  "kaggle_execution_verified": false
+}

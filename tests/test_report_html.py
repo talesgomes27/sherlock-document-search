@@ -53,8 +53,9 @@ class ReportHTMLTests(unittest.TestCase):
             '<div id="fig-corpus"><img src="plot%20one.png" alt="Corpus counts"',
             ' srcset="plot%20one.png 1x, second.png 2x"></div>',
             '<div id="fig-comparison"><img src="second.png" alt="Comparison"></div>',
+            '<div id="fig-positions"><img src="second.png" alt="Query positions"></div>',
             *[f'<a href="#{identifier}">{identifier}</a>' for identifier in
-              ['fig-corpus', 'fig-comparison', 'tbl-corpus', 'tbl-results',
+              ['fig-corpus', 'fig-comparison', 'fig-positions', 'tbl-corpus', 'tbl-results',
                'tbl-negatives', 'tbl-history']],
             table('tbl-corpus', [['Medida', 'Quantidade'], ['Arquivos TXT', '2'],
                                 ['Parágrafos retidos', '12'], ['Palavras retidas', '1.234'],
@@ -92,7 +93,7 @@ class ReportHTMLTests(unittest.TestCase):
         self.assertEqual(stats['html_files'], 2)
         self.assertEqual(stats['css_files'], 2)
         self.assertEqual(stats['tables_checked'], 4)
-        self.assertEqual(stats['images'], 3)
+        self.assertEqual(stats['images'], 4)
         self.assertGreater(stats['checked_local_links'], 15)
         self.assertEqual((self.v1, self.v2), frozen)
         self.assertFalse((self.root / 'data').exists())

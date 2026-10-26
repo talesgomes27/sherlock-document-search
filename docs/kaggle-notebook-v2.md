@@ -1,5 +1,7 @@
 # Notebook Kaggle próprio da v2
 
+Para leitura e importação no Kaggle, use a [edição de apresentação v2](../notebooks/portfolio/sherlock_document_search_v2.ipynb), com linguagem revisada e uma matriz por consulta. Os detalhes abaixo registram a validação do notebook original; veja os [limites da verificação editorial](editorial-presentation.md).
+
 O autor aprovou a v2 e autorizou este notebook em 25 de outubro de 2026. O arquivo [sherlock_document_search_v2.ipynb](../notebooks/sherlock_document_search_v2.ipynb) reúne busca literal, TF-IDF e BM25, gráficos, resultados por consulta e análise das negativas. O notebook v1 e seus auxiliares foram preservados.
 
 ## Executar no Kaggle

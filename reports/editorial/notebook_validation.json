@@ -1,0 +1,32 @@
+{
+  "v1": {
+    "source_notebook": "notebooks/sherlock_document_search.ipynb",
+    "source_notebook_sha256": "5f5f979f249b4f3b3c4813dc4a9918050dc2abf7e7fab17ff104a22f35aca465",
+    "presentation_notebook": "notebooks/portfolio/sherlock_document_search_v1.ipynb",
+    "presentation_notebook_sha256": "8a6e3d4af9c69d33cddbb7e0a6139fd165bdd446f7d3ed5b36129e981488adab",
+    "original_code_cells_and_outputs_preserved": 8,
+    "markdown_cells_revised": 6,
+    "new_chart_cells_executed": 1,
+    "full_notebook_rerun": false,
+    "report_sha256": "92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324",
+    "chart_files": [
+      "/tmp/sherlock-editorial-chart-4eejoldq/v1/query_positions.png",
+      "/tmp/sherlock-editorial-chart-4eejoldq/v1/query_positions.svg"
+    ]
+  },
+  "v2": {
+    "source_notebook": "notebooks/sherlock_document_search_v2.ipynb",
+    "source_notebook_sha256": "037289155de7e59777261c5ec83cf3580c0924b3d480f6485feaf76d491052e1",
+    "presentation_notebook": "notebooks/portfolio/sherlock_document_search_v2.ipynb",
+    "presentation_notebook_sha256": "497aac40da607fbc20a0764d3baf5b76d61cb8b4a25a7c17efccb4cca539a8d7",
+    "original_code_cells_and_outputs_preserved": 8,
+    "markdown_cells_revised": 7,
+    "new_chart_cells_executed": 1,
+    "full_notebook_rerun": false,
+    "report_sha256": "4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b",
+    "chart_files": [
+      "/tmp/sherlock-editorial-chart-4eejoldq/v2/query_positions.png",
+      "/tmp/sherlock-editorial-chart-4eejoldq/v2/query_positions.svg"
+    ]
+  }
+}
