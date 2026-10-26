@@ -29,7 +29,7 @@ Destino: [relatório no GitHub Pages](https://talesgomes27.github.io/sherlock-do
 
 A configuração inicial do repositório precisa usar Pages com `build_type: workflow`. PRs executam somente build e verificações, com `contents: read` e sem credenciais persistidas. Upload e deploy ficam restritos à `main`, com `pages: write` e `id-token: write` apenas no job de deploy. Alterações apenas em README, registro, documentação ou evidências do M5 não geram outro deploy; alterações no relatório ou nas fontes verificadas o fazem.
 
-O fluxo fixa Quarto 1.10.19 e Python 3.11.17, instala ferramentas de `site/requirements.txt`, executa os nove testes de fontes/HTML, renderiza, verifica o resultado e só então envia `site/_site`. A execução remota de testes do relatório não é apresentada como execução da suíte de modelos com o corpus real.
+O fluxo fixa Quarto 1.10.19 e Python 3.11.17, instala ferramentas de `site/requirements.txt`, executa os testes de fontes, HTML, posições e preservação das cópias dos notebooks, renderiza, verifica o resultado e só então envia `site/_site`. A execução remota de testes do relatório não é apresentada como execução da suíte de modelos com o corpus real.
 
 ## Verificações e recuperação
 
@@ -47,3 +47,6 @@ Fontes operacionais: [Quarto/Python](https://quarto.org/docs/computations/python
 O [run 40256849352](https://github.com/talesgomes27/sherlock-document-search/actions/runs/40256849352) concluiu build e deploy do commit `b55ff7027641d3e4421cc95ca919f9c6626070a1`. A página pública respondeu HTTP 200; os 21 arquivos publicados conferiram com os hashes do build, assim como os 50 hashes de entrada. As quatro tabelas foram verificadas contra os JSONs aprovados e a apresentação foi inspecionada no navegador.
 
 A evidência está em [publication_validation.json](../reports/m5/publication_validation.json) e na [captura da publicação](../reports/m5/publication.png). A suíte local passou com 115 testes, sem ignorados; o workflow remoto passou nos nove testes específicos do relatório. Ambos os notebooks e os arquivos congelados permanecem intactos. O commit que acrescenta esta evidência altera apenas documentação e não dispara novo deploy.
+
+
+A [revisão editorial](editorial-presentation.md) simplifica a leitura e acrescenta uma terceira figura, com a posição das referências por consulta. As cinco células de código do relatório e todos os resultados científicos continuam iguais. A evidência inicial do M5 acima descreve a publicação anterior; a revisão é entregue separadamente para aprovação.

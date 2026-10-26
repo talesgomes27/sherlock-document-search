@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT_PATH = '/sherlock-document-search/'
-REQUIRED_IDS = {'fig-corpus', 'fig-comparison', 'tbl-corpus', 'tbl-results',
+REQUIRED_IDS = {'fig-corpus', 'fig-comparison', 'fig-positions', 'tbl-corpus', 'tbl-results',
                 'tbl-negatives', 'tbl-history'}
 VOID_TAGS = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
              'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -210,7 +210,7 @@ def validate_site(output, root=ROOT):
             linked.add(result[1])
     if REQUIRED_IDS - linked:
         raise ValueError(f'Missing report cross-reference links: {sorted(REQUIRED_IDS - linked)}')
-    for identifier in ('fig-corpus', 'fig-comparison'):
+    for identifier in ('fig-corpus', 'fig-comparison', 'fig-positions'):
         if not any(identifier in ancestors and attrs.get('src') for attrs, ancestors in page.images):
             raise ValueError(f'Missing image in figure {identifier}')
     for identifier, expected in expected_tables(root).items():

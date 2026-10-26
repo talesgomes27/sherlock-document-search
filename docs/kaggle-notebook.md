@@ -1,5 +1,7 @@
 # M4 — notebook e avaliação final
 
+Para leitura e importação no Kaggle, use a [edição de apresentação v1](../notebooks/portfolio/sherlock_document_search_v1.ipynb), com linguagem revisada e uma matriz por consulta. Os detalhes abaixo registram a validação do notebook original; veja os [limites da verificação editorial](editorial-presentation.md).
+
 O M4 preparou o notebook para o Kaggle e avaliou as vinte consultas finais com os métodos congelados no M3. A versão reformulada descrita aqui foi validada em kernel local limpo, com dois gráficos e tabelas por consulta; a execução atual na plataforma Kaggle ainda não foi conferida. O autor aprovou essa execução em 25 de outubro de 2026. Nenhum parâmetro, rótulo, recorte do corpus ou código congelado foi alterado após observar os resultados finais.
 
 ## Arquivos entregues
