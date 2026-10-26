@@ -48,3 +48,8 @@ Somente após revisar desenvolvimento e escolher a configuração, congelar os a
 ## Decisão após desenvolvimento, antes do novo teste
 
 O primeiro critério registrado escolheu corte 32, eliminando todos os acertos positivos. O candidato foi explicitamente rejeitado; a regra inicial e suas saídas foram preservadas. BM25 sem corte adicional (min_score=0,0) será avaliado como ranking, sem alegar que a abstenção foi resolvida. A decisão está em `evaluation/v2/configuration_decision.json` e antecede a abertura do novo teste. Nenhum parâmetro ou rótulo final foi consultado para essa decisão.
+
+
+## Estado após execução
+
+Os rótulos foram aprovados, a configuração e o avaliador congelados antes do teste e a avaliação final concluída sem novos ajustes. Os metadados do teste foram divulgados somente depois da avaliação. Resultados e limitações estão em [avaliação final v2](v2-final-evaluation.md). O notebook v1 foi preservado; nova integração Kaggle, Quarto e dashboard não fazem parte desta entrega.

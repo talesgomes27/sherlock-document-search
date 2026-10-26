@@ -7,7 +7,7 @@ O autor aprovou as 36 consultas de desenvolvimento e as 24 reservadas no chat em
 ```bash
 uv sync --python 3.11.17 --frozen
 uv run python -m sherlock_search.bm25 --query "Trichinopoly cigar"
-uv run python -m sherlock_search.v2_development --output reports/v2/development.approved.json
+uv run python -m sherlock_search.v2_development --output reports/v2/development.reproduced.json
 ```
 
 A CLI BM25 informa título, ID, linhas e score, sem gerar respostas. O filtro `--book` aceita o nome exato do TXT; `--min-score` é um corte BM25 não negativo, sem interpretação probabilística. A CLI v1 continua intacta. O comparador lê somente `evaluation/v2/development.json`, sem opção para escolher outro conjunto; o teste reservado não é usado na calibração. Saídas do comparador ficam em `reports/v2/`.
@@ -16,14 +16,14 @@ A CLI BM25 informa título, ID, linhas e score, sem gerar respostas. O filtro `-
 
 Todos os métodos abaixo usam as mesmas 27 consultas positivas, nove negativas, parágrafos e top 5. Estas são métricas de desenvolvimento, não uma estimativa independente de generalização.
 
-| Método | Referência conhecida no top 5 | Negativas com retorno | MRR@5 nas positivas |
+| Método | Consultas positivas com referência conhecida no top 5 | Negativas com retorno | MRR@5 nas positivas |
 |---|---:|---:|---:|
 | Literal v1 | 9/27 | 0/9 | 0.2901 |
 | TF-IDF v1 | 10/27 | 9/9 | 0.2111 |
 | BM25 sem corte adicional | 12/27 | 9/9 | 0.2994 |
 | BM25 com corte candidato 32 | 0/27 | 3/9 | 0.0000 |
 
-BM25 recuperou mais referências conhecidas nas positivas deste conjunto, mas retornou trechos em todas as negativas. Isso não demonstra superioridade geral. Os julgamentos são não exaustivos: um ID ausente pode coexistir com outros trechos relevantes. Nas questões de contexto, um hit conhecido também não garante evidência completa para todas as partes da pergunta.
+BM25 encontrou referência conhecida em mais consultas positivas deste conjunto, mas retornou trechos em todas as negativas. Isso não demonstra superioridade geral. Os julgamentos são não exaustivos: um ID ausente pode coexistir com outros trechos relevantes. Nas questões de contexto, um hit conhecido também não garante evidência completa para todas as partes da pergunta.
 
 ## Leitura por tipo de consulta
 
@@ -52,3 +52,7 @@ O novo teste tem 24 consultas aprovadas e permanece reservado ao avaliador até 
 As referências de desenvolvimento ficam em 20–45% dos corpos das obras e as reservadas em 60–85%; isso não elimina sozinho dependências narrativas. O curador também verificou intenções repetidas. Negativas são detalhes plausíveis não informados no escopo inspecionado; essa revisão não prova ausência formal em todo o acervo. A primeira proposta usava premissas refutadas e foi corrigida antes das métricas, pois trechos que refutam uma pergunta podem ser úteis.
 
 Os relatórios JSON de desenvolvimento registram construção do índice e média local por consulta. Tempos são descritivos, variam entre execuções e não são benchmark de produção. Os relatórios do código-fonte e do wheel instalado coincidiram nos resultados; diferenças de tempo são esperadas.
+
+## Avaliação posterior
+
+O novo teste foi executado após congelamento, sem novos ajustes, e depois divulgado para reprodução. Veja [avaliação final v2](v2-final-evaluation.md). Os trechos que descrevem a reserva acima registram o procedimento anterior à execução, não o estado de acesso atual.

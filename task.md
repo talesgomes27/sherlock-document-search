@@ -202,3 +202,24 @@ No desenvolvimento aprovado, literal teve 9/27 hits conhecidos e 0/9 negativas c
 O novo avaliador final e dez testes sintéticos foram implementados antes de abrir semanticamente o teste. Revisão independente confirmou os gates de integridade, aprovação, composição, runtime, fontes importadas e saídas; nenhum achado acionável. Suíte completa com 102 testes passou antes do congelamento. O avaliador não oferece grade, limiar ou seleção de consultas; usa os três métodos fixos. A tag e os 35 ativos v1 permanecem intactos. O freeze v2 registra também a decisão, o desenvolvimento aprovado e o hash do teste local, conferido como bytes opacos nesta etapa.
 
 Este registro e o código serão versionados antes da primeira execução final v2; os resultados ainda não foram calculados neste ponto. A execução subsequente usará exclusivamente o snapshot fixo e não orientará novos ajustes neste ciclo.
+
+
+### V2 — resultado final e entrega
+
+O suporte foi versionado em `14a0913` antes da primeira execução das 24 finais. O snapshot v2 contém 48 arquivos por hash, incluindo código, ambiente, decisão, desenvolvimento aprovado, fontes v1 e bytes do teste reservado. A execução final usou apenas literal e TF-IDF v1 e BM25 fixo (min_score=0,0), sem grade ou seleção. Depois, o wheel instalado reproduziu o relatório byte a byte, sem alterações.
+
+| Método no mesmo novo teste | Consultas positivas com referência no top 5 | Negativas com retorno |
+|---|---:|---:|
+| Literal v1 | 6/18 | 0/6 |
+| TF-IDF v1 | 10/18 | 6/6 |
+| BM25 | 12/18 | 6/6 |
+
+O ganho observado é de recuperação conhecida e ranking no conjunto curado; abstenção não foi resolvida. A média balanceada não favorece BM25 em relação ao literal neste conjunto. Não se apresentou superioridade geral nem desempenho em documentos de clientes. Não houve ajuste após conhecer o teste.
+
+Após concluir, o curador publicou somente metadados em `evaluation/v2/final.json` e uma tabela sem trechos em `docs/v2-final-queries.md`. O JSON público é byte-idêntico ao privado aprovado; este foi mantido junto da proposta original. Os rótulos finais agora são públicos e não podem ser usados como novo teste independente de futuras melhorias. Os estados de não execução dos manifests são históricos do congelamento e permaneceram intactos.
+
+Verificações da entrega: 102 testes passaram no código-fonte e no wheel, com o corpus real e sem testes ignorados; o avaliador foi revisado independentemente antes da execução real; corpus, runtime e fontes importadas conferidos antes/depois; 35 ativos v1 e 15 hashes M3 intactos; 48 arquivos v2 continuam iguais ao freeze. Relatório final SHA-256 `4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b`. Figuras PNG/SVG geradas do relatório, sem novas buscas, e inspecionadas visualmente. Evidência em `reports/v2/validation.json`.
+
+Os cinco gates de implementação desta extensão foram cumpridos: núcleo testado, integração com corpus e avaliador, figura/JSON inspecionados, documentação de decisões e reprodução, revisão independente e build/instalação. O aceite dos rótulos veio do autor; conclusão técnica não significa aprovação final da entrega pelo autor. A publicação do código continua na branch v2, com a referência v1 preservada.
+
+O notebook Kaggle v1, seus resultados e gráficos foram preservados. Uma integração dos resultados v2 em novo notebook, Quarto ou dashboard ainda não foi executada. A validação ocorreu em Linux local; não se executou a v2 no Kaggle nem em Windows/macOS. Não foram introduzidos embeddings, geração de respostas ou serviços de busca hospedados.

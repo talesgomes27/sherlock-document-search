@@ -1,0 +1,344 @@
+[
+  {
+    "id": "v2-final-01",
+    "query": "a mule and two horses waiting in the Eagle Ravine",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:3619-3621"
+    ],
+    "rationale": "Expressão literal: Hope informa os animais e o local de espera ao planejar a fuga. Não repete a identificação do informante nem a carreira militar de Watson das consultas antigas.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-02",
+    "query": "Why did Jefferson Hope propose leaving the Ferrier house through a side window and crossing the fields that night?",
+    "answerable": true,
+    "relevant_ids": [
+      "a_study_in_scarlet.txt:3638-3644"
+    ],
+    "rationale": "O plano é explicado no mesmo parágrafo: as entradas da frente e dos fundos estavam vigiadas, e a janela lateral permitia tentar chegar aos animais sem passar por elas.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-03",
+    "query": "Why so large a coffin for so small a body?",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:5379-5397"
+    ],
+    "rationale": "Frase literal da reconstrução retrospectiva de Holmes. Ele associa o tamanho especial do caixão à tentativa de enterrar duas pessoas sob um certificado. Trata-se da explicação final, não da fala isolada sobre a encomenda.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-04",
+    "query": "How did the uneven mud marks on Watson's coat tell Holmes that Watson had shared a cab?",
+    "answerable": true,
+    "relevant_ids": [
+      "his_last_bow.txt:4583-4589"
+    ],
+    "rationale": "Reformula o raciocínio: manchas apenas na manga e no ombro esquerdos indicavam assento lateral; daí Holmes infere um companheiro. A conclusão é atribuída a Holmes, não apresentada como prova universal.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-05",
+    "query": "What two things did Victor Hatherley have to change at Reading before catching the last train to Eyford?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:8315-8324"
+    ],
+    "rationale": "O relato de Hatherley especifica a troca de carruagem ferroviária e também de estação em Reading; não exige identificar o veículo final usado na estrada.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-06",
+    "query": "What did Holmes discover about the bell-rope in Helen Stoner's room that made its apparent purpose doubtful?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_adventures_of_sherlock_holmes.txt:7495-7495",
+      "the_adventures_of_sherlock_holmes.txt:7499-7501"
+    ],
+    "rationale": "Holmes a chama de falsa e explica que nem sequer está ligada a um fio, mas presa a um gancho sobre o ventilador. A consulta pede a observação material, sem exigir a conclusão posterior sobre o mecanismo do crime.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-07",
+    "query": "Weekly reports will oblige",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:7170-7170"
+    ],
+    "rationale": "Linha literal do pedido de relatórios na carta lida no caso de Presbury. A proposta recupera a linha completa e não valida como ciência a teoria ficcional do soro.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-08",
+    "query": "Why did Bennett object to calling an outside surgeon after Professor Presbury's throat had been treated?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_case-book_of_sherlock_holmes.txt:7122-7128",
+      "the_case-book_of_sherlock_holmes.txt:7130-7130",
+      "the_case-book_of_sherlock_holmes.txt:7132-7135"
+    ],
+    "rationale": "O primeiro parágrafo situa o ferimento e o tratamento; Watson sugere um cirurgião e Bennett teme que o escândalo saia da casa, afetando a posição universitária, a reputação e a filha do professor.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-09",
+    "query": "in the character of a free woman",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:5559-5560"
+    ],
+    "rationale": "Expressão literal na explicação de Holmes para a falsa condição de solteira da mulher de Stapleton. A referência captura a frase inteira, sem confundi-la com a percepção anterior de Watson.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-10",
+    "query": "Who was the bearded man whose body Holmes and Watson initially mistook for Sir Henry on the moor?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_hound_of_the_baskervilles.txt:5782-5782",
+      "the_hound_of_the_baskervilles.txt:5786-5787",
+      "the_hound_of_the_baskervilles.txt:5789-5794"
+    ],
+    "rationale": "A barba invalida a identificação inicial e o parágrafo seguinte nomeia Selden. Não se pergunta quem matou Sir Henry nem se transforma a hipótese do faro da bota em fato demonstrado.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-11",
+    "query": "Why had the captors covered the Greek prisoner's face with strips of plaster?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:8911-8941"
+    ],
+    "rationale": "O relato retrospectivo informa que o disfarce buscava dificultar que a irmã o reconhecesse, caso o visse. A intenção é distinta do cálculo de velocidade do trem e da carta de Moriarty da v1.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-12",
+    "query": "How did Holmes's interpretation of the two Englishmen's deaths differ from the Hungarian police opinion reported in the newspaper cutting?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_memoirs_of_sherlock_holmes.txt:8943-8951"
+    ],
+    "rationale": "O recorte relata a teoria policial de ferimentos mútuos após uma briga. Watson atribui a Holmes outra suspeita, ligada à possibilidade de a jovem grega esclarecer a vingança. A referência não confirma autoria nem transforma a suspeita em fato.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-13",
+    "query": "golden pince-nez",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:9483-9488"
+    ],
+    "rationale": "Expressão literal para o objeto apresentado por Hopkins, com pontas de cordão de seda preta rompido. Não é uma consulta sobre a identidade de Adair ou a cifra dos dançarinos.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-14",
+    "query": "Why did Holmes connect the clay left in the tutor's room with the university jumping-pit when reconstructing Gilchrist's movements?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_return_of_sherlock_holmes.txt:9100-9116"
+    ],
+    "rationale": "O parágrafo contém a reconstrução, a terra desprendida dos cravos do calçado e a verificação de argila preta com serragem na pista de salto. A consulta trata dessa ligação material, sem exigir reconstruções fora do trecho.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-15",
+    "query": "Benares metal-work",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:3597-3597"
+    ],
+    "rationale": "Expressão literal com que Watson identifica o trabalho do cofre. A proposta não repete a inscrição no mapa de Mary nem o uso de cocaína da v1.",
+    "query_type": "exact",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-16",
+    "query": "Why did Athelney Jones abandon his case against Thaddeus Sholto?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_sign_of_the_four.txt:2896-2902"
+    ],
+    "rationale": "Jones relata que o álibi de Sholto era irrefutável, porque ele esteve à vista de outras pessoas desde que saíra do quarto do irmão. A consulta atribui a conclusão ao investigador.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-17",
+    "query": "Why did Brother Morris warn that attacking James Stanger could turn the whole district against the lodge?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:4946-4952"
+    ],
+    "rationale": "Morris protesta que a violência já era excessiva, que Stanger era idoso e respeitado e que o ataque poderia provocar reação coletiva. A consulta pede o temor expresso, não um resultado histórico garantido.",
+    "query_type": "paraphrase",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-18",
+    "query": "What precautions by the Crow Hill attackers help explain why no witness could swear to their identities despite the crowd of miners?",
+    "answerable": true,
+    "relevant_ids": [
+      "the_valley_of _fear.txt:5763-5769",
+      "the_valley_of _fear.txt:5789-5792"
+    ],
+    "rationale": "A cena informa que os agressores abaixaram chapéus e ergueram golas para esconder os rostos e depois desapareceram na névoa; o relato diz que ninguém pôde jurar suas identidades. Não se infere que o público não os viu de forma alguma.",
+    "query_type": "context",
+    "review_status": "approved"
+  },
+  {
+    "id": "v2-final-19",
+    "query": "What were the ages of the two horses Jefferson Hope had waiting in the Eagle Ravine?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Detalhe plausível não informado no relato inspecionado de um acontecimento real. A preparação informa quantidade e localização; a partida distribui os viajantes entre os animais; as paradas narram água, cansaço e avanço. Esse relato não fornece idades, registros de criação nem outros dados para deduzi-las.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "a_study_in_scarlet.txt:3619-3621",
+        "a_study_in_scarlet.txt:3700-3711",
+        "a_study_in_scarlet.txt:3776-3785"
+      ],
+      "finding": "A preparação informa quantidade e localização; a partida distribui os viajantes entre os animais; as paradas narram água, cansaço e avanço. Esse relato não fornece idades, registros de criação nem outros dados para deduzi-las.",
+      "scope": "Leitura contínua das linhas 3600–3810, da preparação ao uso e alimentação dos animais durante a fuga. Foram examinadas as descrições dos animais e do percurso, não a ocorrência isolada de uma palavra.",
+      "uncertainty": "Ausência contextual revisada por agente, não prova formal de ausência em todo o acervo. O acontecimento é real no relato e sua premissa não é refutada. Revisão humana deve conferir o restante da obra e possíveis respostas indiretas antes de aprovar o rótulo; passagens tematicamente relacionadas podem ser úteis sem informar o detalhe pedido.",
+      "supported_event": "Hope tem dois cavalos e uma mula preparados para a fuga; a narração acompanha seu uso no trajeto.",
+      "requested_detail": "Idade de cada um dos dois cavalos, sem confundir idade dos animais com duração ou distância da fuga."
+    }
+  },
+  {
+    "id": "v2-final-20",
+    "query": "What price did Stimson and Co. charge for the specially enlarged coffin delivered to Poultney Square?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Detalhe plausível não informado no relato inspecionado de um acontecimento real. O diálogo no estabelecimento fala do atraso por ser uma peça incomum; Peters nomeia a funerária e o horário; Holmes explica as dimensões especiais. Não se transcreve orçamento, conta ou preço do caixão. A cobrança de quase cem libras alegada por Peters contra Frances é outra conta; a libra oferecida por Holmes recompensa a abertura da tampa.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "his_last_bow.txt:5028-5032",
+        "his_last_bow.txt:5044-5048",
+        "his_last_bow.txt:5229-5241",
+        "his_last_bow.txt:5379-5397"
+      ],
+      "finding": "O diálogo no estabelecimento fala do atraso por ser uma peça incomum; Peters nomeia a funerária e o horário; Holmes explica as dimensões especiais. Não se transcreve orçamento, conta ou preço do caixão. A cobrança de quase cem libras alegada por Peters contra Frances é outra conta; a libra oferecida por Holmes recompensa a abertura da tampa.",
+      "scope": "Leitura contínua das linhas 4991–5397, incluindo encomenda relatada, entrega, identificação da funerária, inspeções, recompensa aos homens e explicação final. As cifras de outros pagamentos foram distinguidas do valor solicitado.",
+      "uncertainty": "Ausência contextual revisada por agente, não prova formal de ausência em todo o acervo. O acontecimento é real no relato e sua premissa não é refutada. Revisão humana deve conferir o restante da obra e possíveis respostas indiretas antes de aprovar o rótulo; passagens tematicamente relacionadas podem ser úteis sem informar o detalhe pedido.",
+      "supported_event": "Um caixão especial é encomendado, entregue e depois aberto na casa de Poultney Square.",
+      "requested_detail": "Preço de fabricação ou venda do caixão específico, distinto de outras despesas e de recompensas."
+    }
+  },
+  {
+    "id": "v2-final-21",
+    "query": "What was the railway fare for Victor Hatherley's journey from Reading to Eyford?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Detalhe plausível não informado no relato inspecionado de um acontecimento real. O relato cobre motivação financeira do serviço, itinerário, conexão e chegada, seguido da viagem de carruagem. Não informa compra, classe ou valor de bilhete ferroviário que permita responder à tarifa. O honorário discutido é pagamento pelo trabalho, não preço da passagem.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "the_adventures_of_sherlock_holmes.txt:8302-8313",
+        "the_adventures_of_sherlock_holmes.txt:8315-8324",
+        "the_adventures_of_sherlock_holmes.txt:8342-8362"
+      ],
+      "finding": "O relato cobre motivação financeira do serviço, itinerário, conexão e chegada, seguido da viagem de carruagem. Não informa compra, classe ou valor de bilhete ferroviário que permita responder à tarifa. O honorário discutido é pagamento pelo trabalho, não preço da passagem.",
+      "scope": "Leitura contínua das linhas 8253–8376, do acordo e partida à viagem de trem e continuação por estrada; conferência da distinção entre honorário, distância rodoviária e tarifa ferroviária.",
+      "uncertainty": "Ausência contextual revisada por agente, não prova formal de ausência em todo o acervo. O acontecimento é real no relato e sua premissa não é refutada. Revisão humana deve conferir o restante da obra e possíveis respostas indiretas antes de aprovar o rótulo; passagens tematicamente relacionadas podem ser úteis sem informar o detalhe pedido.",
+      "supported_event": "Hatherley narra sua viagem de trem, com troca em Reading e chegada a Eyford.",
+      "requested_detail": "Tarifa ferroviária do trecho Reading–Eyford, em vez do honorário profissional ou da distância de carruagem."
+    }
+  },
+  {
+    "id": "v2-final-22",
+    "query": "What was the name of the ship Barrymore expected to take Selden to South America?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "O plano de enviar Selden à América do Sul é real e Barrymore aguarda um navio. O relato informa destino, expectativa e sigilo, sem nomear a embarcação.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "the_hound_of_the_baskervilles.txt:4495-4503",
+        "the_hound_of_the_baskervilles.txt:4513-4515"
+      ],
+      "finding": "Barrymore pede que não avisem a polícia e diz que Selden aguardará até o navio estar pronto. O plano fornece América do Sul como destino e menciona poucos dias para os preparativos, mas não identifica embarcação, companhia ou reserva. A morte posterior de Selden impede a viagem, porém a consulta pede o navio esperado no plano, sem presumir que a viagem ocorreu.",
+      "scope": "Leitura contínua da perseguição, consequências e conversa sobre o plano, linhas 4293–4524; confronto com o reconhecimento do corpo e apoio material posterior, linhas 5770–5809. Foram examinados o destino, cronologia e preparativos concretos, sem tratar nome ausente como prova isolada.",
+      "uncertainty": "Não foi localizada identidade da embarcação no escopo contextual inspecionado; isso não prova ausência formal em todo o acervo. Revisão humana deve conferir outras alusões ao plano antes de aprovar. Passagens relacionadas sustentam o acontecimento, mas não fornecem o detalhe solicitado.",
+      "supported_event": "Barrymore declara um plano de tirar Selden do país por navio rumo à América do Sul.",
+      "requested_detail": "Nome da embarcação esperada, não destino ou data de preparação."
+    }
+  },
+  {
+    "id": "v2-final-23",
+    "query": "What was the exact weight in pounds of the empty Agra treasure-box Watson opened for Mary Morstan?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Detalhe plausível não informado no relato inspecionado de um acontecimento real. O objeto é descrito como pesado, maciço e com ferragem de dois terços de polegada. Não há pesagem nem dimensões completas e densidade que permitam calcular sua massa. As libras de fortuna mencionadas antes são valor monetário, não peso do cofre.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "the_sign_of_the_four.txt:3545-3548",
+        "the_sign_of_the_four.txt:3599-3600",
+        "the_sign_of_the_four.txt:3609-3613"
+      ],
+      "finding": "O objeto é descrito como pesado, maciço e com ferragem de dois terços de polegada. Não há pesagem nem dimensões completas e densidade que permitam calcular sua massa. As libras de fortuna mencionadas antes são valor monetário, não peso do cofre.",
+      "scope": "Leitura contínua das linhas 3531–3625, da chegada de Watson à abertura e reação de Mary. Foram distinguidas grandeza física, espessura do metal e estimativas monetárias; não se inferiu ausência pela falta de palavra.",
+      "uncertainty": "Ausência contextual revisada por agente, não prova formal de ausência em todo o acervo. O acontecimento é real no relato e sua premissa não é refutada. Revisão humana deve conferir o restante da obra e possíveis respostas indiretas antes de aprovar o rótulo; passagens tematicamente relacionadas podem ser úteis sem informar o detalhe pedido.",
+      "supported_event": "Watson leva o cofre a Mary e o abre; ela comenta seu peso e ele descreve sua construção.",
+      "requested_detail": "Massa numérica do cofre vazio em libras, distinta de espessura do metal ou valor estimado do tesouro."
+    }
+  },
+  {
+    "id": "v2-final-24",
+    "query": "What calibre of ammunition was used to kill the Crow Hill engineer Menzies?",
+    "answerable": false,
+    "relevant_ids": [],
+    "rationale": "Detalhe plausível não informado no relato inspecionado de um acontecimento real. A cena identifica o engenheiro, seu ataque com uma chave de ferro, os dois projéteis no rosto e disparos de revólveres para dispersar os mineiros. Não fornece medida de calibre, modelo de arma, exame de projétil ou autópsia. A referência a revólveres de seis tiros descreve capacidade, não diâmetro da munição.",
+    "query_type": "unanswerable",
+    "review_status": "approved",
+    "negative_verification": {
+      "method": "Leitura direta de parágrafos canônicos e contexto narrativo, sem recuperação ou métricas.",
+      "kind": "missing_detail",
+      "evidence_ids": [
+        "the_valley_of _fear.txt:5755-5761",
+        "the_valley_of _fear.txt:5774-5782",
+        "the_valley_of _fear.txt:5784-5787"
+      ],
+      "finding": "A cena identifica o engenheiro, seu ataque com uma chave de ferro, os dois projéteis no rosto e disparos de revólveres para dispersar os mineiros. Não fornece medida de calibre, modelo de arma, exame de projétil ou autópsia. A referência a revólveres de seis tiros descreve capacidade, não diâmetro da munição.",
+      "scope": "Leitura contínua das linhas 5737–5799, da aproximação à mina ao retorno dos observadores. A inspeção considerou a sequência do ataque, armas e ferimentos; não tratou contagem de tiros como calibre.",
+      "uncertainty": "Ausência contextual revisada por agente, não prova formal de ausência em todo o acervo. O acontecimento é real no relato e sua premissa não é refutada. Revisão humana deve conferir o restante da obra e possíveis respostas indiretas antes de aprovar o rótulo; passagens tematicamente relacionadas podem ser úteis sem informar o detalhe pedido.",
+      "supported_event": "Menzies é atingido por dois projéteis no ataque à mina Crow Hill.",
+      "requested_detail": "Calibre da munição que atingiu Menzies, distinto do número de tiros, ferimentos ou capacidade das armas."
+    }
+  }
+]

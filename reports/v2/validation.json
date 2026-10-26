@@ -1,0 +1,36 @@
+{
+  "scope": "v2_frozen_final_evaluation",
+  "validated_on": "2026-10-25",
+  "support_commit_before_final": "14a0913",
+  "source_tests": {
+    "passed": 102,
+    "skipped": 0
+  },
+  "installed_wheel_tests": {
+    "passed": 102,
+    "skipped": 0
+  },
+  "environment": "local_linux_python_3.11.17",
+  "final_report_byte_identical_source_and_wheel": true,
+  "final_report_sha256": "4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b",
+  "v1_preserved_files": 35,
+  "v1_final_report_sha256": "92753538b7528cec6332b9415343b313221aae211b4e51fe3ee18a64c8d09324",
+  "v2_frozen_files": 48,
+  "freeze_sha256": "93353d5667ec06d613737a204bf4643b151f3ac8f087300df84773696055ac1b",
+  "annotation_status": "approved",
+  "approval_source": "author_chat_2026-10-25",
+  "final_v2_executed": true,
+  "parameter_changes_after_freeze": false,
+  "published_final_queries_match_frozen_private_bytes": true,
+  "figure_files": [
+    "reports/v2/figures/final_comparison.png",
+    "reports/v2/figures/final_comparison.svg"
+  ],
+  "figures_visually_checked": true,
+  "versions": {
+    "python": "3.11.17",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

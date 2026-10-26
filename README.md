@@ -39,7 +39,7 @@ A busca retorna até cinco parágrafos com referências e contagem de ocorrênci
 
 **Revisão concluída:** o autor aprovou as dez consultas de desenvolvimento e as vinte finais no chat. Os JSON registram `review_status: approved`; a [lista completa](docs/queries.md) apresenta as consultas e referências. Os trechos dos livros permanecem fora do Git; as propostas versionadas contêm apenas consultas, referências e justificativas.
 
-A suíte atual tem **65 testes**, incluindo preparação, busca, CLI, avaliação, integração real e integridade do código embutido no notebook. As vinte consultas finais foram avaliadas somente após o congelamento do M3, conforme a seção seguinte.
+A suíte atual tem **102 testes**, incluindo preparação, busca, CLI, avaliação, integração real e integridade do código embutido no notebook. As vinte consultas finais foram avaliadas somente após o congelamento do M3, conforme a seção seguinte.
 
 ## TF-IDF e desenvolvimento — M3
 
@@ -70,16 +70,16 @@ O notebook foi reformulado para carregar um ZIP determinístico com código e me
 
 **Etapa do autor:** importar o arquivo no Kaggle, anexar o dataset, habilitar Internet e executar todas as células. A execução atual na plataforma e eventual publicação ainda não foram conferidas.
 
-## V2 — BM25 em avaliação
+## V2 — BM25 e novo teste concluído
 
-A v1 está preservada na tag `v1-baseline`. A v2 acrescenta BM25 em módulos separados, sem modificar o notebook ou os resultados históricos. O autor aprovou 36 novas consultas de desenvolvimento e 24 reservadas para teste. Consulte o [plano v2](docs/v2-plan.md) e o [desenvolvimento e a decisão sobre o corte](docs/v2-development.md).
+A v1 está preservada na tag `v1-baseline`. A v2 acrescenta BM25 em módulos separados, sem modificar o notebook ou os resultados históricos. O autor aprovou 36 novas consultas de desenvolvimento e 24 reservadas para teste. Consulte o [plano v2](docs/v2-plan.md), o [desenvolvimento](docs/v2-development.md) e a [avaliação final com gráfico e reprodução](docs/v2-final-evaluation.md).
 
 ```bash
 uv run python -m sherlock_search.bm25 --query "Trichinopoly cigar"
-uv run python -m sherlock_search.v2_development --output reports/v2/development.approved.json
+uv run python -m sherlock_search.v2_development --output reports/v2/development.reproduced.json
 ```
 
-No desenvolvimento: literal 9/27, TF-IDF 10/27 e BM25 12/27 referências conhecidas no top 5. TF-IDF e BM25 retornaram trechos nas nove negativas. BM25 será avaliado como ranking; a ausência de resposta permanece sem solução. Estes números não devem ser comparados diretamente aos percentuais do teste v1, que usa outras consultas.
+No desenvolvimento, as consultas positivas com referência conhecida no top 5 foram: literal 9/27, TF-IDF 10/27 e BM25 12/27. TF-IDF e BM25 retornaram trechos nas nove negativas. No novo teste congelado, literal ficou em 6/18, TF-IDF em 10/18 e BM25 em 12/18, com 0/6, 6/6 e 6/6 negativas com retorno, respectivamente. BM25 foi avaliado como ranking; a ausência de resposta permanece sem solução. Estes números não devem ser comparados diretamente aos percentuais do teste v1, que usa outras consultas.
 
 ## Entregas do plano
 
