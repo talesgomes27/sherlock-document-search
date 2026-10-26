@@ -30,3 +30,10 @@ Um gráfico separado de MRR repetiria parte da informação de posições; mais 
 A [evidência dos notebooks](../reports/editorial/notebook_validation.json) registra os hashes das cópias e dos originais. As células novas foram executadas isoladamente em kernel local com os JSONs aprovados. As saídas antigas foram reaproveitadas dos notebooks validados; esta revisão não é uma nova execução integral de cada notebook. A execução no Kaggle permanece sem verificação, e a atualização na plataforma fica com o autor.
 
 A revisão não recalcula a avaliação final para decidir alterações de modelos. Os conjuntos finais já publicados continuam disponíveis para reprodução e diagnóstico; outro ajuste exigiria um novo teste independente.
+
+
+## Publicação aprovada
+
+O autor aprovou o [PR #2](https://github.com/talesgomes27/sherlock-document-search/pull/2), integrado por merge commit `235fc36` com histórico preservado. O [relatório revisado está publicado](https://talesgomes27.github.io/sherlock-document-search/); build e deploy concluíram no [run 40258089685](https://github.com/talesgomes27/sherlock-document-search/actions/runs/40258089685). A verificação do destino conferiu a identidade do commit, os hashes dos 23 arquivos publicados e as quatro tabelas. A linguagem revisada e os três gráficos foram inspecionados no navegador.
+
+A [evidência de publicação](../reports/m5/pr2_publication_validation.json) complementa a validação editorial inicial, cujo estado de prévia registra o momento anterior ao aceite. Os quatro notebooks conferem com os hashes registrados; esta publicação não equivale a uma execução deles no Kaggle.

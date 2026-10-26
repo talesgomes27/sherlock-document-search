@@ -1,0 +1,37 @@
+{
+  "scope": "pr2_editorial_published_pages_smoke",
+  "checked_at_utc": "2026-10-26T02:15:25.193896+00:00",
+  "url": "https://talesgomes27.github.io/sherlock-document-search/",
+  "source_commit": "235fc36fd038c82285fe7baa752c25eb2b8405f8",
+  "workflow_run_id": "40258089685",
+  "workflow_url": "https://github.com/talesgomes27/sherlock-document-search/actions/runs/40258089685",
+  "workflow_conclusion": "success",
+  "html_status": 200,
+  "artifact_hashes_checked": 23,
+  "input_hashes_checked": 50,
+  "source_tree_dirty": false,
+  "report_sha256": "4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b",
+  "quarto_version": "1.10.19",
+  "python_version": "3.11.17",
+  "html_checks": {
+    "html_files": 1,
+    "checked_local_links": 32,
+    "css_files": 5,
+    "tables_checked": 4,
+    "images": 3,
+    "crossrefs_checked": 7
+  },
+  "local_copy": "/tmp/sherlock-pages-smoke-g0tv6ja0",
+  "models_recomputed": false,
+  "pull_request": 2,
+  "merge_method": "merge",
+  "merge_parents": [
+    "2d7bc96f7644e0370970f894f51b7fa748b1fbe6",
+    "847555ccd1625721efeb8ea30e2755c5ace601c5"
+  ],
+  "visual_review": "published_site_in_app_browser",
+  "visual_evidence": "reports/m5/pr2_publication.png",
+  "visual_evidence_sha256": "48bfd4a8fb3c0332125ebbd814fbf1a7f7ea89fcf3ea75df93e9242a4863be7d",
+  "notebook_hashes_verified": 4,
+  "report_ci_tests_passed": 12
+}

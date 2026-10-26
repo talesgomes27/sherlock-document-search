@@ -50,3 +50,6 @@ A evidência está em [publication_validation.json](../reports/m5/publication_va
 
 
 A [revisão editorial](editorial-presentation.md) simplifica a leitura e acrescenta uma terceira figura, com a posição das referências por consulta. As cinco células de código do relatório e todos os resultados científicos continuam iguais. A evidência inicial do M5 acima descreve a publicação anterior; a revisão é entregue separadamente para aprovação.
+
+
+A revisão editorial foi posteriormente aprovada no PR #2 e publicada a partir do merge commit `235fc36`. O [run 40258089685](https://github.com/talesgomes27/sherlock-document-search/actions/runs/40258089685) concluiu build e deploy; a [verificação no destino](../reports/m5/pr2_publication_validation.json) confirma a página com três gráficos e quatro tabelas. Os registros anteriores preservam a cronologia da prévia e da publicação inicial do M5.
