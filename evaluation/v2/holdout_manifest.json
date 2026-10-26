@@ -1,6 +1,6 @@
 {
   "split": "v2_final",
-  "status": "proposed_not_evaluated",
+  "status": "approved_not_evaluated",
   "query_count": 24,
   "positive": 18,
   "negative": 6,
@@ -10,10 +10,10 @@
     "paraphrase": 6,
     "unanswerable": 6
   },
-  "json_path": "data/processed/v2_holdout/final.proposed.json",
+  "json_path": "data/processed/v2_holdout/final.json",
   "review_path": "data/processed/v2_holdout/review.md",
-  "json_sha256": "275b0d4b1b107851bdfd90cc17e88385abbb494e331ef982a0badbac2b85f8d6",
-  "review_sha256": "3ce3814e27bf70da7417f8b77e6378c51a637f23040eb0cdbbb96684d4be4938",
+  "json_sha256": "ed52895e7b760b1ceab89857881624d070455669327677e2c26d1b1c96c5aa61",
+  "review_sha256": "e733faaae9b724636d63ceb6bb43f58f702dceb474d25cea2fa20b217fe53973",
   "source_region": [
     0.6,
     0.85
@@ -21,5 +21,7 @@
   "intent_overlap_checked_v1": true,
   "final_queries_executed": false,
   "intent_overlap_checked_v2development": true,
-  "v2development_sha256": "e658cd4bec42e631e35c393f85408d6880d2fd4c56545aaa9868055d0d78b31f"
+  "v2development_sha256": "19f8ff3275c97c4d7b136d85d96c57015a1611c53784275f5b08942ace4f40bc",
+  "approval_source": "author_chat_2026-10-25",
+  "scope": "pre_evaluation_v2_holdout_manifest"
 }

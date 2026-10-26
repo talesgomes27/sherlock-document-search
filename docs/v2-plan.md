@@ -6,6 +6,8 @@ O autor autorizou iniciar a v2 no chat em 25 de outubro de 2026, registrando o p
 
 A primeira entrega inclui implementação BM25, propostas de desenvolvimento e teste reservado, comparação exploratória de desenvolvimento e documentação. A revisão dos novos rótulos e a avaliação final da v2 são gates posteriores; não se atribuirá aprovação humana a propostas geradas por agentes.
 
+O autor aprovou os dois grupos de rótulos no chat durante a execução. Após esse aceite, os gates de calibração, congelamento e avaliação do novo teste serão conduzidos sem novos ajustes baseados nesse teste.
+
 ## Hipótese e escopo
 
 Testar se BM25 melhora a recuperação de referências conhecidas com custo local pequeno. Comparar separadamente o efeito de recusar resultados abaixo de um corte. Nenhum ganho é garantido. Manter corpus, parágrafos, top 5, filtro por arquivo e referências de linhas da v1. Começar com BM25 fixo em k1=1,2 e b=0,75, sem busca de hiperparâmetros e sem novas dependências. Embeddings, reranking e mudança de segmentação ficam fora desta primeira rodada.
@@ -41,3 +43,8 @@ Somente após revisar desenvolvimento e escolher a configuração, congelar os a
 4. Desenvolvimento: módulo que lê exclusivamente `evaluation/v2/development.json`; rótulos não aprovados exigem opção explícita de exploração. Relatório novo, sem tocar em saídas v1. Testes sintéticos e execução local sobre corpus real.
 5. Revisão e entrega inicial: revisão independente, suíte, build e CLI do pacote instalado; evidências em `task.md`. Preparar instruções de revisão e não executar o teste reservado.
 6. Etapa posterior: aceite dos rótulos, calibração confirmada, congelamento v2 e execução do novo teste. Notebook e gráficos v1 continuam históricos; a integração dos novos resultados só ocorrerá depois desta etapa.
+
+
+## Decisão após desenvolvimento, antes do novo teste
+
+O primeiro critério registrado escolheu corte 32, eliminando todos os acertos positivos. O candidato foi explicitamente rejeitado; a regra inicial e suas saídas foram preservadas. BM25 sem corte adicional (min_score=0,0) será avaliado como ranking, sem alegar que a abstenção foi resolvida. A decisão está em `evaluation/v2/configuration_decision.json` e antecede a abertura do novo teste. Nenhum parâmetro ou rótulo final foi consultado para essa decisão.

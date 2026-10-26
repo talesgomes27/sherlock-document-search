@@ -70,6 +70,17 @@ O notebook foi reformulado para carregar um ZIP determinístico com código e me
 
 **Etapa do autor:** importar o arquivo no Kaggle, anexar o dataset, habilitar Internet e executar todas as células. A execução atual na plataforma e eventual publicação ainda não foram conferidas.
 
+## V2 — BM25 em avaliação
+
+A v1 está preservada na tag `v1-baseline`. A v2 acrescenta BM25 em módulos separados, sem modificar o notebook ou os resultados históricos. O autor aprovou 36 novas consultas de desenvolvimento e 24 reservadas para teste. Consulte o [plano v2](docs/v2-plan.md) e o [desenvolvimento e a decisão sobre o corte](docs/v2-development.md).
+
+```bash
+uv run python -m sherlock_search.bm25 --query "Trichinopoly cigar"
+uv run python -m sherlock_search.v2_development --output reports/v2/development.approved.json
+```
+
+No desenvolvimento: literal 9/27, TF-IDF 10/27 e BM25 12/27 referências conhecidas no top 5. TF-IDF e BM25 retornaram trechos nas nove negativas. BM25 será avaliado como ranking; a ausência de resposta permanece sem solução. Estes números não devem ser comparados diretamente aos percentuais do teste v1, que usa outras consultas.
+
 ## Entregas do plano
 
 1. Revisão humana de 30 consultas: dez para desenvolvimento e vinte reservadas para avaliação final, incluindo consultas sem resposta.

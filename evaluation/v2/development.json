@@ -8,7 +8,7 @@
     ],
     "rationale": "Holmes inclui o charuto Trichinopoly entre as características que atribui ao assassino.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-02",
@@ -19,7 +19,7 @@
     ],
     "rationale": "Durante a inspeção, Holmes recolhe um montículo de pó cinzento e o guarda em um envelope.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-03",
@@ -32,7 +32,7 @@
     ],
     "rationale": "Um anel cai durante a remoção do corpo; Lestrade o interpreta como aliança feminina e conclui que uma mulher esteve ali. A descrição confirma ouro simples, sem validar a conclusão sobre presença feminina.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-04",
@@ -43,7 +43,7 @@
     ],
     "rationale": "Mycroft identifica Sidney Johnson como funcionário sênior e desenhista que possui a outra chave.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-05",
@@ -54,7 +54,7 @@
     ],
     "rationale": "Holmes explica que Mycroft combina informações de vários departamentos e avalia suas interações, tornando-se indispensável às decisões nacionais.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-06",
@@ -66,7 +66,7 @@
     ],
     "rationale": "Três dos dez documentos, os mais essenciais, continuam desaparecidos; Mycroft pode opinar com os dados em mãos, mas não faz diligências e interrogatórios de campo.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-07",
@@ -77,7 +77,7 @@
     ],
     "rationale": "O nome literal identifica a firma de importação de vinhos para a qual Windibank viaja.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-08",
@@ -88,7 +88,7 @@
     ],
     "rationale": "Holmes observa botas diferentes entre si e abotoadas de forma incompleta e irregular; disso infere pressa.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-09",
@@ -100,7 +100,7 @@
     ],
     "rationale": "Angel entra em outro carro e não aparece ao chegar à igreja. Mary recorda que ele exigira fidelidade mesmo se algum imprevisto os separasse e interpreta o desaparecimento à luz desse aviso.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-10",
@@ -111,7 +111,7 @@
     ],
     "rationale": "Holmes identifica a joia desaparecida como a grande pedra amarela Mazarin.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-11",
@@ -126,7 +126,7 @@
     ],
     "rationale": "Holmes pode prender o conde, mas ainda não sabe onde está o diamante e prioriza recuperar a pedra.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-12",
@@ -140,7 +140,7 @@
     ],
     "rationale": "A réplica de Holmes pode ser vista da rua e mudada de posição para parecer viva. Billy vê vigilantes em frente, e Holmes espera que uma arma de ar comprimido atire na cabeça do boneco.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-13",
@@ -151,7 +151,7 @@
     ],
     "rationale": "Holmes pede ao gerente o rapaz Cartwright, cuja habilidade conhecera em investigação anterior.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-14",
@@ -162,7 +162,7 @@
     ],
     "rationale": "Não há outro carro vazio disponível; Holmes tenta perseguir a pé, mas a vantagem do fugitivo e o trânsito fazem o carro desaparecer.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-15",
@@ -175,7 +175,7 @@
     ],
     "rationale": "O carro permite atrasar, ultrapassar e acompanhar outro carro sem chamar atenção. Watson observa que o passageiro fica dependente do cocheiro, e Holmes concorda.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-16",
@@ -186,7 +186,7 @@
     ],
     "rationale": "Munro situa um pequeno bosque de pinheiros escoceses além do chalé vizinho.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-17",
@@ -197,7 +197,7 @@
     ],
     "rationale": "Munro se apresenta como comerciante de lúpulo e diz que a casa custava oitenta libras de aluguel por ano.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-18",
@@ -210,7 +210,7 @@
     ],
     "rationale": "Munro observa saída furtiva às três da manhã e expressão pálida e ansiosa; ao explicar a necessidade de ar, Effie evita olhá-lo e fala de modo diferente. A pergunta trata da percepção de Munro, não exige resolver o segredo.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-19",
@@ -221,7 +221,7 @@
     ],
     "rationale": "Watson registra que Holmes estava ocupado com a perseguição ao milionário do tabaco John Vincent Harden quando Violet Smith chegou.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-20",
@@ -233,7 +233,7 @@
     ],
     "rationale": "O desgaste lateral na sola, provocado pela borda do pedal, acompanha a dedução de que a visitante pedalava muito.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-21",
@@ -245,7 +245,7 @@
     ],
     "rationale": "Violet e a mãe estavam pobres. Carruthers ofereceu cem libras anuais, consideradas excelente remuneração, e permitiu visitas à mãe nos fins de semana.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-22",
@@ -256,7 +256,7 @@
     ],
     "rationale": "O relato identifica Lal Chowdar como o criado que participa da ocultação do corpo de Morstan.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-23",
@@ -267,7 +267,7 @@
     ],
     "rationale": "Bartholomew compara a altura externa com as alturas internas, percebe quatro pés sem explicação no topo e abre o teto para achar o sótão e o baú.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-24",
@@ -279,7 +279,7 @@
     ],
     "rationale": "Sholto teme acusação de homicídio e exposição do tesouro; a interpretação culpabilizadora do próprio criado o faz descrer de convencer um júri e aceitar a ocultação.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-25",
@@ -290,7 +290,7 @@
     ],
     "rationale": "A bicicleta retirada dos arbustos é descrita como uma Rudge-Whitworth bastante usada.",
     "query_type": "exact",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-26",
@@ -302,7 +302,7 @@
     ],
     "rationale": "Holmes compara a tinta do cartão com a da escrivaninha e encontra cores diferentes; também contrapõe traço de pena grossa às penas finas disponíveis na sala.",
     "query_type": "paraphrase",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-27",
@@ -317,7 +317,7 @@
     ],
     "rationale": "Ames diz que o curativo cobre corte feito ao barbear na véspera e que Douglas não se cortava havia muito tempo. Holmes considera que isso pode indicar nervosismo e receio de perigo, admitindo coincidência.",
     "query_type": "context",
-    "review_status": "proposed"
+    "review_status": "approved"
   },
   {
     "id": "v2-dev-28",
@@ -326,7 +326,7 @@
     "relevant_ids": [],
     "rationale": "A aliança é efetivamente encontrada e descrita como ouro simples; as passagens sobre sua circulação e ligação com Lucy não identificam o joalheiro fabricante.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -375,7 +375,7 @@
     "relevant_ids": [],
     "rationale": "West é funcionário do Arsenal e sua noiva considera o salário suficiente, mas não informa valor anual exato.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -434,7 +434,7 @@
     "relevant_ids": [],
     "rationale": "A firma e Fenchurch Street são informadas; o relato de correspondência confirma o endereço comercial sem fornecer número do prédio.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -461,7 +461,7 @@
     "relevant_ids": [],
     "rationale": "Holmes identifica o modelador francês como Tavernier, sem prenome na passagem nem nas demais menções ao nome examinadas.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -486,7 +486,7 @@
     "relevant_ids": [],
     "rationale": "Sir Henry confirma a compra das botas marrons, informa preço e que ainda não as usara; não nomeia fabricante.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -539,7 +539,7 @@
     "relevant_ids": [],
     "rationale": "Munro efetivamente situa uma estalagem próxima à vila, mas não lhe dá nome no relato examinado.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -578,7 +578,7 @@
     "relevant_ids": [],
     "rationale": "O relato confirma a mãe de Violet, sua viuvez e as visitas da filha, mas não fornece seu prenome.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -623,7 +623,7 @@
     "relevant_ids": [],
     "rationale": "Lal Chowdar é descrito como velho e participa da ocultação; o relato não informa idade numérica nem data de nascimento para calculá-la.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",
@@ -650,7 +650,7 @@
     "relevant_ids": [],
     "rationale": "A bicicleta existe, tem marca, desgaste, lama e bolsa descritos; o relato examinado não especifica a cor da pintura.",
     "query_type": "unanswerable",
-    "review_status": "proposed",
+    "review_status": "approved",
     "negative_verification": {
       "method": "Inspeção editorial de parágrafos canônicos: leitura de descrições e diálogos ligados ao detalhe, conferência de menções por nomes e variantes; nenhum ranking, método de recuperação avaliado ou métrica foi executado. Ausência de palavra isolada não foi usada como prova.",
       "kind": "missing_detail",

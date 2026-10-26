@@ -191,3 +191,14 @@ Núcleo BM25 implementado por subagente com testes antes da implementação. Pri
 Revisão metodológica anterior às métricas: os curadores inicialmente criaram negativas com premissas refutadas. Essa convenção penalizaria trechos úteis que corrigem a pergunta. As propostas foram reabertas para substituição por detalhes plausíveis não informados, sem usar resultados de busca. A incerteza da anotação permanece explícita e a aprovação humana está pendente.
 
 Estado deste registro de suporte: regras e código preparados antes da primeira comparação real v2; curadoria e execução exploratória de desenvolvimento em andamento. O candidato de corte não altera a configuração distribuída. Nenhuma consulta do teste v2 foi executada.
+
+
+### V2 — aceite, configuração e congelamento antes do teste
+
+O autor respondeu “aprovado” à solicitação explícita de revisão das 36 consultas de desenvolvimento e 24 reservadas. Alteraram-se exclusivamente os status de revisão; a cópia privada das propostas finais foi preservada. Registrou-se o aceite global do chat, sem afirmar revisão humana individual documentada.
+
+No desenvolvimento aprovado, literal teve 9/27 hits conhecidos e 0/9 negativas com retorno; TF-IDF 10/27 e 9/9; BM25 12/27 e 9/9. A regra pré-registrada produziu corte 32, com 0/27 hits e 3/9 negativas com retorno. Esse candidato foi rejeitado explicitamente por inviabilidade funcional, sem alterar ou ocultar a regra inicial. A decisão anterior ao teste mantém k1=1,2, b=0,75 e min_score=0,0 para avaliar BM25 como ranking, sem resolver abstenção. A análise por tipo está em docs/v2-development.md.
+
+O novo avaliador final e dez testes sintéticos foram implementados antes de abrir semanticamente o teste. Revisão independente confirmou os gates de integridade, aprovação, composição, runtime, fontes importadas e saídas; nenhum achado acionável. Suíte completa com 102 testes passou antes do congelamento. O avaliador não oferece grade, limiar ou seleção de consultas; usa os três métodos fixos. A tag e os 35 ativos v1 permanecem intactos. O freeze v2 registra também a decisão, o desenvolvimento aprovado e o hash do teste local, conferido como bytes opacos nesta etapa.
+
+Este registro e o código serão versionados antes da primeira execução final v2; os resultados ainda não foram calculados neste ponto. A execução subsequente usará exclusivamente o snapshot fixo e não orientará novos ajustes neste ciclo.

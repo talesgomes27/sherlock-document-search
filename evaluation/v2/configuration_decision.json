@@ -1,0 +1,18 @@
+{
+  "scope": "v2_bm25_ranking_only",
+  "annotation_approval": "author_chat_2026-10-25",
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "min_score": 0.0
+  },
+  "additional_abstention_rule": false,
+  "initial_selection_rule": "maximize_balanced_utility_then_minimize_false_positive_rate_then_minimize_threshold",
+  "initial_threshold_candidate": 32.0,
+  "candidate_adopted": false,
+  "reason": "Candidate 32 lost all 12 known positive hits; no additional cutoff is adopted. BM25 is evaluated as a ranker, without a solved answerability claim.",
+  "selection_history": "The initial rule was preregistered in da31d56 before development execution. Rejection of its unusable candidate uses development only and is recorded before opening the new final set.",
+  "final_v2_executed_at_decision": false,
+  "decision_on": "2026-10-25",
+  "decision_source": "implementation_judgement_from_development_within_authorized_scope"
+}
