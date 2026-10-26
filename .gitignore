@@ -8,3 +8,7 @@ __pycache__/
 /data/processed/
 *.zip
 /data/*.txt
+
+/site/_site/
+/site/.quarto/
+/.venv-report/

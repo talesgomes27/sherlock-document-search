@@ -1,0 +1,62 @@
+name: Report and Pages
+
+on:
+  pull_request:
+    paths-ignore: ['README.md', 'task.md', 'docs/**', 'reports/m5/**']
+  push:
+    branches: [main]
+    paths-ignore: ['README.md', 'task.md', 'docs/**', 'reports/m5/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: report-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11.17'
+          cache: pip
+          cache-dependency-path: site/requirements.txt
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.10.19'
+      - name: Prepare report environment
+        run: |
+          python -m venv .venv-report
+          .venv-report/bin/python -m pip install -r site/requirements.txt
+      - name: Check report sources and HTML validators
+        run: .venv-report/bin/python -m unittest discover -s tests -p 'test_report_*.py' -v
+      - name: Render the report
+        run: .venv-report/bin/python scripts/render_report.py
+      - name: Validate HTML, figures and links
+        run: .venv-report/bin/python scripts/check_report.py
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/_site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the validated artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

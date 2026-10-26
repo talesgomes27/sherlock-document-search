@@ -1,0 +1,27 @@
+{
+  "scope": "m5_local_quarto_validation",
+  "validated_on": "2026-10-25",
+  "quarto_version": "1.10.19",
+  "python_version": "3.11.17",
+  "source_tests": {
+    "passed": 115,
+    "skipped": 0
+  },
+  "report_tests": 9,
+  "qmd_cells_executed": 5,
+  "html_checks": {
+    "html_files": 1,
+    "checked_local_links": 30,
+    "css_files": 5,
+    "tables_checked": 4,
+    "images": 2,
+    "crossrefs_checked": 6
+  },
+  "visual_review": "local_desktop_browser",
+  "models_recomputed": false,
+  "raw_corpus_required_for_render": false,
+  "v1_preserved_files": 35,
+  "v2_frozen_files": 48,
+  "final_report_sha256": "4c05fc86dcd6907bfafec5283b45c5e66ae91aaf3ef323466b54f179039ac92b",
+  "merge_pr1_commit": "95fda2e7a02cf2b3b03c55686ac533a7fa861a8e"
+}

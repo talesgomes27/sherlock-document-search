@@ -251,3 +251,18 @@ A primeira redação foi delegada a modelo mais leve e revisada pelo agente prin
 Verificações desta preparação: 106 testes passaram novamente com o corpus real, sem ignorados; os verificadores confirmaram os 35 ativos v1 e 48 arquivos do congelamento v2; os dois notebooks conferem com seus hashes de validação; os payloads dos dois notebooks conferiram antes da publicação. A comparação remota identificou main em 8f17985 e v2 cinco commits à frente antes desta edição, sem divergência; não havia PR aberto dessa branch para main na consulta realizada.
 
 O PR integra a branch completa codex/search-v2-bm25 em main: BM25, avaliação v2, notebook próprio, diagnóstico e documentação consolidada. A descrição registra validação local e limitações, sem alegar CI ou execução real no Kaggle. O merge fica pendente de autorização específica. Nenhum arquivo além de README.md e deste registro foi alterado nesta consolidação.
+
+
+## Merge do PR #1 e M5 — relatório Quarto para Pages
+
+O autor aprovou explicitamente o merge preservando histórico e autorizou iniciar o M5 em 25 de outubro de 2026. O merge foi feito pela API com método `merge` e SHA esperado `36be9d7`; resultado `95fda2e7a02cf2b3b03c55686ac533a7fa861a8e`, pais `8f17985` e `36be9d7`. A main local foi atualizada por fast-forward, sem reescrever os commits anteriores. O M5 foi preparado na branch `codex/m5-quarto-report`.
+
+Escopo do M5 conforme o plano aprovado: autoria/renderização HTML e publicação verificada no GitHub Pages do mesmo repositório público. Notebook Kaggle, modelos, rótulos, resultados e snapshots permanecem preservados; M6 não foi iniciado. A autorização do M5 cobre esta publicação do relatório no destino nomeado, sem introduzir outro serviço ou alterar acesso ao código/dados já públicos.
+
+O Quarto 1.10.19 já estava instalado e a versão oficial foi confirmada. O ambiente Jupyter dos modelos não foi alterado; foi criado ambiente de relatório Python 3.11.17, com ferramentas próprias e PyYAML. O diagnóstico inicial de Quarto apontou PyYAML ausente no ambiente antigo; o ambiente separado resolveu essa dependência e a renderização efetiva passou.
+
+Fontes em site/index.qmd, configuração/style/assets em site/, helpers stdlib de fontes/render/HTML em scripts/, testes próprios em tests/. O conteúdo inicial foi delegado, verificado contra JSONs e revisado para que a figura de corpus descrevesse somente palavras retidas. O checker independente encontrou falta de alt explícito e uma referência histórica; ambos corrigidos antes da publicação. O relatório executa cinco células de leitura/formatação, sem importação de métodos de busca, fit ou varreduras. Os 50 hashes verificados incluem o snapshot original e a referência final; o metadado antes privado é obtido da cópia pública idêntica.
+
+Validação local: 115 testes passaram com os dados reais e sem ignorados; nove são novos testes de fontes/HTML. Quatro tabelas, duas imagens com alt e seis referências cruzadas conferem com as fontes; 30 links/recursos locais e cinco CSS verificados. Render HTML inspecionado no navegador. Fontes remotas desnecessárias foram retiradas do tema, preservando fontes de sistema. As verificações dos 35 ativos v1, 48 arquivos v2 e ambos payloads de notebooks passaram.
+
+O workflow foi revisado independentemente: build sem permissão de deploy em PR, artifact publicado somente a partir de main, deploy dependente do build validado e permissões mínimas. Pages não estava configurado (GET 404); gh confirmou administração do repositório, Actions habilitado e destino público. A configuração de Pages, execução remota e smoke tests serão registrados em evidência própria após a publicação; validação local não os substitui.

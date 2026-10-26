@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+  render:
+    - index.qmd
+  resources:
+    - assets/
+website:
+  title: "Sherlock Document Search"
+  site-url: "https://talesgomes27.github.io/sherlock-document-search/"
+  search: false
+  navbar:
+    right:
+      - text: "Código e notebooks"
+        href: "https://github.com/talesgomes27/sherlock-document-search"
+  page-footer:
+    left: "talesgomes27 · Busca documental com referências verificáveis"
+    right:
+      - text: "Fontes do relatório"
+        href: "https://github.com/talesgomes27/sherlock-document-search/blob/main/site/index.qmd"
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    toc-title: "Neste relatório"
+    number-sections: true
+    anchor-sections: true
+lang: pt-BR
+jupyter: sherlock-report
+execute:
+  echo: false
+  cache: false
+  freeze: false

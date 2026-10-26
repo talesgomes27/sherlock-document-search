@@ -1,0 +1,17 @@
+:root { --report-ink: #173b4e; --report-accent: #2d6477; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; color: #24343d; }
+h1, h2, h3, .navbar-brand { color: var(--report-ink); font-weight: 650; }
+.quarto-title-block .description { color: #52636d; font-size: 1.12rem; }
+a { color: #216378; text-underline-offset: .18em; }
+a:hover { color: #173b4e; }
+.navbar { background: #f1f5f6; border-bottom: 1px solid #dbe5e8; }
+main.content { max-width: 960px; }
+table { font-size: .91rem; line-height: 1.5; }
+figure { margin-block: 2rem; }
+figcaption { color: #52636d; }
+.callout { border-left-color: var(--report-accent); }
+@media (max-width: 767px) {
+  body { font-size: 1rem; }
+  h1.title { font-size: 1.85rem; }
+  table { font-size: .84rem; }
+}

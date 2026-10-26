@@ -10,6 +10,12 @@ O projeto compara três formas de busca sobre os mesmos parágrafos:
 
 As pontuações de cosseno e BM25 não são probabilidades de resposta. TF-IDF e BM25 podem retornar passagens que compartilham termos com a consulta sem informar o detalhe solicitado.
 
+## Leia o relatório
+
+[Relatório Quarto no GitHub Pages](https://talesgomes27.github.io/sherlock-document-search/) · [Fontes e reprodução do relatório](docs/quarto-report.md)
+
+O relatório reúne dados, métodos, resultados, análise das consultas sem resposta e histórico v1, com tabelas calculadas dos JSONs aprovados. A renderização não recalcula buscas nem ajusta modelos.
+
 ## Experimente no Kaggle
 
 [Abra o notebook v2](notebooks/sherlock_document_search_v2.ipynb), importe-o como um notebook novo, anexe o [dataset Sherlock Holmes Series](https://www.kaggle.com/datasets/talesgomes27/sherleck-books), habilite Internet e execute todas as células. O notebook contém o código necessário: não precisa clonar o repositório. O corpus anexado é a entrada. A execução no Kaggle ainda não foi verificada.
@@ -53,7 +59,7 @@ Execute a suíte após preparar os dados:
 uv run python -m unittest discover -s tests -q
 ```
 
-A suíte tem 106 testes, incluindo integração com os dados reais. Sem os TXT, testes que dependem do corpus real são ignorados; essa execução não valida a integração real.
+A suíte tem 115 testes, incluindo integração com os dados reais. Sem os TXT, testes que dependem do corpus real são ignorados; essa execução não valida a integração real.
 
 ## Dados e proveniência
 
@@ -76,7 +82,7 @@ A v1 usou 16 positivas e quatro negativas; a v2 usou 18 e seis. Não agregue nem
 
 ## Próximas etapas e limites
 
-A v2 e seus resultados foram validados localmente; a execução atual do notebook no Kaggle ainda precisa ser conferida. Os próximos marcos são o relatório Quarto no GitHub Pages (M5) e o dashboard Streamlit (M6), ainda não iniciados. A avaliação em literatura não mede desempenho em documentos de clientes. O portfólio demonstra preparação de texto, recuperação de informação, avaliação e comunicação analítica.
+A v2 e seus resultados foram validados localmente; a execução atual do notebook no Kaggle ainda precisa ser conferida. O relatório Quarto do M5 reúne a análise no GitHub Pages. O dashboard Streamlit (M6) continua planejado e não foi iniciado. A avaliação em literatura não mede desempenho em documentos de clientes. O portfólio demonstra preparação de texto, recuperação de informação, avaliação e comunicação analítica.
 
 ## Documentação e artefatos
 
