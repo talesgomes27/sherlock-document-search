@@ -46,6 +46,8 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     for extension in ('png', 'svg'):
         fig.savefig(output / f'final_comparison.{extension}', dpi=160, bbox_inches='tight', facecolor='white')
+    svg = output / 'final_comparison.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines()) + '\n', encoding='utf-8')
     plt.close(fig)
     print('Gráficos exportados do relatório final; nenhuma busca foi executada.')
 
